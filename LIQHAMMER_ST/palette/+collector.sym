@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="Collector" >
+
+		<ellipse id="Ellipse_1" cx="215" cy="53" rx="7" ry="7" dx="-135" dy="-17" color="66,133,244"  />
+
+		<port id="f_in" library="LIQHAMMER_ST" type="fluid"  hotPort="f_in" >
+		
+				<symbol dx="80" dy="36" onLabel="true" />
+		
+				<label cx="14" cy="12" dx="44" dy="24" />
+		
+		</port>
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

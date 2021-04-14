@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="700" sy="600" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="159,159,159" colorSecondary="190,190,190" numberCells="5" margin="true" />
+
+	<componentType id="Pump" >
+
+		<ellipse id="Ellipse_1" cx="232" cy="72" rx="24" ry="24" dx="-112" dy="-32" lineWidth="1.5"  color="66,133,244"  />
+
+		<rect id="Rectangle_1" cx="236" cy="72" sx="40" sy="16" dx="-96" dy="-48" lineType="-1"  color="66,133,244"  />
+
+		<line id="Line_1" points="216,64 256,64" dx="-96" dy="-48" lineWidth="1.5"   />
+
+		<line id="Line_2" points="256,64 256,80" dx="-96" dy="-48" lineWidth="1.5"   />
+
+		<line id="Line_3" points="236,80 256,80" dx="-96" dy="-48" lineWidth="1.5"   />
+
+		<ellipse id="Ellipse_2" cx="220" cy="84" rx="4" ry="4" dx="-100" dy="-44"  />
+
+		<line id="Line_5" points="-10.4096,731.722 29.5904,731.722" dx="90.4096" dy="-691.722" lineColor="0,0,255" lineWidth="2"   />
+
+		<polygon id="Polygon_2" points="126,38 133,40 126,42" dx="-36.7603" dy="-0.0103" lineColor="0,0,255"  color="0,0,255"  />
+
+		<polygon id="Polygon_1" points="126,38 133,40 126,42" dx="38" dy="-16" lineColor="0,0,255"  color="0,0,255"  />
+
+		<line id="Line_4" points="13.59,731.722 29.5904,731.722" dx="146.41" dy="-707.722" lineColor="0,0,255" lineWidth="2"   />
+
+		<port id="f_in" library="LIQHAMMER_ST" type="fluid"  hotPort="f_in" >
+		
+				<symbol dx="80" dy="40" onLabel="true" />
+		
+				<label cx="14" cy="12" dx="44" dy="28" />
+		
+		</port>
+
+		<port id="f_out" library="LIQHAMMER_ST" type="fluid"  hotPort="f_out" >
+		
+				<symbol dx="176" dy="24" onLabel="true" />
+		
+				<label cx="18" cy="12" dx="184" dy="12" />
+		
+		</port>
+
+		<editor used="true">
+			<tab name="Rated - Elevation">
+				<var name="z_in"/>
+				<var name="outlet_elev_same_as_inlet"/>
+				<var name="z_out" conditionVar="outlet_elev_same_as_inlet" conditionVals="FALSE"/>
+				<var name="tdh_r"/>
+				<var name="Q_r"/>
+				<var name="n_r"/>
+				<var name="eff_r"/>
+			</tab>
+			<tab name="Transient">
+				<var name="pump_transient"/>
+				<var name="I" conditionVar="pump_transient" conditionVals="Trip"/>
+				<var name="TIME_trip" conditionVar="pump_transient" conditionVals="Trip"/>
+				<var name="n_o_trip" conditionVar="pump_transient" conditionVals="Trip"/>
+				<var name="TIME_start" conditionVar="pump_transient" conditionVals="Start"/>
+				<var name="DTIME_start" conditionVar="pump_transient" conditionVals="Start"/>
+				<var name="n_start_end" conditionVar="pump_transient" conditionVals="Start"/>
+				<var name="n_constant" conditionVar="pump_transient" conditionVals="ConstantSpeed"/>
+			</tab>
+			<tab name="FourQuadrantCurves">
+				<var name="Ns"/>
+				<var name="User_Curves"/>
+				<var name="wh_vs_theta"/>
+				<var name="wbeta_vs_theta"/>
+				<var name="N_stages"/>
+				<var name="N_suctions"/>
+			</tab>
+		</editor>
+
+	</componentType>
+</palette>

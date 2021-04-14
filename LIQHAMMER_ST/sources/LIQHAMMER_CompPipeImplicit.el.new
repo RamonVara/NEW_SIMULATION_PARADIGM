@@ -1,0 +1,204 @@
+/*-----------------------------------------------------------------------------------------
+ LIBRARY: LIQHAMMER_ST
+ FILE: LIQHAMMER_CompPipeImplicit
+ CREATION DATE: 24/03/2019
+-----------------------------------------------------------------------------------------*/
+USE MATH
+CLASS PipeImplVars (INTEGER nr)
+	DECLS
+		REAL BM[10*nr+6]
+		REAL R[6*nr]
+	OBJECTS
+		NODES node[nr+1]
+	METHODS
+		METHOD NO_TYPE Eqns(
+				IN REAL dx,
+				IN REAL dt_local,
+				IN REAL f,
+				IN REAL dia,
+				IN REAL A,
+				IN REAL a,
+				OUT INTEGER ier
+				)
+			DECLS
+				INTEGER ia = 0
+				INTEGER irow = 0
+				INTEGER ma 
+				INTEGER mc
+				CONST INTEGER mup = 2
+				CONST INTEGER mld = 2
+				REAL c1, c2, c3, c4
+				REAL d1, d2, d3, d4
+			BODY
+				ia = 0
+				irow = 0
+			
+				FOR(i IN 1, nr)
+					d1    = 2.*(1-theta1) - theta2*((node[i].Q + node[i+1].Q) / A) * (dt_local/dx) + f * dt_local * EPS_FRIC * abs(node[i].Q + node[i+1].Q)/(4.*dia*A)
+					d2    = 2.*  theta1   + theta2*((node[i].Q + node[i+1].Q) / A) * (dt_local/dx) + f * dt_local * EPS_FRIC * abs(node[i].Q + node[i+1].Q)/(4.*dia*A)
+					d3    = 2. * theta2 * G * A * dt_local /dx
+					d4    = 2.*(1-theta2)*G*A*(dt_local/dx)*(node[i+1].H - node[i].H) - 2.* (theta1*node[i+1].Q + (1.-theta1)*node[i].Q) \
+							+ ((node[i].Q + node[i+1].Q)/A)*(1-theta2)* (node[i+1].Q - node[i].Q) * (dt_local/dx) \
+							+ f *(1-EPS_FRIC) * dt_local * (node[i].Q + node[i+1].Q)*abs(node[i].Q + node[i+1].Q)/(4.*dia*A)
+				  
+					c1   = (a**2)* theta2 *(dt_local/dx)
+					c2   = (1-theta1) * G * A  - 0.5 * G * theta2* (node[i].Q + node[i+1].Q)*(dt_local/dx)
+					c3   =     theta1 * G * A +  0.5 * G * theta2* (node[i].Q + node[i+1].Q)*(dt_local/dx)
+					c4   = -G * A *(theta1*node[i+1].H + (1-theta1)*node[i].H) + \
+							0.5 * G * (node[i].Q + node[i+1].Q) * (1-theta2) * (node[i+1].H - node[i].H)* (dt_local/dx)\
+							+(a**2)*(1-theta2)*(node[i+1].Q - node[i].Q) * (dt_local/dx)
+					--
+					mc = min(2*nr, 1 + mup + mld)
+					ma = 2 * nr * mc  - (mc - mld -1) * (mc - mld)/2
+					IF(nr == 1) THEN
+						irow = 1
+						ia = 0
+						BM[ia+1] = d1
+						BM[ia+2] = d2
+						BM[ia+3] = 0  --d3
+						R[1] = -d4
+						R[1+2*nr] =  d3
+						R[1+4*nr] = -d3
+						irow = 2
+						ia = ia + 3
+						BM[ia+1]= -c1
+						BM[ia+2]=  c1
+						BM[ia+3]=  0 --c3
+						BM[ia+4]=  0
+						R[2] = -c4
+						R[2+2*nr] = -c2
+						R[2+4*nr] = -c3
+					ELSE
+						IF(i == 1) THEN
+						irow = 1
+						ia = 0
+						BM[ia+1] = d1
+						BM[ia+2] = d2
+						BM[ia+3] = d3
+						R[1] = -d4
+						R[1+2*nr] =  d3
+						R[1+4*nr] =  0
+						irow = 2
+						ia = ia + 3
+						BM[ia+1]= -c1
+						BM[ia+2]=  c1
+						BM[ia+3]=  c3
+						BM[ia+4]=  0
+						R[2] = -c4
+						R[2+2*nr] = -c2
+						R[2+4*nr] =  0
+						ia = ia + 4
+					ELSEIF(i < nr) THEN
+			 			irow = irow + 1
+						BM[ia+1] = 0
+						BM[ia+2] =  d1
+						BM[ia+3] = -d3
+						BM[ia+4] =  d2
+						BM[ia+5] =  d3
+						R[irow] = -d4
+						R[irow+2*nr] = 0
+						R[irow+4*nr] = 0
+						ia = ia + 5
+						irow = irow + 1
+						BM[ia+1] =  -c1
+						BM[ia+2] =  c2
+						BM[ia+3] =  c1
+						BM[ia+4] =  c3
+						BM[ia+5] =  0
+						R[irow] = -c4
+						R[irow+2*nr] = 0
+						R[irow+4*nr] = 0
+						ia = ia + 5			
+					ELSE
+						irow = irow + 1
+						BM[ia+1] = 0
+						BM[ia+2] =  d1
+						BM[ia+3] = -d3
+						BM[ia+4] =  d2
+						R[irow] = -d4
+						R[irow+2*nr] =  0
+						R[irow+4*nr] = -d3
+						ia = ia +4
+						irow = irow + 1
+						BM[ia+1] =  -c1
+						BM[ia+2] =   c2
+						BM[ia+3] =   c1
+						R[irow] =  -c4
+						R[irow+2*nr] =  0
+						R[irow+4*nr] =  -c3
+						ia = ia+3
+					END IF
+				END IF
+			END FOR
+			GELB(R, BM, 2*nr, 3, mup, mld, 1e-6, ier)
+			IF(ier!=0) THEN
+				WRITE ("*** TROUBLE IN SOLUTION OF MATRIX R1, IER= %d\n", ier)
+			END IF
+		END METHOD
+END CLASS
+
+COMPONENT PipeImpl IS_A AbstractPipe (INTEGER nr = 2)
+	DECLS
+		REAL dx
+		REAL HN[nr+1],QN[nr+1] 
+		HIDDEN REAL c1, c2, c3, c4, d1, d2, d3, d4
+		REAL R[6*nr]
+		REAL A
+		REAL dt_local
+		CONST INTEGER i = 1
+
+		HIDDEN INTEGER ier = 0
+	OBJECTS
+		NODES node[nr+1]
+		PipeImplVars(nr = nr) FE_pipe
+	INIT
+		A = PI * dia**2 /4.
+		f_in.H = Ho
+		f_out.H = Ho - f * (l/dia) * Qo * abs(Qo) /(2. * A**2 * G)
+		f_in.Q = Qo
+		f_out.Q = Qo
+		FOR(i IN 1, nr+1)
+			node[i].H  = Ho - (i-1) * f * (l/dia) * Qo * abs(Qo) /(2. * A**2 * G)/nr
+			node[i].Q = Qo
+		END FOR
+	DISCRETE
+		WHEN (sample) THEN 
+			IF(istep > 0) THEN
+			FOR(i IN 1, nr+1)
+				node[i].H = HN[i]
+				node[i].Q = QN[i]
+			END FOR
+			END IF
+		END WHEN
+	CONTINUOUS
+		A = PI * dia**2 /4.
+		dx = l/nr
+		dt_local = TIME - TIME_sample + 1e-9
+		
+		FE_pipe.End_Eqns(dx, dt_local, f, dia, A, ier)
+		
+		EXPAND_BLOCK(nr == 0)
+			f_in.H - f_out.H = 0 
+			f_in.Q = f_out.Q
+		END EXPAND_BLOCK
+		
+		EXPAND_BLOCK(nr == 1) 
+			d1*f_in.Q - d3*f_in.H + d2*f_out.Q + d3*f_out.H = -d4
+		  -c1*f_in.Q + c2*f_in.H + c1*f_out.Q + c3*f_out.H = -c4
+		END EXPAND_BLOCK
+
+		EXPAND_BLOCK(nr >1)
+			f_in.Q = R[1] + R[1+2*nr]*f_in.H + R[1+4*nr]*f_out.H
+			f_out.Q = R[2*nr] + R[2*nr+2*nr] * f_in.H + R[2*nr+4*nr] * f_out.H
+		
+		EXPAND (j IN 2, nr)
+				QN[j] = R[2*(j-1)] + R[2*(j-1)+2*nr] * HN[1] + R[2*(j-1)+4*nr] * HN[nr+1]
+		EXPAND (j IN 2, nr)
+				HN[j] = R[2*j-1] + R[2*j-1+2*nr] * HN[1] + R[2*j-1+4*nr] * HN[nr+1]
+		END EXPAND_BLOCK
+		
+		f_in.H = HN[1]
+		f_in.Q = QN[1]
+		f_out.H = HN[nr+1]
+		f_out.Q = QN[nr+1]
+END COMPONENT

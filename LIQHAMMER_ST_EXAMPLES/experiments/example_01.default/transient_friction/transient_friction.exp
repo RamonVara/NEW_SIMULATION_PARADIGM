@@ -1,0 +1,66 @@
+EXPERIMENT transient_friction ON example_01.default
+   DECLS
+		--Two experiment parameters: 
+		--		close_time to define the total flow reduction time
+		--		n_exp	to define the shape of the reduction law (linear reduction with n_exp = 1)
+		REAL close_time = 0.1
+      REAL n_exp = 0.75
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      flow_out.Q = 0.47744*(1- (min(TIME/close_time,1))**n_exp)
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		--Steady state friction with 100 nodes
+		NEW_BRANCH("Transient friction - 100 nodes")
+		RESET_VARIABLES()
+		solver.transient_friction = FALSE
+		solver.nrsp_min = 100
+		solver.nrsp_max = 100
+		solver.cavitation_flag = FALSE
+		TIME = 0
+      TSTOP = 20
+      CINT = 0.01
+		INTEG()
+      --Transient friction with 100 nodes
+		NEW_BRANCH("Transient friction - 100 nodes")
+		RESET_VARIABLES()
+		solver.transient_friction = TRUE
+		solver.nrsp_min = 100
+		solver.nrsp_max = 100
+		solver.cavitation_flag = FALSE
+		TIME = 0
+      TSTOP = 20
+      CINT = 0.01
+		EXEC_INIT()
+		INTEG()
+		--Transient friction with 200 nodes
+		NEW_BRANCH("Transient friction - 100 nodes")
+		RESET_VARIABLES()
+		solver.transient_friction = TRUE
+		solver.nrsp_min = 200
+		solver.nrsp_max = 200
+		solver.cavitation_flag = FALSE
+		TIME = 0
+      TSTOP = 20
+      CINT = 0.01
+		EXEC_INIT()
+		INTEG()
+END EXPERIMENT

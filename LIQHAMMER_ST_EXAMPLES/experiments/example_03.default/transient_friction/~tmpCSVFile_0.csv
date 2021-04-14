@@ -1,0 +1,11 @@
+Experiment: transient_friction Library: LIQHAMMER_ST_EXAMPLES Component: example_03 Partition: default
+User: Ram?n Date: 2019:03:18 Time: 00:53:55
+Platform: win64_gcc64v4_9 OS: Microsoft Windows [Version 10.0.17134]
+Library dependency list: LIQHAMMER_ST V1.0 LIQHAMMER_ST_EXAMPLES V1.0 
+Programme and Version: EcosimPro V5.10.2
+
+"TIME";" ";
+"";"s";
+
+
+

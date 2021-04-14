@@ -1,0 +1,37 @@
+EXPERIMENT exp1 ON example_07.default
+   DECLS
+		TABLE_1D closure_law ={{0, 10., 10.1, 100}, {1., 1., 0., 0.}}
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+
+
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      valve1.pos = timeTableInterp(TIME, closure_law)
+      valve2.pos = step(TIME, 0.1)
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		--FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		solver.nrsp_max = 20
+		solver.nrsp_min = 20
+		solver.cavitation_flag = TRUE
+      TIME = 0
+      TSTOP = 20
+      CINT = 0.1
+      INTEG()
+END EXPERIMENT

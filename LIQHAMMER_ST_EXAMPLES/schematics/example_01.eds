@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="700" sy="600" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" port-status="false" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="214,214,214" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<component id="tank" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="1"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="40" dy="64" onLabel="true" />
+	
+		<label cx="20.5" cy="14" dx="120" dy="160" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H_tank" value="150" pos="D" />
+			<datum id="type" value="Pressurized" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_1" cx="35" cy="12" sx="70" sy="24" lineColor="0,0,255" lineType="0"  dx="112" dy="200" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600; color:#000000;&#34;&#62;H = 150 m&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_2" cx="60.5" cy="52" sx="121" sy="104" lineColor="0,0,255" lineType="0"  dx="216" dy="200" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;L =600 m&#60;/span&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:8pt;&#34;&#62; &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;dia = 0.5 m&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;a = 1200 m/s&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;f = 0.018&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;Ho = 150 m&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600;&#34;&#62;Qo = 0.47744 m3/s&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="6" >
+	
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="-17.2497" dy="-55.5" onLabel="true" />
+	
+		<label cx="27.5" cy="14" dx="235" dy="70" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="nrsp_min" value="20" pos="D" />
+			<datum id="nrsp_max" value="20" pos="D" />
+			<datum id="PSIMAX" value="0.05" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="9"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="144" dy="64" onLabel="true" />
+	
+		<label cx="20.5" cy="14" dx="232" dy="160" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="Qo" value="0.47744" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="tank" sPort="f_out" eShape="pipe" ePort="f_in" elPosition="0"  />
+
+	<component id="flow_out" library="LIQHAMMER_ST" type="Flow_out" layer="1" elPosition="10" >
+	
+		<symbol cx="84.125" cy="48" sx="49.25" sy="25.5" dx="280" dy="96" onLabel="true" />
+	
+		<label cx="37" cy="14" dx="336.625" dy="159.75" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<connector id="Connector_2" sShape="pipe" sPort="f_out" eShape="flow_out" ePort="f_in" elPosition="1"  />
+
+	<bodyEL>
+	<![CDATA[-- EL code of the schematic.
+-- The COMPONENT definition lines are blocked for edition.
+-- You can edit the parameters clicking over them.
+
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+</schematic>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.0">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="MATH_Units.el"/>
+  <file name="MATH_Common.el"/>
+  <file name="MATH_f_Basics.el"/>
+  <file name="MATH_f_Equations.el"/>
+  <file name="MATH_f_Polynomials.el"/>
+  <file name="MATH_f_Randoms.el"/>
+  <file name="MATH_f_Fluids.el"/>
+  <file name="MATH_CompTables.el"/>
+  <file name="MATH_Fun_Ecua3.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+ <symcategories>
+ </symcategories>
+</library>

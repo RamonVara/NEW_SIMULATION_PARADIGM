@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="825" sy="625" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<component id="tank_01" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="0"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="-56" dy="-40" onLabel="true" />
+	
+		<label cx="34" cy="14" dx="27.375" dy="54.25" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H_tank" value="70" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="c_02" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="23"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="112" dy="4" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="169" dy="8" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_06" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="24"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="112" dy="196" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="192.5" dy="222" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_03" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="25"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dy="196" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="48.5" dy="198" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_04" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="26"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dy="316" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="14.5" dy="334" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_05" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="27"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dy="452" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="24.5" dy="470" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_08" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="28"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="112" dy="452" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="174.5" dy="494" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_07" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="29"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="112" dy="324" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="144.5" dy="350" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_09" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="30"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="224" dy="4" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="280" dy="8" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_10" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="31"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="224" dy="116" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="244" dy="142" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_11" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="32"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="224" dy="236" onLabel="true" />
+	
+		<label cx="21.5" cy="14" dx="260" dy="254" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_12" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="34"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="224" dy="340" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="256.5" dy="366" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_13" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="36"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="224" dy="452" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="278.5" dy="494" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_17" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="37"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="336" dy="452" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="388" dy="494" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_16" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="38"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="336" dy="292" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="356" dy="318" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_15" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="39"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="336" dy="164" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="356" dy="182" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_14" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="40"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="336" dy="4" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="406.5" dy="6" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_22" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="41"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="544" dy="452" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="588" dy="494" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_18" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="43"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="544" dy="4" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="596" dy="6" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_19" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="44"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="432" dy="164" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="488.5" dy="166" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_20" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="46"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="544" dy="164" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="628" dy="182" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="c_25" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="47"  hotPort="f_in" >
+	
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="544" dy="292" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="564" dy="318" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="v_23" library="LIQHAMMER_ST" type="ExitValve" layer="1" elPosition="49"  hotPort="f_in" >
+	
+		<symbol cx="102.125" cy="72.375" sx="53.25" sy="32.75" dx="664" dy="408" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="737.625" dy="492.25" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="Cd_A" value="0.00220087" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="50" >
+	
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="-212" dy="24.5" onLabel="true" />
+	
+		<label cx="27.5" cy="14" dx="38.75" dy="151" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<component id="p_01" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="51"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="-32" dy="256" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="21.5" dy="294" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="30" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.021" pos="D" />
+			<datum id="Ho" value="65.74" pos="D" />
+			<datum id="Qo" value="0.0112078043" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_10" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="52"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="192" dy="48" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="246" dy="86" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="30" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.022" pos="D" />
+			<datum id="Ho" value="65.03" pos="D" />
+			<datum id="Qo" value="0.00864" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_12" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="53"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="192" dy="272" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="251.5" dy="302" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="30" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.022" pos="D" />
+			<datum id="Ho" value="64.97" pos="D" />
+			<datum id="Qo" value="0.00864" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_23" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="54"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="352" dy="152" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="445.5" dy="206" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="30" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="64.05" pos="D" />
+			<datum id="Qo" value="0.01633" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_24" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="55"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="512" dy="216" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="571.5" dy="246" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="30" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="63.85" pos="D" />
+			<datum id="Qo" value="0.03383" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="c_03" sPort="f_in" eShape="p_01" ePort="f_in" elPosition="56"  />
+
+	<connector id="Connector_2" sShape="p_01" sPort="f_out" eShape="c_04" ePort="f_in" elPosition="57"  />
+
+	<connector id="Connector_3" sShape="c_09" sPort="f_in" eShape="p_10" ePort="f_in" elPosition="58"  />
+
+	<connector id="Connector_4" sShape="p_10" sPort="f_out" eShape="c_10" ePort="f_in" elPosition="59"  />
+
+	<connector id="Connector_5" sShape="c_11" sPort="f_in" eShape="p_12" ePort="f_in" elPosition="60"  />
+
+	<connector id="Connector_6" sShape="p_12" sPort="f_out" eShape="c_12" ePort="f_in" points="304,384" elPosition="61"  />
+
+	<connector id="Connector_7" sShape="c_15" sPort="f_in" eShape="p_23" ePort="f_in" elPosition="62"  />
+
+	<connector id="Connector_8" sShape="p_23" sPort="f_out" eShape="c_19" ePort="f_in" elPosition="63"  />
+
+	<connector id="Connector_9" sShape="c_20" sPort="f_in" eShape="p_24" ePort="f_in" elPosition="64"  />
+
+	<connector id="Connector_10" sShape="p_24" sPort="f_out" eShape="c_25" ePort="f_in" elPosition="65"  />
+
+	<component id="p_02" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="56"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="-40" dy="328" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="13.5" dy="393.5" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.021" pos="D" />
+			<datum id="Ho" value="65.72" pos="D" />
+			<datum id="Qo" value="0.0112078054" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_03" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="57"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="8" dy="408" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="107.5" dy="494" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.021" pos="D" />
+			<datum id="Ho" value="65.63" pos="D" />
+			<datum id="Qo" value="0.0112078054" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_14" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="58"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="128" dy="408" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="227.5" dy="494" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="65.53" pos="D" />
+			<datum id="Qo" value="0.03007" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_04" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="59"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="72" dy="344" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="121" dy="406" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="100" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="65.71" pos="D" />
+			<datum id="Qo" value="0.0186865212" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_05" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="60"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="72" dy="224" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="121" dy="286" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="70" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="65.84" pos="D" />
+			<datum id="Qo" value="0.0186865212" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_06" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="61"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="16" dy="152" rotation="180" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="112" dy="198" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.021" pos="D" />
+			<datum id="Ho" value="65.84" pos="D" />
+			<datum id="Qo" value="0.0112077967" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_08" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="62"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="72" dy="48" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="140.5" dy="110" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="120" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="66.37" pos="D" />
+			<datum id="Qo" value="0.03007" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_07" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="63"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="24" dy="-40" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="124.5" dy="48" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="Ho" value="70" pos="D" />
+			<datum id="Qo" value="0.075" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_09" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="64"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="128" dy="-40" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="224" dy="46" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="Ho" value="66.37" pos="D" />
+			<datum id="Qo" value="0.04493" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_15" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="65"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="240" dy="-40" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="336" dy="48" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="120" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="65.03" pos="D" />
+			<datum id="Qo" value="0.03628" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_20" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="66"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="408" dy="-40" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="504" dy="48" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="64.27" pos="D" />
+			<datum id="Qo" value="0.0175" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_21" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="67" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="505" dy="40" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="574.5" dy="110" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="120" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="64.04" pos="D" />
+			<datum id="Qo" value="0.0175" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_22" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="68"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="448" dy="120" flipY="true" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="551.5" dy="208" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="110" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="64.01" pos="D" />
+			<datum id="Qo" value="0.01633" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_16" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="69" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="296" dy="56" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="350.5" dy="134" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="120" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="64.27" pos="D" />
+			<datum id="Qo" value="0.01878" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_17" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="70"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="296" dy="184" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="355.5" dy="262" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="85" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.029" pos="D" />
+			<datum id="Ho" value="64.05" pos="D" />
+			<datum id="Qo" value="0.00245" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_18" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="71"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="296" dy="312" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="425.5" dy="382" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="85" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.029" pos="D" />
+			<datum id="Ho" value="64.04" pos="D" />
+			<datum id="Qo" value="0.00245" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_19" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="72"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="240" dy="408" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="331.5" dy="494" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="120" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="64.91" pos="D" />
+			<datum id="Qo" value="0.03872" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_26" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="73"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="408" dy="408" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="499.5" dy="496" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="64.04" pos="D" />
+			<datum id="Qo" value="0.04117" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_27" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="74"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="560" dy="408" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="663.5" dy="496" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="Ho" value="62.91" pos="D" />
+			<datum id="Qo" value="0.075" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_11" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="75"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="184" dy="136" rotation="90" onLabel="true" />
+	
+		<label cx="22" cy="14" dx="254" dy="193.5" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="115" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.022" pos="D" />
+			<datum id="Ho" value="65.02" pos="D" />
+			<datum id="Qo" value="0.00864" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_13" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="76"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="184" dy="352" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="251.5" dy="414" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="115" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.022" pos="D" />
+			<datum id="Ho" value="64.96" pos="D" />
+			<datum id="Qo" value="0.00864" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p_25" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="77"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="504" dy="312" rotation="90" onLabel="true" />
+	
+		<label cx="22.5" cy="14" dx="571.5" dy="382" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="140" pos="D" />
+			<datum id="dia" value="0.2" pos="D" />
+			<datum id="f" value="0.019" pos="D" />
+			<datum id="Ho" value="63.69" pos="D" />
+			<datum id="Qo" value="0.03383" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_11" sShape="c_04" sPort="f_in" eShape="p_02" ePort="f_in" elPosition="66"  />
+
+	<connector id="Connector_12" sShape="p_02" sPort="f_out" eShape="c_05" ePort="f_in" elPosition="67"  />
+
+	<connector id="Connector_13" sShape="c_05" sPort="f_in" eShape="p_03" ePort="f_in" elPosition="68"  />
+
+	<connector id="Connector_14" sShape="p_03" sPort="f_out" eShape="c_08" ePort="f_in" elPosition="69"  />
+
+	<connector id="Connector_15" sShape="c_08" sPort="f_in" eShape="p_14" ePort="f_in" elPosition="70"  />
+
+	<connector id="Connector_16" sShape="p_14" sPort="f_out" eShape="c_13" ePort="f_in" elPosition="71"  />
+
+	<connector id="Connector_17" sShape="c_07" sPort="f_in" eShape="p_04" ePort="f_in" elPosition="72"  />
+
+	<connector id="Connector_18" sShape="p_04" sPort="f_out" eShape="c_08" ePort="f_in" elPosition="73"  />
+
+	<connector id="Connector_19" sShape="c_06" sPort="f_in" eShape="p_05" ePort="f_in" elPosition="74"  />
+
+	<connector id="Connector_20" sShape="p_05" sPort="f_out" eShape="c_07" ePort="f_in" elPosition="75"  />
+
+	<connector id="Connector_21" sShape="p_06" sPort="f_in" eShape="c_06" ePort="f_in" elPosition="76"  />
+
+	<connector id="Connector_22" sShape="p_06" sPort="f_out" eShape="c_03" ePort="f_in" elPosition="77"  />
+
+	<connector id="Connector_23" sShape="c_02" sPort="f_in" eShape="p_08" ePort="f_in" elPosition="78"  />
+
+	<connector id="Connector_24" sShape="p_08" sPort="f_out" eShape="c_06" ePort="f_in" elPosition="79"  />
+
+	<connector id="Connector_25" sShape="tank_01" sPort="f_out" eShape="p_07" ePort="f_in" elPosition="80"  />
+
+	<connector id="Connector_26" sShape="p_07" sPort="f_out" eShape="c_02" ePort="f_in" elPosition="81"  />
+
+	<connector id="Connector_27" sShape="c_02" sPort="f_in" eShape="p_09" ePort="f_in" elPosition="82"  />
+
+	<connector id="Connector_28" sShape="p_09" sPort="f_out" eShape="c_09" ePort="f_in" elPosition="83"  />
+
+	<connector id="Connector_29" sShape="c_09" sPort="f_in" eShape="p_15" ePort="f_in" elPosition="84"  />
+
+	<connector id="Connector_30" sShape="p_15" sPort="f_out" eShape="c_14" ePort="f_in" elPosition="85"  />
+
+	<connector id="Connector_31" sShape="c_14" sPort="f_in" eShape="p_20" ePort="f_in" elPosition="86"  />
+
+	<connector id="Connector_32" sShape="p_20" sPort="f_out" eShape="c_18" ePort="f_in" elPosition="87"  />
+
+	<connector id="Connector_33" sShape="c_18" sPort="f_in" eShape="p_21" ePort="f_in" elPosition="88"  />
+
+	<connector id="Connector_34" sShape="p_21" sPort="f_out" eShape="c_20" ePort="f_in" elPosition="89"  />
+
+	<connector id="Connector_35" sShape="c_19" sPort="f_in" eShape="p_22" ePort="f_in" elPosition="90"  />
+
+	<connector id="Connector_36" sShape="p_22" sPort="f_out" eShape="c_20" ePort="f_in" elPosition="91"  />
+
+	<connector id="Connector_37" sShape="c_14" sPort="f_in" eShape="p_16" ePort="f_in" elPosition="92"  />
+
+	<connector id="Connector_38" sShape="p_16" sPort="f_out" eShape="c_15" ePort="f_in" elPosition="93"  />
+
+	<connector id="Connector_39" sShape="c_15" sPort="f_in" eShape="p_17" ePort="f_in" elPosition="94"  />
+
+	<connector id="Connector_40" sShape="p_17" sPort="f_out" eShape="c_16" ePort="f_in" elPosition="95"  />
+
+	<connector id="Connector_41" sShape="c_16" sPort="f_in" eShape="p_18" ePort="f_in" elPosition="96"  />
+
+	<connector id="Connector_42" sShape="p_18" sPort="f_out" eShape="c_17" ePort="f_in" elPosition="97"  />
+
+	<connector id="Connector_43" sShape="c_13" sPort="f_in" eShape="p_19" ePort="f_in" elPosition="98"  />
+
+	<connector id="Connector_44" sShape="p_19" sPort="f_out" eShape="c_17" ePort="f_in" elPosition="99"  />
+
+	<connector id="Connector_45" sShape="c_17" sPort="f_in" eShape="p_26" ePort="f_in" elPosition="100"  />
+
+	<connector id="Connector_46" sShape="p_26" sPort="f_out" eShape="c_22" ePort="f_in" elPosition="101"  />
+
+	<connector id="Connector_47" sShape="c_22" sPort="f_in" eShape="p_27" ePort="f_in" elPosition="102"  />
+
+	<connector id="Connector_48" sShape="p_27" sPort="f_out" eShape="v_23" ePort="f_in" elPosition="103"  />
+
+	<connector id="Connector_49" sShape="c_10" sPort="f_in" eShape="p_11" ePort="f_in" elPosition="104"  />
+
+	<connector id="Connector_50" sShape="p_11" sPort="f_out" eShape="c_11" ePort="f_in" elPosition="105"  />
+
+	<connector id="Connector_51" sShape="c_12" sPort="f_in" eShape="p_13" ePort="f_in" elPosition="106"  />
+
+	<connector id="Connector_52" sShape="p_13" sPort="f_out" eShape="c_13" ePort="f_in" elPosition="107"  />
+
+	<connector id="Connector_53" sShape="c_25" sPort="f_in" eShape="p_25" ePort="f_in" elPosition="108"  />
+
+	<connector id="Connector_54" sShape="p_25" sPort="f_out" eShape="c_22" ePort="f_in" elPosition="109"  />
+
+	<text id="Text_10" cx="226" cy="32.5" sx="452" sy="65" lineColor="66,133,244" lineWidth="4" lineType="0"  color="255,255,127" dx="168" dy="528" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Model based on  application example number 2 of&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;J. Twynman &#38;quot;Pipe Replacement Elements for &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Unsteady Flow Analysis in Pipe Networks&#38;quot;, 2018, RIOC&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<line id="Line_1" points="108,32 100,-8"  end_arrow="true" dx="372" dy="240" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<ellipse id="Ellipse_1" cx="168" cy="68" rx="72" ry="28" dx="344" dy="232" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<text id="Text_9" cx="54.5" cy="14" sx="109" sy="28" lineColor="66,133,244" lineWidth="4"  color="255,255,255" dx="456" dy="288" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Implicit Pipes&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<line id="Line_2" points="82,30 -62,-138"  end_arrow="true" dx="382" dy="250" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<line id="Line_3" points="58,-2 -54,14"  end_arrow="true" dx="382" dy="314" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<line id="Line_4" points="48,-28 -296,-28"  end_arrow="true" dx="392" dy="324" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<line id="Line_5" points="194,38 226,22"  end_arrow="true" dx="382" dy="250" lineColor="255,0,0" lineWidth="1.5"  layer="1"  />
+
+	<bodyEL>
+	<![CDATA[
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="false" />
+</schematic>

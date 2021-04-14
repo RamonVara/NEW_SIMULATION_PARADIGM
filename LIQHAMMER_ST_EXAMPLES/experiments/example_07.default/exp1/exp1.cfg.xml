@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_4" x="0" y="348" dx="821" dy="348">
+				<plot id="Plot_4" graphType="plot_time">
+						<title value="Valve Positions" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" " position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="valve1.pos" nick="Valve 1" lineType="line" lineWidth="3" lineColor="255,0,0"/>
+							<var name="valve2.pos" nick="Valve 2" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="821" dy="348">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="Piezometric Heads " position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" Head" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pipe0.f_in.H" nick="pipe0 inlet" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+							<var name="pipe0.f_out.H" nick="pipe0 outlet" lineType="line" lineWidth="3" lineColor="255,0,0"/>
+							<var name="pipe1.f_in.H" nick="pipe1 inlet" lineType="line" lineWidth="3" lineColor="0,170,0"/>
+							<var name="pipe1.f_out.H" nick="pipe1 outlet" lineType="line" lineWidth="3" lineColor="255,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_2" x="821" y="348" dx="821" dy="348">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="Volume Flows" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" Volume flows" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pipe0.f_in.Q" nick="pipe0 inlet" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+							<var name="pipe0.f_out.Q" nick="pipe0 outlet" lineType="line" lineWidth="2" lineColor="255,0,0"/>
+							<var name="pipe1.f_in.Q" nick="pipe1 inlet" lineType="line" lineWidth="3" lineColor="0,170,0"/>
+							<var name="pipe1.f_out.Q" nick="pipe1 outlet" lineType="line" lineWidth="3" lineColor="255,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_3" x="821" y="0" dx="821" dy="348">
+				<plot id="Plot_3" graphType="plot_time">
+						<title value="Bubble Volumes" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" Volume" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="11" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="valve1.V_bubble_in" nick="Valve 1 inlet" lineType="line" lineWidth="3" lineColor="0,0,255">
+								<marker isShowed="false"/>
+							</var>
+							<var name="valve1.V_bubble_out" nick="Valve 1 outlet" lineType="line" lineWidth="3" lineColor="255,0,0"/>
+							<var name="valve2.V_bubble" nick="Valve 2" lineWidth="3"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+	<watch width="266" height="702" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="valve2.pos" value="0"/>
+				<var name="valve1.pos" value="1"/>
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

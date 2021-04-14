@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="700" sy="600" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<component id="pipe" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="1"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="187.738" dy="78.0328" rotation="-26.6911" onLabel="true" />
+	
+		<label cx="20.5" cy="14" dx="304" dy="160" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="980" pos="D" />
+			<datum id="dia" value="1.1284" pos="D" />
+			<datum id="f" value="0.03" pos="D" />
+			<datum id="a" value="980" pos="D" />
+			<datum id="Ho" value="15.213062" pos="D" />
+			<datum id="Qo" value="0.4" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="tank" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="2"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="316.25" dy="48" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="20.5" cy="14" dx="432" dy="144" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H_tank" value="15" pos="D" />
+			<datum id="z" value="4" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="pipe" sPort="f_out" eShape="tank" ePort="f_out" points="368,128" elPosition="0"  />
+
+	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="3" >
+	
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="-26.25" dy="-55.5" onLabel="true" />
+	
+		<label cx="20.5" cy="12" dx="227" dy="73" />
+	
+		<instanceData>
+			<datum id="nrsp_min" value="6" pos="D" />
+			<datum id="nrsp_max" value="6" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_1" cx="160.5" cy="60" sx="321" sy="120" lineColor="66,133,244" lineWidth="4" lineType="0"  color="255,255,127" dx="176" dy="320" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;Fluid Transients in Systems, 1993, Prentice-Hall, &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;E. Benjamin Wylie, Victor L. Streeter, &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;Cavitation in Elevated Pipes&#60;br /&#62;&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;   Page 202, Example 8-6 ==&#38;gt; exp1 &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;   Page 202, Example 8-7 ==&#38;gt; exp2&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-weight:600; color:#0000ff;&#34;&#62;   Page 202, Example 8-8 ==&#38;gt; exp3&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_2" cx="56" cy="42.5" sx="112" sy="85" lineColor="0,85,255" lineType="0"  adjust="false" dx="272" dy="224" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;L =980m&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:8pt;&#34;&#62; &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;dia = 1,1284 m&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;a = 980 m/s&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;f = 0,03&#60;/p&#62;&#60;p style=&#34;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&#39;MS Shell Dlg 2&#39;; font-size:8pt;&#34;&#62;&#60;br /&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_3" cx="32" cy="26.5" sx="64" sy="53" lineColor="0,85,255" lineType="0"  adjust="false" dx="416" dy="224" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;H = 15 m&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;z = 4 m&#60;/p&#62;&#60;p style=&#34;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&#39;MS Shell Dlg 2&#39;; font-size:8pt;&#34;&#62;&#60;br /&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_4" cx="32" cy="18.5" sx="64" sy="37" lineColor="0,85,255" lineType="0"  adjust="false" dx="176" dy="224" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;z = 0 m&#60;/p&#62;&#60;p style=&#34;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&#39;MS Shell Dlg 2&#39;; font-size:8pt;&#34;&#62;&#60;br /&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="flow_in" library="LIQHAMMER_ST" type="Flow_in" layer="1" elPosition="4" >
+	
+		<symbol cx="123.875" cy="80" sx="49.25" sy="25.5" dx="96" dy="96" onLabel="true" />
+	
+		<label cx="31.5" cy="14" dx="191.375" dy="186.25" family="Arial" points="12" bold="true" />
+	
+	</component>
+
+	<connector id="Connector_2" sShape="flow_in" sPort="f_out" eShape="pipe" ePort="f_in" elPosition="1"  />
+
+	<component id="Impulse_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" elPosition="5" >
+	
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="278.5" dy="12" onLabel="true" />
+	
+		<label cx="49.5" cy="12" dx="307" dy="72" />
+	
+		<instanceData>
+			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_06_exp_01_impulse.txt&#34;" pos="D" />
+			<datum id="size" value="2" pos="P" />
+		</instanceData>
+	
+	</component>
+
+	<bodyEL>
+	<![CDATA[-- EL code of the schematic.
+-- The COMPONENT definition lines are blocked for edition.
+-- You can edit the parameters clicking over them.
+
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+</schematic>

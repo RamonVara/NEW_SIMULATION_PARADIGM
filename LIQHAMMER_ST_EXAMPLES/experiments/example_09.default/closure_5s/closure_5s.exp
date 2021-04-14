@@ -1,0 +1,48 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: LIQHAMMER_ST_EXAMPLES
+ COMPONENT: example_09
+ PARTITION: default
+ EXPERIMENT: closure
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 19/03/2019
+-----------------------------------------------------------------------------------------*/
+EXPERIMENT closure_5s ON example_09.default
+   DECLS
+		--Two experiment parameters: 
+		--		close_time to define the total closure time
+		--		n_exp	to define the shape of the closure law (linear reduction with n_exp = 1)
+		REAL close_time = 5
+      REAL n_exp = 0.75
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+		 v_23.pos = 1- (min(TIME/close_time,1))**n_exp
+   BODY
+      -- report results in file reportAll.rpt
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		solver.nrsp_max = 5
+		solver.nrsp_min = 1
+		solver.PSIMAX = 5
+
+		--solver.cavitation_flag = FALSE
+      -- Integrate the model
+		EXEC_INIT()
+		NEW_BRANCH("Total number of sections = $solver.ntot_sect")
+      TIME = 0
+      TSTOP = 50.
+      CINT = 0.1
+      INTEG()
+END EXPERIMENT

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workspace version="1.3" wsVersion="0.0"  wsDate="18/03/2019"  wsAuthor=""  wsDescription="">
+ <library name="MATH" version="3.2.5" dir="./MATH" dirType="REL_WORKSPACE"/>
+ <library name="LIQHAMMER_ST" version="1.0" dir="./LIQHAMMER_ST" dirType="REL_WORKSPACE"/>
+ <library name="LIQHAMMER_ST_EXAMPLES" version="1.0" dir="./LIQHAMMER_ST_EXAMPLES" dirType="REL_WORKSPACE"/>
+ <setLibrariesPath value=""/>
+</workspace>

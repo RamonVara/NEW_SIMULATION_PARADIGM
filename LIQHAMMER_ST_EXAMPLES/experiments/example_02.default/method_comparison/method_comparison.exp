@@ -1,0 +1,59 @@
+EXPERIMENT method_comparison ON example_02.default
+   DECLS
+		--Two experiment parameters: 
+		--		close_time to define the total closure time
+		--		n_exp	to define the shape of the closure law (linear reduction with n_exp = 1)
+		REAL close_time = 0.001
+      REAL n_exp = 0.75
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      valve.pos = 1- (min(TIME/close_time,1))**n_exp
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		--1st integration
+		NEW_BRANCH("Method of Characteristics - 400 reaches")
+		solver.global_method = MOC
+		solver.nrsp_min = 400
+		solver.nrsp_max = 400	
+		--This case will produce cavitation. Cavitation model is deactivated to 
+		--see the analytical solution
+		solver.cavitation_flag = FALSE
+		TIME = 0
+      TSTOP = 25
+      CINT = 0.05
+		INTEG()
+		--2nd Integration
+		--EcosimPro requires to reset the variables after 
+		--the first integration and to force the initialization
+		RESET_VARIABLES()
+		SET_INIT_ACTIVE(TRUE)
+		NEW_BRANCH("Algebraic  Water   Hammer - 400 reaches")
+		solver.global_method = AlgebraicWaterHammer
+		solver.nrsp_min = 400
+		solver.nrsp_max = 400	
+		--This case will produce cavitation. Cavitation model is deactivated to 
+		--see the analytical solution
+		solver.cavitation_flag = FALSE
+		TIME = 0
+      TSTOP = 25
+      CINT = 0.05
+		INTEG()
+END EXPERIMENT

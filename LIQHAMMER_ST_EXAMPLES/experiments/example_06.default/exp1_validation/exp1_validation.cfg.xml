@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_2" x="803" y="0" dx="803" dy="696">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="VOLUME OF  BUBBLE AT PIPE INLET" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" VOLUME (m3)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true" italic="false"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="flow_in.V_bubble" nick="LiqHammer" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+							<var name="Impulse_results.yref[2]" nick="Impulse"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="803" dy="696">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="PIEZOMETRIC HEAD AT PIPE INLET" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" HEAD" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pipe.f_in.H" nick="LiqHammer" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+							<var name="Impulse_results.yref[1]" nick="Impulse"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+	<watch width="301" height="702" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

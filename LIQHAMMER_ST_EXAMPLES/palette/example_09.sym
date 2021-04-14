@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="800" sy="550" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="example_09" >
+
+		<image id="Image_1" cx="393" cy="262" sx="786" sy="524" file="Image_1.png" dx="-8" dy="4"  />
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

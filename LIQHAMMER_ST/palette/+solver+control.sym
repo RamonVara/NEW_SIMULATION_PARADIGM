@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="700" sy="600" label-status="allshowed" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="16" vspacing="16" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<componentType id="SolverControl" >
+
+		<rect id="Rectangle_2" cx="340" cy="108" sx="48" sy="48" dx="-60" dy="-4" color="52,168,83"  />
+
+		<text id="Text_1" cx="24.5" cy="28" sx="49" sy="56" lineColor="255,255,255" lineWidth="0.5"  dx="256" dy="75"  >
+			<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600; color:#ffffff;&#34;&#62;Solver&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600; color:#ffffff;&#34;&#62;    &#38;amp;&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-weight:600; color:#ffffff;&#34;&#62; fluid&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+		</text>
+
+		<editor used="true">
+			<tab name="Solver data">
+				<var name="global_method"/>
+				<var name="interp_method"/>
+				<var name="nrsp_min"/>
+				<var name="nrsp_max"/>
+				<var name="PSIMAX"/>
+				<var name="perc_incr"/>
+				<var name="Cr_TL"/>
+				<var name="eps_fric" conditionVar="global_method" conditionVals="MOC"/>
+				<var name="transient_friction" conditionVar="global_method" conditionVals="MOC"/>
+				<var name="cavitation_flag" conditionVar="global_method" conditionVals="MOC"/>
+			</tab>
+			<tab name="Fluid data">
+				<var name="rho"/>
+				<var name="visc"/>
+				<var name="P_vap"/>
+			</tab>
+			<tab name="System data">
+				<var name="P_atm"/>
+				<var name="G"/>
+			</tab>
+		</editor>
+
+	</componentType>
+</palette>

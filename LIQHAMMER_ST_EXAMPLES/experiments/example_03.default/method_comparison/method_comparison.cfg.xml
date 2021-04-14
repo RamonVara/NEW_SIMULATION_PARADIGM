@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_2" x="1094" y="0" dx="547" dy="696">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="CPU TIME" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" CPU TIME" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Center-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="solver.cpu" nick=" " lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_3" x="547" y="0" dx="547" dy="696">
+				<plot id="Plot_3" graphType="plot_time">
+						<title value="TANK 1 OUTLET FLOW" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" FLOW" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Center-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="tank1.f_out.Q" nick=" " lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="547" dy="696">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="PIEZOMETRIC HEAD AT VALVE V6" position="Center" isShowed="true">
+							<font family="Arial" size="16" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" HEAD" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Center-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="v6.f_in.H" nick=" " lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+	<watch width="266" height="702" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="LIQHAMMER_ST.cpu_awh_end_nodes" value="0.119"/>
+				<var name="LIQHAMMER_ST.cpu_moc_end_nodes" value="0"/>
+				<var name="LIQHAMMER_ST.cpu_moc_inner_nodes" value="0"/>
+				<var name="p1.nr" value="91"/>
+				<var name="p2.nr" value="120"/>
+				<var name="p3.nr" value="75"/>
+				<var name="p4.nr" value="90"/>
+				<var name="p5.nr" value="60"/>
+				<var name="p6.nr" value="75"/>
+				<var name="p7.nr" value="105"/>
+				<var name="p8.nr" value="75"/>
+				<var name="p9.nr" value="91"/>
+				<var name="solver.cpu" value="3.071"/>
+				<var name="solver.global_method" value="AlgebraicWaterHammer"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="p1.nr"/>
+				<var name="p2.nr"/>
+				<var name="p3.nr"/>
+				<var name="p4.nr"/>
+				<var name="p5.nr"/>
+				<var name="p6.nr"/>
+				<var name="p7.nr"/>
+				<var name="p8.nr"/>
+				<var name="p9.nr"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

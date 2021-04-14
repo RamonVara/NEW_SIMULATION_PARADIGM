@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="700" sy="600" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<componentType id="Valve" >
+
+		<line id="Line_2" points="13.929,509.877 29.929,509.877" dx="66.071" dy="-429.877" lineColor="0,0,255" lineWidth="2"   />
+
+		<polygon id="Polygon_1" points="28.2184,516.376 28.2184,500.376 60.2184,516.376 60.2184,500.376" dx="67.7816" dy="-428.376" color="66,133,244"  />
+
+		<line id="Line_3" points="44.9291,493.878 44.9291,509.878" dx="67.0709" dy="-429.878"  />
+
+		<closedBezier id="ClosedBezier_1" points="32.2184,496.376 36.2184,484.376 52.2184,484.376 56.2184,496.376" dx="67.7816" dy="-428.376" color="251,188,5"  />
+
+		<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="-37" dy="40" lineColor="0,0,255"  color="0,0,255"  />
+
+		<line id="Line_1" points="16.929,509.877 32.929,509.877" dx="111.071" dy="-429.877" lineColor="0,0,255" lineWidth="2"   />
+
+		<polygon id="Polygon_2" points="126,38 133,40 126,42" dx="7" dy="40" lineColor="0,0,255"  color="0,0,255"  />
+
+		<port id="f_in" library="LIQHAMMER_ST" type="fluid"  hotPort="f_in" >
+		
+				<symbol dx="80" dy="80" onLabel="true" />
+		
+				<label cx="14" cy="12" dx="44" dy="68" />
+		
+		</port>
+
+		<port id="f_out" library="LIQHAMMER_ST" type="fluid"  hotPort="f_out" >
+		
+				<symbol dx="144" dy="80" onLabel="true" />
+		
+				<label cx="18" cy="12" dx="152" dy="68" />
+		
+		</port>
+
+		<editor used="true">
+			<tab name="Data">
+				<var name="z_in"/>
+				<var name="outlet_elev_same_as_inlet"/>
+				<var name="z_out" conditionVar="outlet_elev_same_as_inlet" conditionVals="FALSE"/>
+				<var name="A"/>
+				<var name="k_loss"/>
+			</tab>
+		</editor>
+
+	</componentType>
+</palette>

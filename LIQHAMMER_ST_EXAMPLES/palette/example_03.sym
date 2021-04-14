@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="1500" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="example_03" >
+
+		<rect id="Rectangle_1" cx="113.5" cy="100" sx="19" sy="24"  color="85,170,255" gradientColor="255,255,255" gradientType="GL" position="100"  />
+
+		<image id="Image_1" cx="713" cy="274.5" sx="1426" sy="549" file="Image_1.png" dx="10" dy="10"  />
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

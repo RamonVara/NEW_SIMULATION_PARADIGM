@@ -1,0 +1,30 @@
+EXPERIMENT trip_validation ON example_04.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+
+   BOUNDS
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-005
+      ABS_ERROR = 1e-005
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		pump.TIME_trip = 0
+      TIME = 0
+      TSTOP = 15
+      CINT = 0.01
+      INTEG()
+END EXPERIMENT

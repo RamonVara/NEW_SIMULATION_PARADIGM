@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+<palette version="1.2.0" sx="700" sy="600" >
+
+	<grid enabled="false" snap="false" hspacing="16" vspacing="16" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="5" />
+
+	<portType id="fluid" color="0,0,255" aliasing="true" >
+		<editor used="false">
+		</editor>
+
+	</portType>
+</palette>

@@ -1,0 +1,37 @@
+EXPERIMENT closure ON example_02.default
+   DECLS
+		--Two experiment parameters: 
+		--		close_time to define the total closure time
+		--		n_exp	to define the shape of the closure law (linear reduction with n_exp = 1)
+		REAL close_time = 2.1
+      REAL n_exp = 0.75
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      valve.pos = 1- (min(TIME/close_time,1))**n_exp
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+      -- Integrate the model
+      TIME = 0
+      TSTOP = 20
+      CINT = 0.01
+      INTEG()
+END EXPERIMENT
+

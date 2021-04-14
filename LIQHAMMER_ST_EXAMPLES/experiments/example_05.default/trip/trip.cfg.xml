@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_2" x="822" y="0" dx="822" dy="817">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="PUMP STATE" position="Center" isShowed="true">
+							<font family="Arial" size="18" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" Ratio Q/Qr or n/nr" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pump.alpha" nick="n/nr  non dimensional speed" lineType="line" lineWidth="3" lineColor="255,0,0"/>
+							<var name="pump.v" nick="Q/Qr  non dimensional flow" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="822" dy="817">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="PIEZOMETRIC HEAD" position="Center" isShowed="true">
+							<font family="Arial" size="18" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value="HEAD" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pipe1.f_in.H" nick="Pump discharge" lineType="line" lineWidth="3" lineColor="255,0,0"/>
+							<var name="pipe2.f_in.H" nick="Mid Point (btw pipes)" lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+	<watch width="264" height="823" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="pipe1.nr" value="20"/>
+				<var name="pipe2.nr" value="20"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="pump.DTIME_start"/>
+				<var name="pump.I"/>
+				<var name="pump.Ns"/>
+				<var name="pump.Q"/>
+				<var name="pump.Q_r"/>
+				<var name="pump.TIME_start"/>
+				<var name="pump.TIME_trip"/>
+				<var name="pump.User_Curves"/>
+				<var name="pump.a0"/>
+				<var name="pump.a1"/>
+				<var name="pump.alpha"/>
+				<var name="pump.b0"/>
+				<var name="pump.b1"/>
+				<var name="pump.beta"/>
+				<var name="pump.dx"/>
+				<var name="pump.eff_r"/>
+				<var name="pump.f_in.H"/>
+				<var name="pump.f_in.Q"/>
+				<var name="pump.f_in.z"/>
+				<var name="pump.f_out.H"/>
+				<var name="pump.f_out.Q"/>
+				<var name="pump.f_out.z"/>
+				<var name="pump.h"/>
+				<var name="pump.index"/>
+				<var name="pump.ip"/>
+				<var name="pump.ipa"/>
+				<var name="pump.m"/>
+				<var name="pump.n"/>
+				<var name="pump.n_constant"/>
+				<var name="pump.n_o_trip"/>
+				<var name="pump.n_old"/>
+				<var name="pump.n_r"/>
+				<var name="pump.n_start_end"/>
+				<var name="pump.pump_transient"/>
+				<var name="pump.tdh"/>
+				<var name="pump.tdh_r"/>
+				<var name="pump.theta"/>
+				<var name="pump.torque"/>
+				<var name="pump.torque_motor"/>
+				<var name="pump.torque_motor_old"/>
+				<var name="pump.torque_old"/>
+				<var name="pump.torque_r"/>
+				<var name="pump.v"/>
+				<var name="pump.wbeta"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="145"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="170"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+	<outputWindow height="71" width="1920" visible="true" pos="bottom" />
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

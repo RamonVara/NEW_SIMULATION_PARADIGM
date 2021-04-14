@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_3" x="821" y="0" dx="821" dy="696">
+				<plot id="Plot_3" graphType="plot_time">
+						<title value="CPU TIME" position="Center" isShowed="true">
+							<font family="Arial" size="18" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" CPU TIME" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend isShowed="true" position="Internal: Center-Top">
+							<font family="MS Shell Dlg 2" size="14" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="solver.cpu" nick=" " lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="821" dy="696">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="PIEZOMETRIC HEAD AT PIPE OUTLET" position="Center" isShowed="true">
+							<font family="Arial" size="18" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" HEAD" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="MS Shell Dlg 2" size="12" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Center-Top">
+							<font family="MS Shell Dlg 2" size="14" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pipe.f_out.H" nick=" " lineType="line" lineWidth="3" lineColor="0,0,255"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+	<watch width="266" height="702" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+				<var name="pipe.nr"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

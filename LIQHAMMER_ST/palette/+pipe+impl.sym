@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="PipeImpl" >
+
+		<line id="Line_1" points="85.8301,731.962 69.8301,731.962" dx="58.1699" dy="-683.962" lineColor="0,0,255" lineWidth="2"   />
+
+		<line id="Line_2" points="-10.4096,731.722 5.59042,731.722" dx="90.4096" dy="-683.722" lineColor="0,0,255" lineWidth="2"   />
+
+		<rect id="Rectangle_2" cx="37.8301" cy="731.962" sx="32" sy="16" dx="74.1699" dy="-683.962" color="66,133,244"  />
+
+		<line id="Line_3" points="21.8301,723.962 53.8301,723.962" dx="74.1699" dy="-683.962" lineWidth="1.5"   />
+
+		<line id="Line_4" points="21.8301,739.962 53.8301,739.962" dx="74.1699" dy="-683.962" lineWidth="1.5"   />
+
+		<line id="Line_5" points="37.5904,731.722 49.5904,731.722" dx="66.4096" dy="-683.722"  />
+
+		<polygon id="Polygon_1" points="45.8301,727.962 53.8301,731.962 45.8301,735.962" dx="66.4096" dy="-683.722" color="0,0,0"  />
+
+		<polygon id="Polygon_2" points="126,38 133,40 126,42" dx="-36.7603" dy="7.9897" lineColor="0,0,255"  color="0,0,255"  />
+
+		<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="6.12499" dy="8" lineColor="0,0,255"  color="0,0,255"  />
+
+		<port id="f_in" library="LIQHAMMER_ST" type="fluid"  hotPort="f_in" >
+		
+				<symbol dx="80" dy="48" onLabel="true" />
+		
+				<label cx="14" cy="12" dx="44" dy="36" />
+		
+		</port>
+
+		<port id="f_out" library="LIQHAMMER_ST" type="fluid"  hotPort="f_out" >
+		
+				<symbol dx="144" dy="48" onLabel="true" />
+		
+				<label cx="18" cy="12" dx="152" dy="36" />
+		
+		</port>
+
+		<editor used="true">
+			<tab name="Data">
+				<var name="nr"/>
+				<var name="l"/>
+				<var name="dia"/>
+				<var name="a"/>
+				<var name="f"/>
+				<var name="Ho"/>
+				<var name="Qo"/>
+				<var name="theta1"/>
+				<var name="theta2"/>
+			</tab>
+		</editor>
+
+	</componentType>
+</palette>

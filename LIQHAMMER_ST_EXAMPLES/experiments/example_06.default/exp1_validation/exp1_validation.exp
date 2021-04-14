@@ -1,0 +1,32 @@
+EXPERIMENT exp1_validation ON example_06.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      flow_in.Q = 0.4*(1-step(TIME,0.))
+	BODY	
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		
+		solver.nrsp_max = 20
+		solver.nrsp_min = 20
+      TIME = 0
+      TSTOP = 6
+      CINT = 0.001
+      INTEG()
+END EXPERIMENT

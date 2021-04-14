@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="700" sy="600" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<component id="pipe1" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="7"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="224" dy="48" onLabel="true" />
+	
+		<label cx="25" cy="14" dx="320.5" dy="136" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="450" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="f" value="0.01" pos="D" />
+			<datum id="Ho" value="60.0051831" pos="D" />
+			<datum id="Qo" value="0.509672664" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe2" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="8"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="304" dy="48" onLabel="true" />
+	
+		<label cx="25" cy="14" dx="396" dy="136" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="550" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="f" value="0.012" pos="D" />
+			<datum id="a" value="1100" pos="D" />
+			<datum id="Ho" value="59.5976765" pos="D" />
+			<datum id="Qo" value="0.509672664" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="pipe1" sPort="f_out" eShape="pipe2" ePort="f_in" elPosition="2"  />
+
+	<component id="pump" library="LIQHAMMER_ST" type="Pump" layer="1" elPosition="9"  hotPort="f_in" >
+	
+		<symbol cx="128" cy="39.125" sx="105" sy="51.25" dx="128" dy="104" onLabel="true" />
+	
+		<label cx="26" cy="14" dx="231" dy="166" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="tdh_r" value="60" pos="D" />
+			<datum id="Q_r" value="0.50" pos="D" />
+			<datum id="n_r" value="1100" pos="D" />
+			<datum id="I" value="33.70" pos="D" />
+			<datum id="n_o_trip" value="1100" pos="D" />
+			<datum id="wh_vs_theta" value="{ {0,0.0713998,0.1427997,0.2141995,0.2855993,0.3569992,0.428399,0.4997988,0.5711987,0.6425985,0.7139983,0.7853982,0.856798,0.9281978,0.9995977,1.0709975,1.1423973,1.2137972,1.285197,1.3565968,1.4279967,1.4993965,1.5707963,1.6421962,1.713596,1.7849958,1.8563957,1.9277955,1.9991953,2.0705952,2.141995,2.2133948,2.2847947,2.3561945,2.4275943,2.4989942,2.570394,2.6417938,2.7131937,2.7845935,2.8559933,2.9273932,2.998793,3.0701928,3.1415927,3.2129925,3.2843923,3.3557922,3.427192,3.4985918,3.5699917,3.6413915,3.7127913,3.7841912,3.855591,3.9269908,3.9983907,4.0697905,4.1411903,4.2125901,4.28399,4.3553898,4.4267896,4.4981895,4.5695893,4.6409891,4.712389,4.7837888,4.8551886,4.9265885,4.9979883,5.0693881,5.140788,5.2121878,5.2835876,5.3549875,5.4263873,5.4977871,5.569187,5.6405868,5.7119866,5.7833865,5.8547863,5.9261861,5.997586,6.0689858,6.1403856,6.2117855,6.2831853}, {0.634,0.643,0.646,0.64,0.629,0.613,0.595,0.575,0.552,0.533,0.516,0.505,0.504,0.51,0.512,0.522,0.539,0.559,0.58,0.601,0.63,0.662,0.692,0.722,0.753,0.782,0.808,0.832,0.857,0.879,0.904,0.93,0.959,0.996,1.027,1.06,1.09,1.124,1.165,1.204,1.238,1.258,1.271,1.282,1.288,1.281,1.26,1.225,1.172,1.107,1.031,0.942,0.842,0.733,0.617,0.5,0.368,0.24,0.125,0.011,-0.102,-0.168,-0.255,-0.342,-0.423,-0.494,-0.556,-0.62,-0.655,-0.67,-0.67,-0.66,-0.655,-0.64,-0.6,-0.57,-0.52,-0.47,-0.43,-0.36,-0.275,-0.16,-0.04,0.13,0.295,0.43,0.55,0.62,0.634}}" pos="D" />
+			<datum id="Ns" value="25" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_2" sShape="pump" sPort="f_out" eShape="pipe1" ePort="f_in" elPosition="5"  />
+
+	<component id="tank" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="10"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="-48" dy="64" onLabel="true" />
+	
+		<label cx="20.5" cy="14" dx="46" dy="158" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H_tank" value="1" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="tank2" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="11"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="380" dy="48" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="25" cy="14" dx="470.5" dy="142" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H_tank" value="59" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_4" sShape="pipe2" sPort="f_out" eShape="tank2" ePort="f_out" elPosition="7"  />
+
+	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="12" >
+	
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="4" dy="-55.5" onLabel="true" />
+	
+		<label cx="20.5" cy="12" dx="262.5" dy="74.75" />
+	
+		<instanceData>
+			<datum id="nrsp_min" value="4" pos="D" />
+			<datum id="nrsp_max" value="20" pos="D" />
+			<datum id="PSIMAX" value="1" pos="D" />
+			<datum id="transient_friction" value="TRUE" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe0" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="13"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="48" dy="96" onLabel="true" />
+	
+		<label cx="25" cy="14" dx="134.5" dy="152" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="l" value="0.1" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="f" value="0.0" pos="D" />
+			<datum id="Ho" value="1" pos="D" />
+			<datum id="Qo" value="0.509672664" pos="D" />
+			<datum id="theta1" value="0.5" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_3" sShape="tank" sPort="f_out" eShape="pipe0" ePort="f_in" elPosition="8"  />
+
+	<connector id="Connector_5" sShape="pipe0" sPort="f_out" eShape="pump" ePort="f_in" elPosition="9"  />
+
+	<text id="Text_1" cx="221.5" cy="32.5" sx="443" sy="65" lineColor="66,133,244" lineWidth="4" lineType="0"  color="255,255,127" dx="120" dy="200" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Applied Hydraulic Transients, 2nd Ed., 1987, &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Van Nostrand Reinhold Co., Hanif M. Chaudhry, Ph.D, &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-family:&#39;MS Shell Dlg 2&#39;; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Pump Transient in Pg. 480&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<line id="Line_1" points="128,88 160,128"  end_arrow="true" lineColor="0,0,255" lineWidth="1.5"  layer="1"  />
+
+	<text id="Text_2" cx="93.5" cy="24" sx="187" sy="48" lineColor="66,133,244" lineWidth="4"  color="255,255,255" dx="32" dy="32" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Pipe with length = 0.1 m&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;    Implicit formulation&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<ellipse id="Ellipse_1" cx="136" cy="60" rx="104" ry="36" dx="-12" dy="-8" lineColor="66,133,244" lineWidth="1.5"  layer="1"  />
+
+	<component id="Chaudhry_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" elPosition="14" >
+	
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="339" dy="14" onLabel="true" />
+	
+		<label cx="54.5" cy="12" dx="360.5" dy="71" />
+	
+		<instanceData>
+			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_04_chaudhry.txt&#34;" pos="D" />
+			<datum id="size" value="12" pos="P" />
+		</instanceData>
+	
+	</component>
+
+	<bodyEL>
+	<![CDATA[-- EL code of the schematic.
+-- The COMPONENT definition lines are blocked for edition.
+-- You can edit the parameters clicking over them.
+
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+</schematic>

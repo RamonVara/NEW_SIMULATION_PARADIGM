@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="700" sy="600" label-status="allshowed" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<componentType id="Pipe" >
+
+		<line id="Line_1" points="85.8301,731.962 69.8301,731.962" dx="74.1699" dy="-651.962" lineColor="0,0,255" lineWidth="2"   />
+
+		<line id="Line_2" points="-10.4096,731.722 5.59042,731.722" dx="90.4096" dy="-651.722" lineColor="0,0,255" lineWidth="2"   />
+
+		<rect id="Rectangle_2" cx="29.8301" cy="731.962" sx="48" sy="16" dx="90.1699" dy="-651.962" color="66,133,244"  />
+
+		<line id="Line_5" points="21.5904,731.722 49.5904,731.722" dx="82.4096" dy="-651.722"  />
+
+		<polygon id="Polygon_1" points="45.8301,727.962 53.8301,731.962 45.8301,735.962" dx="82.4096" dy="-651.722" color="0,0,0"  />
+
+		<polygon id="Polygon_2" points="126,38 133,40 126,42" dx="-37.7603" dy="39.9897" lineColor="0,0,255"  color="0,0,255"  />
+
+		<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="22.125" dy="40" lineColor="0,0,255"  color="0,0,255"  />
+
+		<line id="Line_3" points="96,56 144,56" dy="16" lineWidth="1.5"   />
+
+		<line id="Line_4" points="96,56 144,56" dy="32" lineWidth="1.5"   />
+
+		<port id="f_in" library="LIQHAMMER_ST" type="fluid"  hotPort="f_in" >
+		
+				<symbol dx="80" dy="80" onLabel="true" />
+		
+				<label cx="14" cy="12" dx="44" dy="68" />
+		
+		</port>
+
+		<port id="f_out" library="LIQHAMMER_ST" type="fluid"  hotPort="f_out" >
+		
+				<symbol dx="160" dy="80" onLabel="true" />
+		
+				<label cx="18" cy="12" dx="168" dy="68" />
+		
+		</port>
+
+		<editor used="true">
+			<tab name="Data">
+				<var name="method"/>
+				<var name="l"/>
+				<var name="dia"/>
+				<var name="a"/>
+				<var name="f"/>
+				<var name="Ho"/>
+				<var name="Qo"/>
+			</tab>
+		</editor>
+
+	</componentType>
+</palette>

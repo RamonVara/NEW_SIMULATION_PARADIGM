@@ -1,0 +1,59 @@
+EXPERIMENT method_comparison ON example_03.default
+   DECLS
+		--Two experiment parameters: 
+		--		close_time to define the total flow reduction time
+		--		n_exp	to define the shape of the reduction law (linear reduction with n_exp = 1)
+		REAL close_time = 0.001
+      REAL n_exp = 0.75
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      v6.pos = 1- (min(TIME/close_time,1))**n_exp
+   BODY
+		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
+		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
+      --REPORT_TABLE("reportAll.rpt", "*")
+      -- Set the tolerances (relative and absolute);
+      REL_ERROR = 1e-006
+      ABS_ERROR = 1e-006
+		--Recommended integration method for LiqHammer models is a explicit one: 
+		--		Runge Kutta or Euler
+		--		It must be noted that Euler is only supported since Ecosim version 5.4
+		IMETHOD = EULER
+		--LiqHammer typically uses a very small time steps and a explicit solver, 
+		--so it is advantegeous to deactivate the exact finding of events
+		FIND_EVENTS = FALSE
+		--
+		REPORT_MODE = IS_CINT
+		-----------------------------------------------------------------------------
+		--Automatic selection of the number of nodes by the solver
+		--The number of reaches in the pipe with shortes travel time can change in the
+		--range between 1 (solver.nrsp_min) and 200 (solver.nrsp_max). 
+		--The lowest number of reaches that satisfies a maximum required wave speed adjustment 
+		--(solver.PSIMAX) less than 0.1% will be selected
+		solver.nrsp_max = 200
+		solver.nrsp_min = 1
+		solver.PSIMAX = 0.1
+		NEW_BRANCH("Method of Characteristics")
+		solver.global_method = MOC
+      TIME = 0
+      TSTOP = 100
+      CINT = 0.01
+      INTEG()
+		--
+		RESET_VARIABLES()
+		SET_INIT_ACTIVE(TRUE)
+		solver.nrsp_max = 200
+		solver.nrsp_min = 1
+		solver.PSIMAX = 0.1
+		NEW_BRANCH("Algebraic Water Hammer")
+		solver.global_method = AlgebraicWaterHammer
+      TIME = 0
+      TSTOP = 100
+      CINT = 0.01
+      INTEG()
+
+END EXPERIMENT
+

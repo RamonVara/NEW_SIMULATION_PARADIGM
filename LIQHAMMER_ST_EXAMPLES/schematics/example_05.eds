@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="700" sy="600" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="16" vspacing="16" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="5" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<component id="pump" library="LIQHAMMER_ST" type="Pump" layer="1" elPosition="2"  hotPort="f_out" >
+	
+		<symbol cx="128" cy="39.125" sx="105" sy="51.25" dx="64" dy="104" onLabel="true" />
+	
+		<label cx="20" cy="12" dx="167" dy="166" />
+	
+		<instanceData>
+			<datum id="tdh_r" value="60" pos="D" />
+			<datum id="Q_r" value="0.50" pos="D" />
+			<datum id="n_r" value="1100" pos="D" />
+			<datum id="pump_transient" value="Start" pos="D" />
+			<datum id="I" value="33.70" pos="D" />
+			<datum id="n_o_trip" value="1100" pos="D" />
+			<datum id="n_start_end" value="1100" pos="D" />
+			<datum id="n_constant" value="1100" pos="D" />
+			<datum id="Ns" value="25" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe1" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="3"  hotPort="f_out" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="288" dy="48" onLabel="true" />
+	
+		<label cx="19.5" cy="12" dx="384.5" dy="136" />
+	
+		<instanceData>
+			<datum id="l" value="450" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="f" value="0.01" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="Ho" value="59" pos="D" />
+			<datum id="Qo" value="0" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe2" library="LIQHAMMER_ST" type="Pipe" layer="1" elPosition="4"  hotPort="f_in" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="368" dy="48" onLabel="true" />
+	
+		<label cx="19.5" cy="12" dx="460" dy="136" />
+	
+		<instanceData>
+			<datum id="l" value="550" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="f" value="0.012" pos="D" />
+			<datum id="a" value="1100" pos="D" />
+			<datum id="Ho" value="59" pos="D" />
+			<datum id="Qo" value="0" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="pipe1" sPort="f_out" eShape="pipe2" ePort="f_in" elPosition="2" dx="16"  />
+
+	<component id="tank" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="8"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="-64" dy="64" onLabel="true" />
+	
+		<label cx="16.5" cy="12" dx="30" dy="158" />
+	
+		<instanceData>
+			<datum id="H_tank" value="1" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="tank2" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="9"  hotPort="f_out" >
+	
+		<symbol cx="113.875" cy="72" sx="69.25" sy="49.5" dx="444.25" dy="48" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="20" cy="12" dx="534.75" dy="142" />
+	
+		<instanceData>
+			<datum id="H_tank" value="59" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_5" sShape="pipe2" sPort="f_out" eShape="tank2" ePort="f_out" elPosition="7" dx="16"  />
+
+	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="10" >
+	
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="20" dy="-55.5" onLabel="true" />
+	
+		<label cx="20.5" cy="12" dx="278.5" dy="74.75" />
+	
+		<instanceData>
+			<datum id="nrsp_min" value="4" pos="D" />
+			<datum id="nrsp_max" value="20" pos="D" />
+			<datum id="PSIMAX" value="1" pos="D" />
+			<datum id="transient_friction" value="TRUE" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="pipe0a" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="11"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dy="96" onLabel="true" />
+	
+		<label cx="23" cy="12" dx="83" dy="152" />
+	
+		<instanceData>
+			<datum id="l" value="0.1" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="f" value="0.0" pos="D" />
+			<datum id="Ho" value="1" pos="D" />
+			<datum id="Qo" value="0." pos="D" />
+			<datum id="theta1" value="0.5" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_1" cx="155" cy="24" sx="310" sy="48" lineColor="66,133,244" lineWidth="4" lineType="0"  color="255,255,127" dx="160" dy="208" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;Based on example_04 with the addition &#60;/span&#62;&#60;/p&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt; font-weight:600; color:#0000ff;&#34;&#62;of a check valve in the pump discharge&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<connector id="Connector_4" sShape="pipe0a" sPort="f_out" eShape="pump" ePort="f_in" elPosition="8"  />
+
+	<connector id="Connector_6" sShape="tank" sPort="f_out" eShape="pipe0a" ePort="f_in" elPosition="9"  />
+
+	<component id="nr_valve" library="LIQHAMMER_ST" type="NonReturnValve" layer="1" elPosition="12"  hotPort="f_out" >
+	
+		<symbol cx="112" cy="80" sx="73" sy="22.7082" dx="224" dy="48" onLabel="true" />
+	
+		<label cx="26.5" cy="12" dx="301" dy="136.854" />
+	
+		<instanceData>
+			<datum id="A" value="0.2" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_3" sShape="nr_valve" sPort="f_out" eShape="pipe1" ePort="f_in" elPosition="11" dx="16"  />
+
+	<component id="pipe0b" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="13"  hotPort="f_in" >
+	
+		<symbol cx="112" cy="48" sx="73" sy="21" dx="160" dy="80" onLabel="true" />
+	
+		<label cx="23" cy="12" dx="243" dy="136" />
+	
+		<instanceData>
+			<datum id="l" value="0.1" pos="D" />
+			<datum id="dia" value="0.75" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="f" value="0.0" pos="D" />
+			<datum id="Ho" value="1" pos="D" />
+			<datum id="Qo" value="0." pos="D" />
+			<datum id="theta1" value="0.5" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_2" sShape="pump" sPort="f_out" eShape="pipe0b" ePort="f_in" elPosition="12"  />
+
+	<connector id="Connector_7" sShape="pipe0b" sPort="f_out" eShape="nr_valve" ePort="f_in" elPosition="13"  />
+
+	<bodyEL>
+	<![CDATA[-- EL code of the schematic.
+-- The COMPONENT definition lines are blocked for edition.
+-- You can edit the parameters clicking over them.
+
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+</schematic>
