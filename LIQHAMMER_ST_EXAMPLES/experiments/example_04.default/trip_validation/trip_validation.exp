@@ -18,13 +18,15 @@ EXPERIMENT trip_validation ON example_04.default
 		IMETHOD = EULER
 		--LiqHammer typically uses a very small time steps and a explicit solver, 
 		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
+		--FIND_EVENTS = FALSE
 		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
+		solver.nrsp_min = 20
+		solver.nrsp_max = 20
 		pump.TIME_trip = 0
       TIME = 0
       TSTOP = 15
-      CINT = 0.01
+      CINT = 0.5
       INTEG()
 END EXPERIMENT
