@@ -54,13 +54,15 @@
 						<chartStyles>
 							<var name="pipe.f_in.H" nick="LiqHammer" lineType="line" lineWidth="3" lineColor="0,0,255"/>
 							<var name="Impulse_results.yref[1]" nick="Impulse"/>
+							<var name="streeter_results.yref[1]" nick="Streeter"/>
 						</chartStyles>
 					
 					</plot>
 			</plotWindow>
 		</tab>
 	</experimentViews>
-	<watch width="301" height="702" visible="true" pos="right" >
+
+	<watch width="301" height="845" visible="true" pos="right" >
 		<currentTab name="inputs"/>
 		<variables>
 			<tab name="initial"> 
@@ -92,9 +94,16 @@
 			</tab> 
 		</layout>
 	</watch>
-	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+
+
+
+
+
+	<outputWindow height="93" width="1920" visible="true" pos="bottom" />
+
 	<alarms globalEnabled="TRUE">
 	</alarms>
+
 
 	<mainWindow  mode="maximized" currentTab="Tab_1" />
 </experiment>

@@ -1,10 +1,11 @@
 EXPERIMENT exp2_validation ON example_06.default
    DECLS
+		TABLE_1D flow_vs_time = {{0., 0.01, 10., 20},{1.0, 0., 0., 0.}}
    OBJECTS
    INIT
    BOUNDS
       -- Set equations for boundaries: boundVar = f(TIME;...)
-      flow_in.Q = 1.56 * (1-step(TIME,0.))
+      flow_in.Q = 1.56 * linearInterp1D(flow_vs_time, TIME)
 	BODY	
 		------RECOMMENDED OPTIONS FOR LIQHAMMER EXPERIMENTS-------------------------
 		-- For Liqhammer cases it is recommended to deactivate the REPORT_TABLE
@@ -16,19 +17,13 @@ EXPERIMENT exp2_validation ON example_06.default
 		--		Runge Kutta or Euler
 		--		It must be noted that Euler is only supported since Ecosim version 5.4
 		IMETHOD = EULER
-		--LiqHammer typically uses a very small time steps and a explicit solver, 
-		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
-		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
 		solver.nrsp_max = 20
 		solver.nrsp_min = 20
 		--Initialization has to correspond to the flow of 1.56 m3/s
 		pipe.Qo = 1.56
-		pipe.Ho = 18.2347
-		Impulse_results.fileName = "..\\..\\..\\docs\\example_06_exp_02_impulse.txt"
-
+		pipe.Ho = 18.23259
       TIME = 0
       TSTOP = 18.
       CINT = 0.01

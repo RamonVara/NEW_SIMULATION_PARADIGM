@@ -18,7 +18,7 @@ EXPERIMENT exp3_validation ON example_06.default
 		IMETHOD = EULER
 		--LiqHammer typically uses a very small time steps and a explicit solver, 
 		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
+		--FIND_EVENTS = FALSE
 		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
@@ -26,10 +26,7 @@ EXPERIMENT exp3_validation ON example_06.default
 		solver.nrsp_min = 20
 		tank.z = 12
 		pipe.Qo = 1.48
-		pipe.Ho = 17.9115
-		
-		Impulse_results.fileName = "..\\..\\..\\docs\\example_06_exp_03_impulse.txt"
-
+		pipe.Ho = 17.9095
       TIME = 0
       TSTOP = 18
       CINT = 0.05
