@@ -71,8 +71,8 @@
 		<label cx="62" cy="13" dx="355" dy="69" family="Arial" points="11" bold="true" />
 	
 		<instanceData>
-			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_02_streeter.txt&#34;" pos="D" />
 			<datum id="size" value="13" pos="P" />
+			<datum id="fileName" value="&#34;..\\example_02_streeter.txt&#34;" pos="D" />
 		</instanceData>
 	
 	</component>

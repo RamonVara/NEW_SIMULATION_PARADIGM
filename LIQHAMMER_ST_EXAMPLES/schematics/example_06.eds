@@ -81,13 +81,25 @@
 
 	<component id="Impulse_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" elPosition="5" >
 	
-		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="278.5" dy="12" onLabel="true" />
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="310.5" dy="-4" onLabel="true" />
 	
-		<label cx="49.5" cy="12" dx="307" dy="72" />
+		<label cx="49.5" cy="12" dx="339" dy="56" />
 	
 		<instanceData>
-			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_06_exp_01_impulse.txt&#34;" pos="D" />
 			<datum id="size" value="2" pos="P" />
+			<datum id="fileName" value="&#34;Impulse_results.txt&#34;" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="streeter_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" elPosition="6" >
+	
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="438" dy="-4" onLabel="true" />
+	
+		<label cx="49" cy="12" dx="467" dy="56" />
+	
+		<instanceData>
+			<datum id="fileName" value="&#34;Streeter_results.txt&#34;" pos="D" />
 		</instanceData>
 	
 	</component>

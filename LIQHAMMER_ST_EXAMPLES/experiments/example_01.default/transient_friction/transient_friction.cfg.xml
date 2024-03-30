@@ -2,7 +2,7 @@
 <experiment version="1.4.0">
 	<experimentViews>
 		<tab name="Tab_1">
-			<plotWindow title="Plot_1" x="821" y="0" dx="821" dy="696">
+			<plotWindow title="Plot_1" x="-7" y="-3" dx="821" dy="718">
 				<plot id="Plot_1" graphType="plot_time">
 						<title value="PIEZOMETRIC HEAD AT PIPE OUTLET" position="Center" isShowed="true">
 							<font family="Arial" size="18" bold="true"/>
@@ -20,7 +20,7 @@
 							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
 							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
 						</layout>
-						<legend position="External: Right">
+						<legend position="Internal: Right-Top">
 							<font family="MS Shell Dlg 2" size="14" bold="true"/>
 						</legend>
 						<chartStyles>
@@ -29,7 +29,7 @@
 					
 					</plot>
 			</plotWindow>
-			<plotWindow title="Plot_3" x="0" y="0" dx="821" dy="696">
+			<plotWindow title="Plot_3" x="807" y="-3" dx="821" dy="718">
 				<plot id="Plot_3" graphType="plot_time">
 						<title value="CPU TIME" position="Center" isShowed="true">
 							<font family="Arial" size="18" bold="true"/>
@@ -47,7 +47,7 @@
 							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
 							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
 						</layout>
-						<legend isShowed="true" position="External: Right">
+						<legend isShowed="true" position="Internal: Center-Top">
 							<font family="MS Shell Dlg 2" size="14" bold="true"/>
 						</legend>
 						<chartStyles>
@@ -58,7 +58,8 @@
 			</plotWindow>
 		</tab>
 	</experimentViews>
-	<watch width="266" height="702" visible="true" pos="right" >
+
+	<watch width="266" height="746" visible="true" pos="right" >
 		<currentTab name="view"/>
 		<variables>
 			<tab name="initial"> 
@@ -91,9 +92,16 @@
 			</tab> 
 		</layout>
 	</watch>
+
+
+
+
+
 	<outputWindow height="192" width="1920" visible="true" pos="bottom" />
+
 	<alarms globalEnabled="TRUE">
 	</alarms>
+
 
 	<mainWindow  mode="maximized" currentTab="Tab_1" />
 </experiment>

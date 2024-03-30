@@ -31,14 +31,9 @@ EXPERIMENT closure_5s ON example_10.default
 		--		Runge Kutta or Euler
 		--		It must be noted that Euler is only supported since Ecosim version 5.4
 		IMETHOD = EULER
-		--LiqHammer typically uses a very small time steps and a explicit solver, 
-		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
 		solver.nrsp_max = 5
 		solver.nrsp_min = 1
 		solver.PSIMAX = 5
-
-		--solver.cavitation_flag = FALSE
       -- Integrate the model
 		EXEC_INIT()
 		NEW_BRANCH("Total number of sections = $solver.ntot_sect")

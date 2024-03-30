@@ -280,13 +280,13 @@
 
 	<component id="Impulse_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" elPosition="61" >
 	
-		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="329" dy="4" onLabel="true" />
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="328.5" dy="4" onLabel="true" />
 	
-		<label cx="64.5" cy="14" dx="355.5" dy="61" family="Arial" points="12" bold="true" />
+		<label cx="64.5" cy="14" dx="355" dy="61" family="Arial" points="12" bold="true" />
 	
 		<instanceData>
-			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_03_epri_01.txt&#34;" pos="D" />
 			<datum id="size" value="9" pos="P" />
+			<datum id="fileName" value="&#34;..\\example_03_epri_01.txt&#34;" pos="D" />
 			<datum id="gain" value="0.3048" pos="D" />
 		</instanceData>
 	

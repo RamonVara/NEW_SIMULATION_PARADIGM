@@ -10,9 +10,12 @@
 <generateObfuscatedCpp value="FALSE"/>
 <generateParInfoHTML value="TRUE"/>
 <generateParInfoExtra value="FALSE"/>
-<generateMaxSignificantDigits value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
 <generateAdvancedBox value="disabled"/>
 <boundaries>
   <variable name="flow_out.Q"/>
 </boundaries>
+<residues>
+</residues>
 </partitionInfo>

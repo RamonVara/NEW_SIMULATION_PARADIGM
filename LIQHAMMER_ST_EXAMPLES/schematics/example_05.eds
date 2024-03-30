@@ -20,10 +20,8 @@
 			<datum id="n_r" value="1100" pos="D" />
 			<datum id="pump_transient" value="Start" pos="D" />
 			<datum id="I" value="33.70" pos="D" />
-			<datum id="n_o_trip" value="1100" pos="D" />
+			<datum id="n_o" value="0" pos="D" />
 			<datum id="n_start_end" value="1100" pos="D" />
-			<datum id="n_constant" value="1100" pos="D" />
-			<datum id="Ns" value="25" pos="D" />
 		</instanceData>
 	
 	</component>
@@ -62,7 +60,7 @@
 	
 	</component>
 
-	<connector id="Connector_1" sShape="pipe1" sPort="f_out" eShape="pipe2" ePort="f_in" elPosition="2" dx="16"  />
+	<connector id="Connector_1" sShape="pipe1" sPort="f_out" eShape="pipe2" ePort="f_in" elPosition="2"  />
 
 	<component id="tank" library="LIQHAMMER_ST" type="Tank" layer="1" elPosition="8"  hotPort="f_out" >
 	
@@ -71,7 +69,7 @@
 		<label cx="16.5" cy="12" dx="30" dy="158" />
 	
 		<instanceData>
-			<datum id="H_tank" value="1" pos="D" />
+			<datum id="H_tank" value="0" pos="D" />
 		</instanceData>
 	
 	</component>
@@ -88,7 +86,7 @@
 	
 	</component>
 
-	<connector id="Connector_5" sShape="pipe2" sPort="f_out" eShape="tank2" ePort="f_out" elPosition="7" dx="16"  />
+	<connector id="Connector_5" sShape="pipe2" sPort="f_out" eShape="tank2" ePort="f_out" elPosition="7"  />
 
 	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="10" >
 	
@@ -114,11 +112,10 @@
 		<instanceData>
 			<datum id="l" value="0.1" pos="D" />
 			<datum id="dia" value="0.75" pos="D" />
-			<datum id="a" value="900" pos="D" />
 			<datum id="f" value="0.0" pos="D" />
-			<datum id="Ho" value="1" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="Ho" value="0" pos="D" />
 			<datum id="Qo" value="0." pos="D" />
-			<datum id="theta1" value="0.5" pos="D" />
 		</instanceData>
 	
 	</component>
@@ -143,7 +140,7 @@
 	
 	</component>
 
-	<connector id="Connector_3" sShape="nr_valve" sPort="f_out" eShape="pipe1" ePort="f_in" elPosition="11" dx="16"  />
+	<connector id="Connector_3" sShape="nr_valve" sPort="f_out" eShape="pipe1" ePort="f_in" elPosition="11"  />
 
 	<component id="pipe0b" library="LIQHAMMER_ST" type="PipeImpl" layer="1" elPosition="13"  hotPort="f_in" >
 	
@@ -154,11 +151,10 @@
 		<instanceData>
 			<datum id="l" value="0.1" pos="D" />
 			<datum id="dia" value="0.75" pos="D" />
-			<datum id="a" value="900" pos="D" />
 			<datum id="f" value="0.0" pos="D" />
-			<datum id="Ho" value="1" pos="D" />
+			<datum id="a" value="900" pos="D" />
+			<datum id="Ho" value="0" pos="D" />
 			<datum id="Qo" value="0." pos="D" />
-			<datum id="theta1" value="0.5" pos="D" />
 		</instanceData>
 	
 	</component>

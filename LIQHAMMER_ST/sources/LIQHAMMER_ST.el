@@ -570,13 +570,9 @@ COMPONENT SolverControl "MOC Solver Control"
       REAL P_atm = 0.101325    UNITS "MPa"   RANGE 0., 10000.     "Atmospheric pressure"
       REAL G = 9.80665         UNITS "m/s2"  RANGE 0.01, 10000.   "Local gravity"
    DECLS
-
-      INTEGER nrtot                       "Total number of reaches"
       INTEGER ntot_sect                   "Total number of sections"
       --
       DISCR REAL dt_optim     UNITS "s"   "Optimum time step"
-      INTEGER nrsp_optim                  "Number of reaches in pipe with shortest travel time for optimum discretization"
-      INTEGER ntot_sect_optim             "Number of reaches in pipe with shortest travel time for optimum discretization"
       DISCR REAL error_max_optim
       DISCR REAL error_avg_optim
       --
@@ -587,12 +583,12 @@ COMPONENT SolverControl "MOC Solver Control"
       
       HIDDEN INTEGER ip_max               "Number of the pipe with maximum travel time"
       HIDDEN INTEGER ip_min               "Number of the pipe with minimum travel time"
-      HIDDEN INTEGER nrsp                 "Number of reaches in pipe with shortes travel time"
-      HIDDEN INTEGER n_max             "Maximum index for nrsp search"
-      HIDDEN INTEGER n_min             "Minimum index for nrsp search"
+				 INTEGER nrsp                 "Number of reaches in pipe with shortes travel time"
+      HIDDEN INTEGER n_max                "Maximum index for nrsp search"
+      HIDDEN INTEGER n_min                "Minimum index for nrsp search"
       --
-      HIDDEN DISCR REAL PSI               "Allowable shift in Courant number (-)"
-      HIDDEN DISCR REAL dt_local         UNITS "s" "Local time step"
+      HIDDEN DISCR REAL PSI                           "Allowable shift in Courant number (-)"
+      HIDDEN DISCR REAL dt_local          UNITS "s"   "Local time step"
       HIDDEN DISCR REAL dt_max            UNITS "s"   "Maximum time step of the search"
       HIDDEN DISCR REAL dt_min            UNITS "s"   "Minimum time step of the search"
       HIDDEN DISCR REAL dt_min_prev       UNITS "s"   "Previous minimum time step of the search"
@@ -1604,8 +1600,7 @@ COMPONENT Pump IS_A Junction_In_Out "Four quadrants pump"
       REAL Ns  = 25     		 UNITS "SI"  "Specific speed of the pump in metric units, n_r in rpm, Q_r in m3/s and tdh_r in m"		
       INTEGER N_stages = 1          "Number of stages, only used to calculate the informative specific speed"
       INTEGER N_suctions = 1			"Number of suctions, = 1 if single suction, = 2 if double suction, only used to calculate the informative specific speed"
-      BOOLEAN User_Curves = FALSE   "TRUE to use the curves defined by the user"     
-       
+      BOOLEAN User_Curves = FALSE   "TRUE to use the curves defined by the user"            
         --User Specified 1-D Tables
       TABLE_1D wh_vs_theta  = \
          {{ 0.0000000, 0.0713998, 0.1427997, 0.2141995, 0.2855993, 0.3569992, 0.4283990, 
@@ -1665,26 +1660,26 @@ COMPONENT Pump IS_A Junction_In_Out "Four quadrants pump"
       ENUM PumpTransient pump_transient = Trip  "Type of pump transient"
       REAL I = 1                 UNITS "kg·m2"  "Moment of Inertia"
       REAL TIME_trip = 1         UNITS "s"      "Time of pump trip or shutdown"
-      REAL n_o_trip = 1490.      UNITS "rpm"    "Initial pump speed previous to the trip time"
-      REAL TIME_start = 1        UNITS "s"      "Time of pump start"
-      REAL DTIME_start = 5       UNITS "s"      "Duration of the pump start ramp"
+      REAL n_o = 1490.      		UNITS "rpm"    "Initial or constant pump speed"
+      REAL TIME_start = 1.       UNITS "s"      "Time of pump start"
+      REAL DTIME_start = 5.      UNITS "s"      "Duration of the pump start ramp"
       REAL n_start_end = 1490.   UNITS "rpm"    "Speed at the end of the start ramp"
-      REAL n_constant = 1490.    UNITS "rpm"    "Constant speed"
    DECLS
-      REAL alpha              "Adimensional speed"
-      REAL beta               "Adimensional torque"
-      REAL h                  "Adimensional head"
+      REAL alpha              UNITS "-" "Adimensional speed"
+      REAL beta               UNITS "-" "Adimensional torque"
+      REAL h                  UNITS "-" "Adimensional head"
       REAL n                  UNITS "rpm" "Pump speed"
       REAL tdh                UNITS "m"   "Total dynamic head"
       REAL torque_r           UNITS "N·m" "Torque at rated conditions"
       REAL torque             UNITS "N·m" "Brake torque" 
-      REAL theta              "Variable defined as PI + atan2(v, alpha)"
-      REAL v                  "Adimensional volume flow"
-      REAL wh                 "Dimensionless turbomachine characteristics defined as h / (v**2 + alpha**2)"
-      REAL wbeta              "Dimensionless turbomachine characteristics defined as beta / (v**2 + alpha**2)"
-      REAL torque_motor       UNITS "N·m"    "Motor torque"
-      DISCR REAL wh_array[89]
-      DISCR REAL wbeta_array[89]
+      REAL theta              UNITS "rad" "Variable defined as PI + atan2(v, alpha)"
+      REAL v                  UNITS "-" 	"Adimensional volume flow"
+      REAL wh                 UNITS "-" 	"Dimensionless turbomachine characteristics defined as h / (v**2 + alpha**2)"
+      REAL wbeta              UNITS "-" 	"Dimensionless turbomachine characteristics defined as beta / (v**2 + alpha**2)"
+      REAL torque_motor       UNITS "N·m" "Motor torque"
+		CONST INTEGER npoints = 89			"Number of points of the wh and wbeta arrays"
+      DISCR REAL wh_array[npoints]
+      DISCR REAL wbeta_array[npoints]
       --Auxiliary variables to manage the pump curves
       INTEGER m
       HIDDEN REAL a0, a1
@@ -1693,8 +1688,8 @@ COMPONENT Pump IS_A Junction_In_Out "Four quadrants pump"
       DISCR REAL n_old              UNITS "rpm" "Rotational speed at previous time step"
       DISCR REAL torque_old         UNITS "N.m" "Brake torque at previous time step"
       DISCR REAL torque_motor_old   UNITS "N·m" "Motor torque at previous time step"
-      DISCR REAL TIME_old
-      CONST REAL dx = 2. * PI / 88
+      DISCR REAL TIME_old           UNITS "" 
+      DISCR REAL dx  
       ---------------------------------------------------------------------------------------
       -- Two D Table of dimensionless head (H/Hr) / ((Q/Qr)**2 + (N/Nr)**2) vs theta
       ---------------------------------------------------------------------------------------
@@ -1834,8 +1829,8 @@ COMPONENT Pump IS_A Junction_In_Out "Four quadrants pump"
 				WRITE("*************************************************************************************************\n")
 			END IF
 		END IF
-      FOR (j IN 1, 89)
-         theta = 2*PI*(j-1)/88.
+      FOR (j IN 1, npoints)
+         theta = 2*PI*(j-1)/(npoints-1)
          IF (User_Curves == FALSE) THEN
             wh_array[j] =     splineInterp2D(wh_vs_theta_Ns, Ns, theta)
             wbeta_array[j] =  splineInterp2D(wbeta_vs_theta_Ns, Ns, theta)
@@ -1843,18 +1838,18 @@ COMPONENT Pump IS_A Junction_In_Out "Four quadrants pump"
             wh_array[j] =     splineInterp1D(wh_vs_theta, theta)
             wbeta_array[j] =  splineInterp1D(wbeta_vs_theta, theta)
          END IF
-         WRITE("%d \t %g \t %g \t %g \n", j, theta, wh_array[j], wbeta_array[j])
+         --WRITE("%d \t %g \t %g \t %g \n", j, theta, wh_array[j], wbeta_array[j])
       END FOR
       TIME_old =  TIME
       IF (pump_transient == Trip) THEN
-         n = n_o_trip
-         n_old = n_o_trip
+         n = n_o
+         n_old = n_o
       ELSEIF(pump_transient == Start) THEN
-         n = 0
-         n_old = 0
+         n = n_o
+         n_old = n_o
       ELSEIF(pump_transient == ConstantSpeed) THEN
-         n = n_constant
-         n_old = n_constant
+         n = n_o
+         n_old = n_o
       END IF
          alpha = n/n_r
          v = Q/Q_r
@@ -1880,8 +1875,9 @@ IMPL(alpha)    n = alpha * n_r
 
       theta = PI + atan2(v , alpha )
       SEQUENTIAL 
+		   dx = 2.*PI/(npoints-1)
          m = theta/dx + 1
-         m = min(m, 88)
+         m = min(m, 72)
          a1 =(wh_array[m+1]-wh_array[m])/dx
          a0 = wh_array[m+1]-a1*m*dx      
          b1 =(wbeta_array[m+1]-wbeta_array[m])/dx
@@ -1901,20 +1897,20 @@ IMPL(v)     LIQHAMMER_ST.G * f_out.H = LIQHAMMER_ST.G * f_in.H + tdh * LIQHAMMER
       SEQUENTIAL
          IF (pump_transient == Trip) THEN
             IF(TIME <  TIME_trip) THEN
-               n = n_o_trip
+               n = n_o
             ELSE  
                n = n_old +  0.5*(((torque_motor_old -  torque_old)+ (torque_motor  - torque))/I) * (30./PI) * (TIME - TIME_old) 
             END IF
          ELSEIF (pump_transient == Start) THEN
             IF (TIME < TIME_start) THEN
-               n = 0
+               n = n_o
             ELSEIF (TIME < TIME_start + DTIME_start) THEN
-               n = (TIME - TIME_start)/DTIME_start * n_start_end
+               n = n_o + (TIME - TIME_start)/DTIME_start * (n_start_end - n_o)
             ELSE
                n = n_start_end
             END IF
          ELSEIF (pump_transient == ConstantSpeed) THEN
-            n = n_constant
+            n = n_o
          END IF
       END SEQUENTIAL
 

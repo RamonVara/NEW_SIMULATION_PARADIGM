@@ -23,10 +23,6 @@ EXPERIMENT closure ON example_08.default
 		--		Runge Kutta or Euler
 		--		It must be noted that Euler is only supported since Ecosim version 5.4
 		IMETHOD = EULER
-		--LiqHammer typically uses a very small time steps and a explicit solver, 
-		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
-		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
       -- Integrate the model

@@ -10,7 +10,8 @@
 <generateObfuscatedCpp value="FALSE"/>
 <generateParInfoHTML value="TRUE"/>
 <generateParInfoExtra value="FALSE"/>
-<generateMaxSignificantDigits value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
 <generateAdvancedBox value="disabled"/>
 <boundaries>
   <variable name="v_23.pos"/>
@@ -18,4 +19,6 @@
 <algebraics>
   <variable name="v_23.f_in.Q"/>
 </algebraics>
+<residues>
+</residues>
 </partitionInfo>

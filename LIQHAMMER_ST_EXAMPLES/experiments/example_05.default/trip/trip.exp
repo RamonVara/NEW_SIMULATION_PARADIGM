@@ -18,25 +18,24 @@ EXPERIMENT trip ON example_05.default
 		--		Runge Kutta or Euler
 		--		It must be noted that Euler is only supported since Ecosim version 5.4
 		IMETHOD = EULER
-		--LiqHammer typically uses a very small time steps and a explicit solver, 
-		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
 		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
 		solver.nrsp_min = 20
 		solver.nrsp_max = 20
 		--Pipe initialization corresponding to operating state
-		pipe0a.Ho = 1
-		pipe0a.Qo	= 0.50664	
-		pipe0b.Ho = 59.992
-		pipe0b.Qo = 0.50664
-		pipe1.Ho	= 59.992
-		pipe1.Qo	= 0.50664
-		pipe2.Ho	= 59.590
-		pipe2.Qo	= 0.50664
+		pipe0a.Ho = 0.
+		pipe0a.Qo	= 0.496500184	
+		pipe0b.Ho = 60.2672865
+		pipe0b.Qo = 0.496500184
+		pipe1.Ho	= 59.9530706
+		pipe1.Qo	= 0.496500184
+		pipe2.Ho	= 59.5666906
+		pipe2.Qo	= 0.496500184
 		--specify the transient is a pump trip
 		pump.pump_transient = Trip
+		pump.n_o = 1100.
+		pump.TIME_trip = 1.
       TIME = 0
       TSTOP = 25
       CINT = 0.01

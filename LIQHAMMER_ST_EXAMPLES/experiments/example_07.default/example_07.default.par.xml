@@ -10,7 +10,8 @@
 <generateObfuscatedCpp value="FALSE"/>
 <generateParInfoHTML value="TRUE"/>
 <generateParInfoExtra value="FALSE"/>
-<generateMaxSignificantDigits value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
 <generateAdvancedBox value="disabled"/>
 <boundaries>
   <variable name="valve1.pos"/>
@@ -21,4 +22,6 @@
   <variable name="pipe1.f_in.Q"/>
   <variable name="valve1.f_in.Q"/>
 </algebraics>
+<residues>
+</residues>
 </partitionInfo>

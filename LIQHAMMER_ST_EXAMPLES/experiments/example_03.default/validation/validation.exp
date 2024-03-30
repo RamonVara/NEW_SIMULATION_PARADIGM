@@ -22,10 +22,6 @@ EXPERIMENT validation ON example_03.default
 		--		Runge Kutta or Euler
 		--		It must be noted that Euler is only supported since Ecosim version 5.4
 		IMETHOD = EULER
-		--LiqHammer typically uses a very small time steps and a explicit solver, 
-		--so it is advantegeous to deactivate the exact finding of events
-		FIND_EVENTS = FALSE
-		--
 		REPORT_MODE = IS_CINT
 		-----------------------------------------------------------------------------
 		--Automatic selection of the number of nodes by the solver
@@ -33,10 +29,10 @@ EXPERIMENT validation ON example_03.default
 		--range between 1 (solver.nrsp_min) and 100 (solver.nrsp_max). 
 		--The lowest number of reaches that satisfies a 
 		--a required wave speed adjustment (solver.PSIMAX) less than 1% will be selected
-		solver.nrsp_max = 10
+		solver.nrsp_max = 80
 		solver.nrsp_min = 1
 		--Maximum wave speed adjustment 0.5%
-		solver.PSIMAX = 1
+		solver.PSIMAX = 0.5
 		EXEC_INIT()
 		--The total number of sections only is known after initialization 
       TIME = 0

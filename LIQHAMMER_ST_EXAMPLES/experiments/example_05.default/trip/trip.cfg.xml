@@ -2,7 +2,7 @@
 <experiment version="1.4.0">
 	<experimentViews>
 		<tab name="Tab_1">
-			<plotWindow title="Plot_2" x="822" y="0" dx="822" dy="817">
+			<plotWindow title="Plot_2" x="844" y="0" dx="844" dy="817">
 				<plot id="Plot_2" graphType="plot_time">
 						<title value="PUMP STATE" position="Center" isShowed="true">
 							<font family="Arial" size="18" bold="true"/>
@@ -30,7 +30,7 @@
 					
 					</plot>
 			</plotWindow>
-			<plotWindow title="Plot_1" x="0" y="0" dx="822" dy="817">
+			<plotWindow title="Plot_1" x="0" y="0" dx="844" dy="817">
 				<plot id="Plot_1" graphType="plot_time">
 						<title value="PIEZOMETRIC HEAD" position="Center" isShowed="true">
 							<font family="Arial" size="18" bold="true"/>
@@ -60,7 +60,8 @@
 			</plotWindow>
 		</tab>
 	</experimentViews>
-	<watch width="264" height="823" visible="true" pos="right" >
+
+	<watch width="219" height="845" visible="true" pos="right" >
 		<currentTab name="inputs"/>
 		<variables>
 			<tab name="initial"> 
@@ -68,6 +69,7 @@
 			<tab name="inputs"> 
 				<var name="pipe1.nr" value="20"/>
 				<var name="pipe2.nr" value="20"/>
+				<var name="pump.I" value="33.7"/>
 			</tab> 
 			<tab name="view"> 
 				<var name="pump.DTIME_start"/>
@@ -98,8 +100,6 @@
 				<var name="pump.ipa"/>
 				<var name="pump.m"/>
 				<var name="pump.n"/>
-				<var name="pump.n_constant"/>
-				<var name="pump.n_o_trip"/>
 				<var name="pump.n_old"/>
 				<var name="pump.n_r"/>
 				<var name="pump.n_start_end"/>
@@ -138,9 +138,16 @@
 			</tab> 
 		</layout>
 	</watch>
-	<outputWindow height="71" width="1920" visible="true" pos="bottom" />
+
+
+
+
+
+	<outputWindow height="93" width="1920" visible="true" pos="bottom" />
+
 	<alarms globalEnabled="TRUE">
 	</alarms>
+
 
 	<mainWindow  mode="maximized" currentTab="Tab_1" />
 </experiment>

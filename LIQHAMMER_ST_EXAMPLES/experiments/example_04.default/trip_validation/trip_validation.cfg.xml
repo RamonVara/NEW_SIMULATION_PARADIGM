@@ -2,40 +2,6 @@
 <experiment version="1.4.0">
 	<experimentViews>
 		<tab name="Tab_1">
-			<plotWindow title="Plot_3" x="766" y="0" dx="766" dy="732">
-				<plot id="Plot_3" graphType="plot_time">
-						<title value="PUMP STATUS" position="Center" isShowed="true">
-							<font family="Arial" size="20" bold="true"/>
-						</title>
-						<axeX variableName="TIME">
-							<titleAxe value="TIME (s)" position="Center"/>
-							<scale minCustom="0" maxCustom="15" scaleType="user"/>
-						</axeX>
-						<axeY>
-							<titleAxe value=" Ratio Q/Qr &#38; N/Nr" position="Center"/>
-							<scale scaleType="auto"/>
-						</axeY>
-						<layout color="255,255,255">
-							<font family="Arial" size="18" bold="true"/>
-							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
-							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
-						</layout>
-						<legend position="Internal: Right-Top">
-							<font family="Arial" size="18" bold="true"/>
-						</legend>
-						<chartStyles>
-							<var name="pump.alpha" nick="N/Nr  LiqHammer" lineType="line" lineWidth="3" lineColor="0,170,255"/>
-							<var name="Chaudhry_results.yref[01]" nick="N/Nr Chaudhry" isShowed="false" lineType="dash" lineColor="0,0,255">
-								<marker isShowed="true" shape="Triangle" size="10"/>
-							</var>
-							<var name="pump.v" nick="Q/Qr  LiqHammer" lineType="line" lineWidth="3" lineColor="170,0,0"/>
-							<var name="Chaudhry_results.yref[02]" nick="Q/Qr Chaudhry" isShowed="false" lineType="dash" lineColor="255,0,0">
-								<marker isShowed="true" shape="Triangle" size="10"/>
-							</var>
-						</chartStyles>
-					
-					</plot>
-			</plotWindow>
 			<plotWindow title="Plot_1" x="0" y="0" dx="766" dy="732">
 				<plot id="Plot_1" graphType="plot_time">
 						<title value="PIEZOMETRIC HEAD (m)" position="Center" isShowed="true">
@@ -70,17 +36,51 @@
 					
 					</plot>
 			</plotWindow>
+			<plotWindow title="Plot_3" x="766" y="0" dx="766" dy="732">
+				<plot id="Plot_3" graphType="plot_time">
+						<title value="PUMP STATUS" position="Center" isShowed="true">
+							<font family="Arial" size="20" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME (s)" position="Center"/>
+							<scale minCustom="0" maxCustom="15" scaleType="user"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=" Ratio Q/Qr &#38; N/Nr" position="Center"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout color="255,255,255">
+							<font family="Arial" size="18" bold="true"/>
+							<majorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+							<minorGrid lineType="dot" lineWidth="1" lineColor="160,160,164"/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="Arial" size="18" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="pump.alpha" nick="N/Nr  LiqHammer" lineType="line" lineWidth="3" lineColor="0,170,255"/>
+							<var name="Chaudhry_results.yref[01]" nick="N/Nr Chaudhry" isShowed="false" lineType="dash" lineColor="0,0,255">
+								<marker isShowed="true" shape="Triangle" size="10"/>
+							</var>
+							<var name="pump.v" nick="Q/Qr  LiqHammer" lineType="line" lineWidth="3" lineColor="170,0,0"/>
+							<var name="Chaudhry_results.yref[02]" nick="Q/Qr Chaudhry" isShowed="false" lineType="dash" lineColor="255,0,0">
+								<marker isShowed="true" shape="Triangle" size="10"/>
+							</var>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
 		</tab>
 	</experimentViews>
 
 	<watch width="375" height="760" visible="true" pos="right" >
-		<currentTab name="inputs"/>
+		<currentTab name="view"/>
 		<variables>
 			<tab name="initial"> 
 			</tab> 
 			<tab name="inputs"> 
-				<var name="pipe1.nr" value="20"/>
-				<var name="pipe2.nr" value="20"/>
+				<var name="pipe1.nr" value="0"/>
+				<var name="pipe2.nr" value="0"/>
 			</tab> 
 			<tab name="view"> 
 				<var name="pump.DTIME_start"/>
@@ -111,8 +111,6 @@
 				<var name="pump.ipa"/>
 				<var name="pump.m"/>
 				<var name="pump.n"/>
-				<var name="pump.n_constant"/>
-				<var name="pump.n_o_trip"/>
 				<var name="pump.n_old"/>
 				<var name="pump.n_r"/>
 				<var name="pump.n_start_end"/>
