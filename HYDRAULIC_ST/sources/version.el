@@ -2,6 +2,6 @@
 #LIBRARY_INFO
 	#VERSION = "1.0"
 	#DATE = "19/10/2023"
-	#AUTHOR = ""
+	#AUTHOR = "RPV"
 	#COMMENTS= "No comments"
 END #LIBRARY_INFO

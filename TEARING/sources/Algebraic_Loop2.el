@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------------------------------
  LIBRARY: TEARING
- FILE: Algebraic_Loop1
+ FILE: Algebraic_Loop2
  CREATION DATE: 06/06/2023
 -----------------------------------------------------------------------------------------*/
-COMPONENT Algebraic_Loop1
+COMPONENT Algebraic_Loop2
    DECLS
        REAL q1
        REAL q2

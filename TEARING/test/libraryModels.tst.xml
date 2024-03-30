@@ -5,5 +5,16 @@
       <item name="Algebraic_Loop1.default.exp1" type="exp_el" enabled="F"/>
       <item name="Algebraic_Loop1.default.exp2" type="exp_el" enabled="F"/>
       <item name="Test.par1.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample1Corr.default.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample1Corr.default.exp2" type="exp_el" enabled="F"/>
+      <item name="BaharevExample1.default.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample1.default.exp2" type="exp_el" enabled="F"/>
+      <item name="BaharevExample2Corr.default.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample2.default.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample2.default.exp2" type="exp_el" enabled="F"/>
+      <item name="BaharevExample3Corr.default.exp1" type="exp_el" enabled="F"/>
+      <item name="BaharevExample3.default.exp1" type="exp_el" enabled="F"/>
+      <item name="Pendulum.default.exp1" type="exp_el" enabled="F"/>
+      <item name="Pendulum1.par1.exp1" type="exp_el" enabled="F"/>
    </items>
 </test>

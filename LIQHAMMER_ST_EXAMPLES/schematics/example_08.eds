@@ -71,7 +71,7 @@
 
 	<component id="c1" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="9"  hotPort="f_in" >
 	
-		<symbol cx="80" cy="36" sx="13" sy="13" dx="176" dy="108" onLabel="true" />
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="176" dy="108" onLabel="true" />
 	
 		<label cx="13" cy="14" dx="239.5" dy="148" family="Arial" points="12" bold="true" />
 	
@@ -79,7 +79,7 @@
 
 	<component id="c2" library="LIQHAMMER_ST" type="Collector" layer="1" elPosition="10"  hotPort="f_in" >
 	
-		<symbol cx="80" cy="36" sx="13" sy="13" dx="344" dy="108" onLabel="true" />
+		<symbol cx="80" cy="36" sx="15" sy="15" dx="344" dy="108" onLabel="true" />
 	
 		<label cx="13" cy="14" dx="416" dy="152" family="Arial" points="12" bold="true" />
 	
@@ -158,7 +158,6 @@
 			<datum id="l" value="40" pos="D" />
 			<datum id="Ho" value="146.99" pos="D" />
 			<datum id="Qo" value="0.47744" pos="D" />
-			<datum id="theta1" value="0.50" pos="D" />
 		</instanceData>
 	
 	</component>
@@ -201,5 +200,5 @@ END COMPONENT
 ]]>
 	</bodyEL>
 
-	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+	<usedLibrary name="LIQHAMMER_ST" version="1.1" auto="true" />
 </schematic>

@@ -1,13 +1,6 @@
 -- Generated automatically by - EcosimPro - 6.2.0 
 
 
-USE MATH VERSION "3.1.1"
-USE PORTS_LIB VERSION "1.1"
-USE SYSTEM_MDL_LIB VERSION "1.1"
-USE THERMAL
-
-
-
 COMPONENT Wall_NA_3  
 
 PORTS

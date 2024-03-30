@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <workspace version="1.3" wsVersion="0.0"  wsDate="18/03/2019"  wsAuthor=""  wsDescription="">
  <library name="HYDRAULIC_ST" version="1.0" dir="./HYDRAULIC_ST/" dirType="REL_WORKSPACE"/>
- <library name="HYDRAULIC_ST_CLASSIC" version="1.1" dir="./HYDRAULIC_ST_CLASSIC/" dirType="REL_WORKSPACE"/>
- <library name="HYDRAULIC_ST_EXAMPLES" version="0.0" dir="./HYDRAULIC_ST_EXAMPLES/" dirType="REL_WORKSPACE"/>
- <library name="LIQHAMMER_ST" version="1.0" dir="./LIQHAMMER_ST/" dirType="REL_WORKSPACE"/>
+ <library name="HYDRAULIC_ST_CLASSIC" version="1.0" dir="./HYDRAULIC_ST_CLASSIC/" dirType="REL_WORKSPACE"/>
+ <library name="HYDRAULIC_ST_EXAMPLES" version="1.0" dir="./HYDRAULIC_ST_EXAMPLES/" dirType="REL_WORKSPACE"/>
+ <library name="LIQHAMMER_ST" version="1.1" dir="./LIQHAMMER_ST/" dirType="REL_WORKSPACE"/>
  <library name="LIQHAMMER_ST_EXAMPLES" version="1.0" dir="./LIQHAMMER_ST_EXAMPLES/" dirType="REL_WORKSPACE"/>
  <library name="MATH" version="3.2.5" dir="./MATH/" dirType="REL_WORKSPACE"/>
  <library name="SPARSE" version="1.0" dir="./SPARSE/" dirType="REL_WORKSPACE"/>
- <library name="SPARSE_EXAMPLES" version="0.0" dir="./SPARSE_EXAMPLES/" dirType="REL_WORKSPACE"/>
- <library name="TEARING" version="0.0" dir="./TEARING/" dirType="REL_WORKSPACE"/>
- <library name="THERMAL_NEW" version="0.0" dir="./THERMAL_NEW/" dirType="REL_WORKSPACE"/>
+ <library name="SPARSE_EXAMPLES" version="1.0" dir="./SPARSE_EXAMPLES/" dirType="REL_WORKSPACE"/>
+ <library name="TEARING" version="1.0" dir="./TEARING/" dirType="REL_WORKSPACE"/>
+ <library name="THERMAL_NEW" version="1.0" dir="./THERMAL_NEW/" dirType="REL_WORKSPACE"/>
  <library name="TRANLIQ" version="1.0" dir="./TRANLIQ/" dirType="REL_WORKSPACE"/>
  <library name="TRANLIQ_EXAMPLES" version="1.0" dir="./TRANLIQ_EXAMPLES/" dirType="REL_WORKSPACE"/>
  <setLibrariesPath value=""/>
