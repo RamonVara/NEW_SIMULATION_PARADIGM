@@ -1,0 +1,26 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: SPARSE_EXAMPLES
+ COMPONENT: TestNleqnSystem01
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 15/11/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON TestNleqnSystem01.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

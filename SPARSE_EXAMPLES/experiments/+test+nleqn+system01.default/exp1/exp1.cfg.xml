@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+				</tab>
+	</experimentViews>
+
+	<watch width="805" height="551" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="iter_damp" value="2"/>
+				<var name="iter_max" value="20"/>
+				<var name="NR_debug" value="2"/>
+				<var name="STAMP_debug" value="0"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="FRAC"/>
+				<var name="FRAC_damp"/>
+				<var name="NR_debug"/>
+				<var name="STAMP_debug"/>
+				<var name="errorf"/>
+				<var name="errorx"/>
+				<var name="iter_damp"/>
+				<var name="iter_max"/>
+				<var name="rdata[01]"/>
+				<var name="rdata[02]"/>
+				<var name="rdata[03]"/>
+				<var name="rdata[04]"/>
+				<var name="rdata[05]"/>
+				<var name="rdata[06]"/>
+				<var name="rdata[07]"/>
+				<var name="rdata[08]"/>
+				<var name="rdata[09]"/>
+				<var name="rdata[10]"/>
+				<var name="tol"/>
+				<var name="x[01]"/>
+				<var name="x[02]"/>
+				<var name="x[03]"/>
+				<var name="x[04]"/>
+				<var name="x[05]"/>
+				<var name="x[06]"/>
+				<var name="x[07]"/>
+				<var name="x[08]"/>
+				<var name="x[09]"/>
+				<var name="x[10]"/>
+				<var name="x[11]"/>
+				<var name="x[12]"/>
+				<var name="x[13]"/>
+				<var name="x[14]"/>
+				<var name="x[15]"/>
+				<var name="x[16]"/>
+				<var name="x[17]"/>
+				<var name="x[18]"/>
+				<var name="x[19]"/>
+				<var name="x[20]"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="387" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

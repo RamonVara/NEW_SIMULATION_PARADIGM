@@ -1,0 +1,24 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: SPARSE_EXAMPLES
+ COMPONENT: TestSparseMatrix02
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 18/11/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON TestSparseMatrix02.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

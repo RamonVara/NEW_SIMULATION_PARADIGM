@@ -4,8 +4,6 @@
   <file name="version.el"/>
   <file name="hydro_v1.el"/>
   <file name="hydro_v2.el"/>
-  <file name="hydro_v3.el"/>
-  <file name="hydro_v4.el"/>
  </filedeps>
  <libdeps>
  </libdeps>

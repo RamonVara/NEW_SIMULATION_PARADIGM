@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_1" x="0" y="0" dx="350" dy="250" state="maximized">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="x[001]" nick=""/>
+							<var name="x[002]" nick=""/>
+							<var name="x[003]" nick=""/>
+							<var name="x[004]" nick=""/>
+							<var name="x[005]" nick=""/>
+							<var name="x[006]" nick=""/>
+							<var name="x[007]" nick=""/>
+							<var name="x[008]" nick=""/>
+							<var name="x[009]" nick=""/>
+							<var name="x[010]" nick=""/>
+							<var name="x[011]" nick=""/>
+							<var name="x[012]" nick=""/>
+							<var name="x[013]" nick=""/>
+							<var name="x[014]" nick=""/>
+							<var name="x[015]" nick=""/>
+							<var name="x[016]" nick=""/>
+							<var name="x[017]" nick=""/>
+							<var name="x[018]" nick=""/>
+							<var name="x[019]" nick=""/>
+							<var name="x[020]" nick=""/>
+							<var name="x[021]" nick=""/>
+							<var name="x[022]" nick=""/>
+							<var name="x[023]" nick=""/>
+							<var name="x[024]" nick=""/>
+							<var name="x[025]" nick=""/>
+							<var name="x[026]" nick=""/>
+							<var name="x[027]" nick=""/>
+							<var name="x[028]" nick=""/>
+							<var name="x[029]" nick=""/>
+							<var name="x[030]" nick=""/>
+							<var name="x[031]" nick=""/>
+							<var name="x[032]" nick=""/>
+							<var name="x[033]" nick=""/>
+							<var name="x[034]" nick=""/>
+							<var name="x[035]" nick=""/>
+							<var name="x[036]" nick=""/>
+							<var name="x[037]" nick=""/>
+							<var name="x[038]" nick=""/>
+							<var name="x[039]" nick=""/>
+							<var name="x[040]" nick=""/>
+							<var name="x[041]" nick=""/>
+							<var name="x[042]" nick=""/>
+							<var name="x[043]" nick=""/>
+							<var name="x[044]" nick=""/>
+							<var name="x[045]" nick=""/>
+							<var name="x[046]" nick=""/>
+							<var name="x[047]" nick=""/>
+							<var name="x[048]" nick=""/>
+							<var name="x[049]" nick=""/>
+							<var name="x[050]" nick=""/>
+							<var name="x[051]" nick=""/>
+							<var name="x[052]" nick=""/>
+							<var name="x[053]" nick=""/>
+							<var name="x[054]" nick=""/>
+							<var name="x[055]" nick=""/>
+							<var name="x[056]" nick=""/>
+							<var name="x[057]" nick=""/>
+							<var name="x[058]" nick=""/>
+							<var name="x[059]" nick=""/>
+							<var name="x[060]" nick=""/>
+							<var name="x[061]" nick=""/>
+							<var name="x[062]" nick=""/>
+							<var name="x[063]" nick=""/>
+							<var name="x[064]" nick=""/>
+							<var name="x[065]" nick=""/>
+							<var name="x[066]" nick=""/>
+							<var name="x[067]" nick=""/>
+							<var name="x[068]" nick=""/>
+							<var name="x[069]" nick=""/>
+							<var name="x[070]" nick=""/>
+							<var name="x[071]" nick=""/>
+							<var name="x[072]" nick=""/>
+							<var name="x[073]" nick=""/>
+							<var name="x[074]" nick=""/>
+							<var name="x[075]" nick=""/>
+							<var name="x[076]" nick=""/>
+							<var name="x[077]" nick=""/>
+							<var name="x[078]" nick=""/>
+							<var name="x[079]" nick=""/>
+							<var name="x[080]" nick=""/>
+							<var name="x[081]" nick=""/>
+							<var name="x[082]" nick=""/>
+							<var name="x[083]" nick=""/>
+							<var name="x[084]" nick=""/>
+							<var name="x[085]" nick=""/>
+							<var name="x[086]" nick=""/>
+							<var name="x[087]" nick=""/>
+							<var name="x[088]" nick=""/>
+							<var name="x[089]" nick=""/>
+							<var name="x[090]" nick=""/>
+							<var name="x[091]" nick=""/>
+							<var name="x[092]" nick=""/>
+							<var name="x[093]" nick=""/>
+							<var name="x[094]" nick=""/>
+							<var name="x[095]" nick=""/>
+							<var name="x[096]" nick=""/>
+							<var name="x[097]" nick=""/>
+							<var name="x[098]" nick=""/>
+							<var name="x[099]" nick=""/>
+							<var name="x[100]" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="250" height="738" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="200" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>
