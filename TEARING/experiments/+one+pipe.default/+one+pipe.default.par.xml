@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partitionInfo version="1.0" library="TEARING" component="OnePipe" partition="default">
+<noDerivatives value="FALSE"/>
+<inhibitReductionConstantCoefEqts value="FALSE"/>
+<generatePartitionClass value="FALSE"/>
+<removeNotUsedVars value="FALSE"/>
+<showPropertyPanel value="FALSE"/>
+<generateProtectedMathFunctions value="TRUE"/>
+<generatePerformanceMeters value="FALSE"/>
+<generateObfuscatedCpp value="FALSE"/>
+<generateParInfoHTML value="TRUE"/>
+<generateParInfoExtra value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
+<generateAdvancedBox value="disabled"/>
+<boundaries>
+  <variable name="v1.pos"/>
+</boundaries>
+<dynamics>
+  <variable name="p1.Q[01]"/>
+  <variable name="p1.Q[21]"/>
+  <variable name="p1.H[01]"/>
+  <variable name="p1.H[02]"/>
+  <variable name="p1.H[03]"/>
+  <variable name="p1.H[04]"/>
+  <variable name="p1.H[05]"/>
+  <variable name="p1.H[06]"/>
+  <variable name="p1.H[07]"/>
+  <variable name="p1.H[08]"/>
+  <variable name="p1.H[09]"/>
+  <variable name="p1.H[10]"/>
+  <variable name="p1.H[11]"/>
+  <variable name="p1.H[12]"/>
+  <variable name="p1.H[13]"/>
+  <variable name="p1.H[14]"/>
+  <variable name="p1.H[15]"/>
+  <variable name="p1.H[16]"/>
+  <variable name="p1.H[17]"/>
+  <variable name="p1.H[18]"/>
+  <variable name="p1.H[19]"/>
+  <variable name="p1.H[20]"/>
+  <variable name="p1.Q[02]"/>
+  <variable name="p1.Q[03]"/>
+  <variable name="p1.Q[04]"/>
+  <variable name="p1.Q[05]"/>
+  <variable name="p1.Q[06]"/>
+  <variable name="p1.Q[07]"/>
+  <variable name="p1.Q[08]"/>
+  <variable name="p1.Q[09]"/>
+  <variable name="p1.Q[10]"/>
+  <variable name="p1.Q[11]"/>
+  <variable name="p1.Q[12]"/>
+  <variable name="p1.Q[13]"/>
+  <variable name="p1.Q[14]"/>
+  <variable name="p1.Q[15]"/>
+  <variable name="p1.Q[16]"/>
+  <variable name="p1.Q[17]"/>
+  <variable name="p1.Q[18]"/>
+  <variable name="p1.Q[19]"/>
+  <variable name="p1.Q[20]"/>
+</dynamics>
+<residues>
+</residues>
+</partitionInfo>

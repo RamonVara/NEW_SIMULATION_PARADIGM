@@ -1,0 +1,36 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: BaharevExample2
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 08/12/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp2 ON BaharevExample2.default
+   INIT
+      -- initial values for algebraics
+      x[01] = 1.0
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+		--The equation system is singular for k = 1, so integrations starts with k=1.5				
+      k = TIME 
+   BODY
+      -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
+      DEBUG_LEVEL= 1   -- valid range is [0,4]
+      IMETHOD= DASSL -- integration method
+      -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
+      REL_ERROR = 1e-06
+      ABS_ERROR = 1e-06
+      TOLERANCE = 1e-06
+
+      INIT_INTEG_STEP = -1 -- initial integration step size (-1 uses default) 
+      MAX_INTEG_STEP = -1 -- maximum integration step size (-1 uses default) 
+      NSTEPS = 1 -- Only for explicit solvers use CINT/NSTEPS as integration step size
+      REPORT_MODE = IS_EVENT -- Report results at every CINT and event detection.
+      -- simulate a transient in range[TIME,TSTOP] reporting at every CINT
+      TIME = 0.
+      TSTOP = 20.
+      CINT = 0.01
+      INTEG()
+END EXPERIMENT

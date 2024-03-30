@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" paper="A4" orientation="Landscape" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" />
+	</layers>
+	
+	<text id="Text_1" cx="287.5" cy="54" sx="575" sy="108" lineType="0"  color="255,255,220" dx="458" dy="644" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;LIBRARY: TRANLIQ&#60;br /&#62;FILE: +simple+network_04.eds&#60;br /&#62;AUTHOR: rpv&#60;br /&#62;DESCRIPTION: Schematic generated automatically from compiled component&#60;br /&#62;CREATION DATE: lunes, octubre 2 2023&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="c1" library="TRANLIQ" type="Collector" layer="1"  hotPort="h_in" >
+	
+		<symbol cx="64" cy="48" sx="15" sy="15" dx="256" dy="176" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="309" dy="233" />
+	
+	</component>
+
+	<component id="c2" library="TRANLIQ" type="Collector" layer="1" >
+	
+		<symbol cx="64" cy="48" sx="15" sy="15" dx="384" dy="80" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="437" dy="137" />
+	
+	</component>
+
+	<component id="c3" library="TRANLIQ" type="Collector" layer="1"  hotPort="h_in" >
+	
+		<symbol cx="64" cy="48" sx="15" sy="15" dx="384" dy="272" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="437" dy="329" />
+	
+	</component>
+
+	<component id="c4" library="TRANLIQ" type="Collector" layer="1" >
+	
+		<symbol cx="64" cy="48" sx="15" sy="15" dx="576" dy="80" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="629" dy="137" />
+	
+	</component>
+
+	<component id="c5" library="TRANLIQ" type="Collector" layer="1" >
+	
+		<symbol cx="64" cy="48" sx="15" sy="15" dx="576" dy="272" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="629" dy="329" />
+	
+	</component>
+
+	<component id="v6" library="TRANLIQ" type="ValveExit" layer="1" >
+	
+		<symbol cx="86.125" cy="56.375" sx="53.25" sy="32.75" dx="704" dy="256" onLabel="true" />
+	
+		<label cx="10" cy="12" dx="780.125" dy="321.375" />
+	
+		<instanceData>
+			<datum id="A" value="0.01418251" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="tank1" library="TRANLIQ" type="Tank" layer="1" >
+	
+		<symbol cx="65.875" cy="56" sx="69.25" sy="49.5" dx="112" dy="160" onLabel="true" />
+	
+		<label cx="20" cy="12" dx="160" dy="248" />
+	
+		<instanceData>
+			<datum id="H" value="626.64 * 0.3048" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p1" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="176" dy="160" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="253" dy="233" />
+	
+		<instanceData>
+			<datum id="n" value="12" pos="P" />
+			<datum id="L" value="2000 * 0.3048" pos="D" />
+			<datum id="D" value="36 * 0.0254" pos="D" />
+			<datum id="a" value="3300 * 0.3048" pos="D" />
+			<datum id="f" value="0.03" pos="D" />
+			<datum id="Ho" value="190.999872" pos="D" />
+			<datum id="Qo" value="0.8495053981" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p2" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="296" dy="64" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="373" dy="137" />
+	
+		<instanceData>
+			<datum id="n" value="16" pos="P" />
+			<datum id="L" value="3000 * 0.3048" pos="D" />
+			<datum id="D" value="30 * 0.0254" pos="D" />
+			<datum id="a" value="3750 * 0.3048" pos="D" />
+			<datum id="f" value="0.028" pos="D" />
+			<datum id="Ho" value="189.293447" pos="D" />
+			<datum id="Qo" value="0.408702022" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p3" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="296" dy="256" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="373" dy="329" />
+	
+		<instanceData>
+			<datum id="n" value="10" pos="P" />
+			<datum id="L" value="2000 * 0.3048" pos="D" />
+			<datum id="D" value="24 * 0.0254" pos="D" />
+			<datum id="a" value="4000 * 0.3048" pos="D" />
+			<datum id="f" value="0.024" pos="D" />
+			<datum id="Ho" value="189.293447" pos="D" />
+			<datum id="Qo" value="0.440803548" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p4" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="360" dy="160" rotation="-270" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="416" dy="216" />
+	
+		<instanceData>
+			<datum id="n" value="12" pos="P" />
+			<datum id="L" value="1800 * 0.3048" pos="D" />
+			<datum id="D" value="18 * 0.0254" pos="D" />
+			<datum id="a" value="3000 * 0.3048" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="187.9175" pos="D" />
+			<datum id="Qo" value="0.176558589" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p5" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="464" dy="64" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="541" dy="137" />
+	
+		<instanceData>
+			<datum id="n" value="8" pos="P" />
+			<datum id="L" value="1500 * 0.3048" pos="D" />
+			<datum id="D" value="18 * 0.0254" pos="D" />
+			<datum id="a" value="3750 * 0.3048" pos="D" />
+			<datum id="f" value="0.02" pos="D" />
+			<datum id="Ho" value="187.9175" pos="D" />
+			<datum id="Qo" value="0.2321434421" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p6" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="452.437" dy="163.869" rotation="-44.6899" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="540.118" dy="239.286" />
+	
+		<instanceData>
+			<datum id="n" value="10" pos="P" />
+			<datum id="L" value="1600 * 0.3048" pos="D" />
+			<datum id="D" value="18 * 0.0254" pos="D" />
+			<datum id="a" value="3200 * 0.3048" pos="D" />
+			<datum id="f" value="0.025" pos="D" />
+			<datum id="Ho" value="186.502245" pos="D" />
+			<datum id="Qo" value="0.111185842" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p7" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="464" dy="256" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="541" dy="329" />
+	
+		<instanceData>
+			<datum id="n" value="14" pos="P" />
+			<datum id="L" value="2200 * 0.3048" pos="D" />
+			<datum id="D" value="30 * 0.0254" pos="D" />
+			<datum id="a" value="3140 * 0.3048" pos="D" />
+			<datum id="f" value="0.04" pos="D" />
+			<datum id="Ho" value="186.502245" pos="D" />
+			<datum id="Qo" value="0.506176295" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p8" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="552" dy="144" rotation="-90" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="629" dy="217" />
+	
+		<instanceData>
+			<datum id="n" value="10" pos="P" />
+			<datum id="L" value="1500 * 0.3048" pos="D" />
+			<datum id="D" value="24 * 0.0254" pos="D" />
+			<datum id="a" value="3000 * 0.3048" pos="D" />
+			<datum id="f" value="0.03" pos="D" />
+			<datum id="Ho" value="184.291209" pos="D" />
+			<datum id="Qo" value="-0.343329284" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p9" library="TRANLIQ" type="Pipe" layer="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="624" dy="256" onLabel="true" />
+	
+		<label cx="11" cy="12" dx="701" dy="329" />
+	
+		<instanceData>
+			<datum id="n" value="12" pos="P" />
+			<datum id="type" value="RC" pos="P" />
+			<datum id="L" value="2000 * 0.3048" pos="D" />
+			<datum id="D" value="36 * 0.0254" pos="D" />
+			<datum id="a" value="3300 * 0.3048" pos="D" />
+			<datum id="f" value="0.024" pos="D" />
+			<datum id="Ho" value="184.291209" pos="D" />
+			<datum id="Qo" value="0.849505398" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="c1" sPort="h_in" eShape="p3" ePort="h_in" points="320,320"  />
+
+	<connector id="Connector_2" sShape="c2" sPort="h_in" eShape="p4" ePort="h_in"  />
+
+	<connector id="Connector_3" sShape="c2" sPort="h_in" eShape="p5" ePort="h_in"  />
+
+	<connector id="Connector_4" sShape="c3" sPort="h_in" eShape="p6" ePort="h_in"  />
+
+	<connector id="Connector_5" sShape="c3" sPort="h_in" eShape="p7" ePort="h_in"  />
+
+	<connector id="Connector_6" sShape="c5" sPort="h_in" eShape="p9" ePort="h_in"  />
+
+	<connector id="Connector_7" sShape="p1" sPort="h_out" eShape="c1" ePort="h_in"  />
+
+	<connector id="Connector_8" sShape="p2" sPort="h_in" eShape="c1" ePort="h_in" points="320,128"  />
+
+	<connector id="Connector_9" sShape="p2" sPort="h_out" eShape="c2" ePort="h_in"  />
+
+	<connector id="Connector_10" sShape="p3" sPort="h_out" eShape="c3" ePort="h_in"  />
+
+	<connector id="Connector_11" sShape="p4" sPort="h_out" eShape="c3" ePort="h_in"  />
+
+	<connector id="Connector_12" sShape="p5" sPort="h_out" eShape="c4" ePort="h_in"  />
+
+	<connector id="Connector_13" sShape="p6" sPort="h_out" eShape="c4" ePort="h_in"  />
+
+	<connector id="Connector_14" sShape="p7" sPort="h_out" eShape="c5" ePort="h_in"  />
+
+	<connector id="Connector_15" sShape="p8" sPort="h_in" eShape="c5" ePort="h_in"  />
+
+	<connector id="Connector_16" sShape="p8" sPort="h_out" eShape="c4" ePort="h_in"  />
+
+	<connector id="Connector_17" sShape="p9" sPort="h_out" eShape="v6" ePort="h_in"  />
+
+	<connector id="Connector_18" sShape="tank1" sPort="h_out" eShape="p1" ePort="h_in" points="240,224"  intermediate2="1"  />
+
+	<bodyEL>
+	<![CDATA[
+COMPONENT %NAME% ( INTEGER n1 = 10 &#34;Number of nodes in p1&#34;, INTEGER n2 = 10 &#34;Number of nodes in p2&#34;, INTEGER n3 = 10 &#34;Number of nodes in p3&#34;, INTEGER n4 = 10 &#34;Number of nodes in p4&#34;, INTEGER n5 = 10 &#34;Number of nodes in p5&#34;, INTEGER n6 = 10 &#34;Number of nodes in p6&#34;, INTEGER n7 = 10 &#34;Number of nodes in p7&#34;, INTEGER n8 = 10 &#34;Number of nodes in p8&#34;, INTEGER n9 = 10 &#34;Number of nodes in p9&#34; )
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="TRANLIQ" version="1.0" auto="true" />
+</schematic>

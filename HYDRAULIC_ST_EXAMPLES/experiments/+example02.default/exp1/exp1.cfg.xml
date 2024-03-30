@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+				</tab>
+	</experimentViews>
+
+	<watch width="1024" height="795" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="solver.NR_debug" value="2"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="t1.Q"/>
+				<var name="t1_1.Q"/>
+				<var name="t1_2.Q"/>
+				<var name="t1_3.Q"/>
+				<var name="of1.H"/>
+				<var name="of1_1.H"/>
+				<var name="of1_2.H"/>
+				<var name="of1_3.H"/>
+				<var name="of2.H"/>
+				<var name="of2_1.H"/>
+				<var name="of2_2.H"/>
+				<var name="of2_3.H"/>
+				<var name="of3.H"/>
+				<var name="of3_1.H"/>
+				<var name="of3_2.H"/>
+				<var name="of3_3.H"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="160"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="143" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

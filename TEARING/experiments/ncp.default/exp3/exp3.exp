@@ -1,0 +1,27 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: ncp
+ PARTITION: default
+ EXPERIMENT: exp3
+ TEMPLATE: STEADY
+ CREATION DATE: 02/09/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp3 ON ncp.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      x = TIME
+
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

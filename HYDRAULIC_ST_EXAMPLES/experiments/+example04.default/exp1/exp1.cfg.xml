@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+				</tab>
+	</experimentViews>
+
+	<watch width="743" height="618" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="solver.FRAC_damp" value="0.1"/>
+				<var name="solver.iter_damp" value="2"/>
+				<var name="solver.iter_max" value="30"/>
+				<var name="solver.NR_debug" value="1"/>
+				<var name="p16.D" value="0.0025"/>
+				<var name="p17.D" value="0.0025"/>
+				<var name="solver.tol" value="1e-09"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="p10.Q"/>
+				<var name="p11.Q"/>
+				<var name="p12.Q"/>
+				<var name="p13.Q"/>
+				<var name="p14.Q"/>
+				<var name="p15.Q"/>
+				<var name="p16.Q"/>
+				<var name="p17.Q"/>
+				<var name="p18.Q"/>
+				<var name="p19.Q"/>
+				<var name="p1a.Q"/>
+				<var name="p1b.Q"/>
+				<var name="p1c.Q"/>
+				<var name="p1d.Q"/>
+				<var name="p1e.Q"/>
+				<var name="p1f.Q"/>
+				<var name="p1g.Q"/>
+				<var name="p1h.Q"/>
+				<var name="p1i.Q"/>
+				<var name="p1j.Q"/>
+				<var name="p1k.Q"/>
+				<var name="p20.Q"/>
+				<var name="p21.Q"/>
+				<var name="p22.Q"/>
+				<var name="p23.Q"/>
+				<var name="p24.Q"/>
+				<var name="p25.Q"/>
+				<var name="p26.Q"/>
+				<var name="p27.Q"/>
+				<var name="p28.Q"/>
+				<var name="p29.Q"/>
+				<var name="p2a.Q"/>
+				<var name="p2b.Q"/>
+				<var name="p2c.Q"/>
+				<var name="p2d.Q"/>
+				<var name="p2e.Q"/>
+				<var name="p2f.Q"/>
+				<var name="p2g.Q"/>
+				<var name="p2h.Q"/>
+				<var name="p2i.Q"/>
+				<var name="p2j.Q"/>
+				<var name="p2k.Q"/>
+				<var name="p30.Q"/>
+				<var name="p31.Q"/>
+				<var name="p32.Q"/>
+				<var name="p33.Q"/>
+				<var name="p34.Q"/>
+				<var name="p35.Q"/>
+				<var name="p36.Q"/>
+				<var name="p37.Q"/>
+				<var name="p38.Q"/>
+				<var name="p39.Q"/>
+				<var name="p3a.Q"/>
+				<var name="p3b.Q"/>
+				<var name="p3c.Q"/>
+				<var name="p3d.Q"/>
+				<var name="p3e.Q"/>
+				<var name="p3f.Q"/>
+				<var name="p3g.Q"/>
+				<var name="p3h.Q"/>
+				<var name="p3i.Q"/>
+				<var name="p3j.Q"/>
+				<var name="p3k.Q"/>
+				<var name="p40.Q"/>
+				<var name="p41.Q"/>
+				<var name="p42.Q"/>
+				<var name="p43.Q"/>
+				<var name="p44.Q"/>
+				<var name="p45.Q"/>
+				<var name="p46.Q"/>
+				<var name="p47.Q"/>
+				<var name="p48.Q"/>
+				<var name="p49.Q"/>
+				<var name="p4a.Q"/>
+				<var name="p4b.Q"/>
+				<var name="p4c.Q"/>
+				<var name="p4d.Q"/>
+				<var name="p4e.Q"/>
+				<var name="p4f.Q"/>
+				<var name="p4g.Q"/>
+				<var name="p4h.Q"/>
+				<var name="p4i.Q"/>
+				<var name="p4j.Q"/>
+				<var name="p4k.Q"/>
+				<var name="p50.Q"/>
+				<var name="p51.Q"/>
+				<var name="p52.Q"/>
+				<var name="p53.Q"/>
+				<var name="p54.Q"/>
+				<var name="p55.Q"/>
+				<var name="p56.Q"/>
+				<var name="p57.Q"/>
+				<var name="p58.Q"/>
+				<var name="p59.Q"/>
+				<var name="p5a.Q"/>
+				<var name="p5b.Q"/>
+				<var name="p5c.Q"/>
+				<var name="p5d.Q"/>
+				<var name="p5e.Q"/>
+				<var name="p5f.Q"/>
+				<var name="p5g.Q"/>
+				<var name="p5h.Q"/>
+				<var name="p5i.Q"/>
+				<var name="p5j.Q"/>
+				<var name="p5k.Q"/>
+				<var name="p60.Q"/>
+				<var name="p61.Q"/>
+				<var name="p62.Q"/>
+				<var name="p63.Q"/>
+				<var name="p64.Q"/>
+				<var name="p65.Q"/>
+				<var name="p66.Q"/>
+				<var name="p67.Q"/>
+				<var name="p68.Q"/>
+				<var name="p69.Q"/>
+				<var name="p6a.Q"/>
+				<var name="p6b.Q"/>
+				<var name="p6c.Q"/>
+				<var name="p6d.Q"/>
+				<var name="p6e.Q"/>
+				<var name="p6f.Q"/>
+				<var name="p6g.Q"/>
+				<var name="p6h.Q"/>
+				<var name="p6i.Q"/>
+				<var name="p6j.Q"/>
+				<var name="p6k.Q"/>
+				<var name="p70.Q"/>
+				<var name="p71.Q"/>
+				<var name="p72.Q"/>
+				<var name="p73.Q"/>
+				<var name="p74.Q"/>
+				<var name="p75.Q"/>
+				<var name="p76.Q"/>
+				<var name="p77.Q"/>
+				<var name="p78.Q"/>
+				<var name="p79.Q"/>
+				<var name="p7a.Q"/>
+				<var name="p7b.Q"/>
+				<var name="p7c.Q"/>
+				<var name="p7d.Q"/>
+				<var name="p7e.Q"/>
+				<var name="p7f.Q"/>
+				<var name="p7g.Q"/>
+				<var name="p7h.Q"/>
+				<var name="p7i.Q"/>
+				<var name="p7j.Q"/>
+				<var name="p7k.Q"/>
+				<var name="p80.Q"/>
+				<var name="p81.Q"/>
+				<var name="p82.Q"/>
+				<var name="p83.Q"/>
+				<var name="p84.Q"/>
+				<var name="p85.Q"/>
+				<var name="p86.Q"/>
+				<var name="p87.Q"/>
+				<var name="p88.Q"/>
+				<var name="p89.Q"/>
+				<var name="p8a.Q"/>
+				<var name="p8b.Q"/>
+				<var name="p8c.Q"/>
+				<var name="p8d.Q"/>
+				<var name="p8e.Q"/>
+				<var name="p8f.Q"/>
+				<var name="p8g.Q"/>
+				<var name="p8h.Q"/>
+				<var name="p8i.Q"/>
+				<var name="p8j.Q"/>
+				<var name="p8k.Q"/>
+				<var name="p90.Q"/>
+				<var name="p91.Q"/>
+				<var name="p92.Q"/>
+				<var name="p93.Q"/>
+				<var name="p94.Q"/>
+				<var name="p95.Q"/>
+				<var name="p96.Q"/>
+				<var name="p97.Q"/>
+				<var name="p98.Q"/>
+				<var name="p99.Q"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="200"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="311" width="958" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="normal" height="1008" width="958" posX="1" posY="31" currentTab="Tab_1" />
+</experiment>

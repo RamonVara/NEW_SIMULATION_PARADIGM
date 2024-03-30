@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="Example02.eds"/>
+  <file name="Example01.eds"/>
+  <file name="Example03.eds"/>
+  <file name="Example02_classic.eds"/>
+  <file name="Example01_classic.eds"/>
+  <file name="Example04.eds"/>
+  <file name="Example05.eds"/>
+  <file name="A_README.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>

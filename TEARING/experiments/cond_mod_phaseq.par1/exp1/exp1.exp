@@ -1,0 +1,27 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: cond_mod_phaseq
+ PARTITION: par1
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 02/08/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON cond_mod_phaseq.par1
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+
+
+   BOUNDS
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

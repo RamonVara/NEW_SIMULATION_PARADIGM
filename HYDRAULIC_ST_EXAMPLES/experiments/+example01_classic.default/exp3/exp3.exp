@@ -1,0 +1,27 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: HYDRAULIC_ST_EXAMPLES
+ COMPONENT: Example01_classic
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 02/02/2024
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp3 ON Example01_classic.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+      t1.Q = 0
+
+   BOUNDS
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+		REPORT_MODE = IS_EVENT
+      DEBUG_LEVEL= 3      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+      SMETHOD = MINPACK
+      TOLTYPE= RELTOL -- convergence criteria
+		p3.D = 1.e-6
+      STEADY()
+END EXPERIMENT

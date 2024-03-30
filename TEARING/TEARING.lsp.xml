@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="Tearing.el"/>
+  <file name="Algebraic_Loop1.el"/>
+  <file name="Pendulum.el"/>
+  <file name="Algebraic_Loop2.el"/>
+  <file name="BaharevExamples.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>

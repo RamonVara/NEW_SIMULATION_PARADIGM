@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="400" sy="800" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" connector-creation="true" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" />
+	</layers>
+	
+	<component id="model_10" library="TRANLIQ_EXAMPLES" type="OnePipe" layer="1" >
+	
+		<symbol cx="144" cy="69.75" sx="257" sy="108.5" dx="20" dy="148" onLabel="true" />
+	
+		<label cx="49" cy="15.5" dx="104" dy="264" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="n" value="10" pos="P" />
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="model_20" library="TRANLIQ_EXAMPLES" type="OnePipe" layer="1" >
+	
+		<symbol cx="144" cy="69.75" sx="257" sy="108.5" dx="20" dy="308" onLabel="true" />
+	
+		<label cx="49" cy="15.5" dx="104" dy="424" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="model_05" library="TRANLIQ_EXAMPLES" type="OnePipe" layer="1" >
+	
+		<symbol cx="144" cy="69.75" sx="257" sy="108.5" dx="20" dy="-12" onLabel="true" />
+	
+		<label cx="49" cy="15.5" dx="104" dy="104" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="n" value="5" pos="P" />
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_2" cx="65.5" cy="18" sx="131" sy="36" dx="208" dy="104" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:14pt; font-weight:600;&#34;&#62;(nodes = 5)&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_3" cx="72" cy="18" sx="144" sy="36" dx="208" dy="264" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:14pt; font-weight:600;&#34;&#62;(nodes = 10)&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<text id="Text_4" cx="72" cy="18" sx="144" sy="36" dx="208" dy="424" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:14pt; font-weight:600;&#34;&#62;(nodes = 20)&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="model_100" library="TRANLIQ_EXAMPLES" type="OnePipe" layer="1" >
+	
+		<symbol cx="144" cy="69.75" sx="257" sy="108.5" dx="20" dy="620" onLabel="true" />
+	
+		<label cx="54.5" cy="15.5" dx="96" dy="736" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="n" value="100" pos="P" />
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_5" cx="72" cy="18" sx="144" sy="36" dx="208" dy="576" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:14pt; font-weight:600;&#34;&#62;(nodes = 50)&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="model_50" library="TRANLIQ_EXAMPLES" type="OnePipe" layer="1" >
+	
+		<symbol cx="144" cy="69.75" sx="257" sy="108.5" dx="20" dy="460" onLabel="true" />
+	
+		<label cx="49" cy="15.5" dx="104" dy="576" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="n" value="50" pos="P" />
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<text id="Text_6" cx="78.5" cy="18" sx="157" sy="36" dx="208" dy="736" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:14pt; font-weight:600;&#34;&#62;(nodes = 100)&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<bodyEL>
+	<![CDATA[COMPONENT %NAME% 
+DATA
+	REAL kdamp = 0.15
+
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="MATH" version="3.2.8" auto="false" />
+	<usedLibrary name="TRANLIQ" version="1.0" auto="false" />
+</schematic>

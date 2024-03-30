@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mathematical Model View</title>
+<link href="./css/mlog.css" rel="stylesheet">
+<script src="./css/jquery-1.10.2.min.js"></script>
+<script>
+function includeTimestampHTML() {
+var z, i, elmnt, file, xhttp;
+z = document.getElementsByTagName("*");
+for (i = 0; i < z.length; i++) {
+elmnt = z[i];
+file = elmnt.getAttribute("w3-include-html");
+if (file) {
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4) {
+if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+if (this.status == 404) { elmnt.innerHTML = "Timestamp not available."; }
+elmnt.removeAttribute("w3-include-html");
+includeTimestampHTML();
+}
+}
+xhttp.open("GET", file, true);
+xhttp.send();
+return;
+}
+}
+}
+</script>
+</head><body>
+<div data-role="page">
+<div data-role="main" class="ui-content">
+<div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../+one+pipe.default.par.html">Mathematical Model View</a>
+</div><div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../+one+pipe.default.par.html">Summary</a> |
+<a class="qindexHL" rel="external" data-ajax='false' href="doc_vars.par.html">Variables</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equivalents.par.html">Equivalents</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_boundary.par.html">Boundary</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_jacobian.par.html">Jacobian</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equations.par.html">Equations</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_init.par.html">Init</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_discrete.par.html">Discrete</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_design.par.html">Design</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_highindex.par.html">High Index</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equationmatrix.par.html">Equation Matrix</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_diff.par.html">Validation Differences</a>
+</div><h2>Variables<br /></h2>
+<h2>Types</h2>
+<table border="1" cellspacing="0" ><tr><td><color="black"><b>TYPE</b></color></td>
+<td><color="black"><b>NAME
+</b></color></td>
+</tr>
+<tr><td>ENUM</td><td><a href="TEARING.enumerativeTypes.html#PipeType">PipeType</a></td></tr>
+</table>
+<h2>Variables</h2>
+<table border="1" cellspacing="0" ><tr><td><color="black"><b>#</b></color></td>
+<td><color="black"><b>NAME</b></color></td>
+<td><color="black"><b>UNITS</b></color></td>
+<td><color="black"><b>TYPE</b></color></td>
+<td><color="black"><b>MATH-TYPE</b></color></td>
+<td><color="black"><b>INITIAL</b></color></td>
+<td><color="black"><b>LRANGE</b></color></td>
+<td><color="black"><b>RRANGE</b></color></td>
+<td><color="black"><b>ALIAS</b></color></td>
+<td><color="black"><b>IS-ALIAS</b></color></td>
+<td><color="black"><b>EDIT</b></color></td>
+<td><color="black"><b>TRACE
+</b></color></td>
+</tr>
+<tr><td><a name="v1">1</a></td><td>TEARING.g</td><td></td><td>REAL</td><td>CTE</td><td>9.806</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v2">2</a></td><td>kdamp</td><td></td><td>REAL</td><td>DATA_VAR</td><td>0</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v3">3</a></td><td>nodes</td><td></td><td>INTEGER</td><td>CTE</td><td>20</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v4">4</a></td><td>p1.A</td><td></td><td>REAL</td><td>DISCRETE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v5">5</a></td><td>p1.D</td><td>m</td><td>REAL</td><td>DATA_VAR</td><td>0.5</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v6">6</a></td><td>p1.H</td><td></td><td>REAL[20]</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v7">7</a></td><td>p1.H[01]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v8">8</a></td><td>p1.H[01]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v9">9</a></td><td>p1.H[02]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v10">10</a></td><td>p1.H[02]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v11">11</a></td><td>p1.H[03]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v12">12</a></td><td>p1.H[03]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v13">13</a></td><td>p1.H[04]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v14">14</a></td><td>p1.H[04]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v15">15</a></td><td>p1.H[05]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v16">16</a></td><td>p1.H[05]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v17">17</a></td><td>p1.H[06]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v18">18</a></td><td>p1.H[06]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v19">19</a></td><td>p1.H[07]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v20">20</a></td><td>p1.H[07]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v21">21</a></td><td>p1.H[08]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v22">22</a></td><td>p1.H[08]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v23">23</a></td><td>p1.H[09]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v24">24</a></td><td>p1.H[09]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v25">25</a></td><td>p1.H[10]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v26">26</a></td><td>p1.H[10]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v27">27</a></td><td>p1.H[11]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v28">28</a></td><td>p1.H[11]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v29">29</a></td><td>p1.H[12]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v30">30</a></td><td>p1.H[12]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v31">31</a></td><td>p1.H[13]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v32">32</a></td><td>p1.H[13]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v33">33</a></td><td>p1.H[14]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v34">34</a></td><td>p1.H[14]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v35">35</a></td><td>p1.H[15]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v36">36</a></td><td>p1.H[15]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v37">37</a></td><td>p1.H[16]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v38">38</a></td><td>p1.H[16]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v39">39</a></td><td>p1.H[17]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v40">40</a></td><td>p1.H[17]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v41">41</a></td><td>p1.H[18]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v42">42</a></td><td>p1.H[18]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v43">43</a></td><td>p1.H[19]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v44">44</a></td><td>p1.H[19]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v45">45</a></td><td>p1.H[20]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v46">46</a></td><td>p1.H[20]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v47">47</a></td><td>p1.Ho</td><td></td><td>REAL</td><td>DATA_VAR</td><td>150</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v48">48</a></td><td>p1.L</td><td>m</td><td>REAL</td><td>DATA_VAR</td><td>600</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v49">49</a></td><td>p1.Q</td><td></td><td>REAL[21]</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v50">50</a></td><td>p1.Q[01]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v51">51</a></td><td>p1.Q[01]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v52">52</a></td><td>p1.Q[02]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v53">53</a></td><td>p1.Q[02]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v54">54</a></td><td>p1.Q[03]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v55">55</a></td><td>p1.Q[03]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v56">56</a></td><td>p1.Q[04]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v57">57</a></td><td>p1.Q[04]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v58">58</a></td><td>p1.Q[05]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v59">59</a></td><td>p1.Q[05]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v60">60</a></td><td>p1.Q[06]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v61">61</a></td><td>p1.Q[06]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v62">62</a></td><td>p1.Q[07]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v63">63</a></td><td>p1.Q[07]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v64">64</a></td><td>p1.Q[08]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v65">65</a></td><td>p1.Q[08]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v66">66</a></td><td>p1.Q[09]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v67">67</a></td><td>p1.Q[09]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v68">68</a></td><td>p1.Q[10]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v69">69</a></td><td>p1.Q[10]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v70">70</a></td><td>p1.Q[11]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v71">71</a></td><td>p1.Q[11]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v72">72</a></td><td>p1.Q[12]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v73">73</a></td><td>p1.Q[12]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v74">74</a></td><td>p1.Q[13]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v75">75</a></td><td>p1.Q[13]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v76">76</a></td><td>p1.Q[14]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v77">77</a></td><td>p1.Q[14]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v78">78</a></td><td>p1.Q[15]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v79">79</a></td><td>p1.Q[15]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v80">80</a></td><td>p1.Q[16]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v81">81</a></td><td>p1.Q[16]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v82">82</a></td><td>p1.Q[17]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v83">83</a></td><td>p1.Q[17]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v84">84</a></td><td>p1.Q[18]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v85">85</a></td><td>p1.Q[18]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v86">86</a></td><td>p1.Q[19]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v87">87</a></td><td>p1.Q[19]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v88">88</a></td><td>p1.Q[20]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v89">89</a></td><td>p1.Q[20]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v90">90</a></td><td>p1.Q[21]'</td><td></td><td>REAL</td><td>DERIVATIVE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v91">91</a></td><td>p1.Q[21]</td><td></td><td>REAL</td><td>DYNAMIC</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v92">92</a></td><td>p1.Qo</td><td></td><td>REAL</td><td>DATA_VAR</td><td>0.47744</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v93">93</a></td><td>p1.W</td><td></td><td>REAL[20]</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v94">94</a></td><td>p1.a</td><td></td><td>REAL</td><td>DATA_VAR</td><td>1200</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v95">95</a></td><td>p1.dx</td><td></td><td>REAL</td><td>DISCRETE</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v96">96</a></td><td>p1.f</td><td>-</td><td>REAL</td><td>DATA_VAR</td><td>0.018</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v97">97</a></td><td>p1.h_in.H</td><td>m</td><td>REAL</td><td>DATA_VAR</td><td>150</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v98">98</a></td><td>p1.h_in.Q</td><td>m3/s</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v99">99</a></td><td>p1.h_out.H</td><td>m</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v100">100</a></td><td>p1.h_out.Q</td><td>m3/s</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v101">101</a></td><td>p1.kdamp</td><td></td><td>REAL</td><td>DATA_VAR</td><td>0</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v102">102</a></td><td>p1.km</td><td></td><td>REAL</td><td>DISCRETE</td><td>1</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v103">103</a></td><td>p1.nodes</td><td></td><td>INTEGER</td><td>CTE</td><td>20</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v104">104</a></td><td>p1.type</td><td></td><td><a href="TEARING.enumerativeTypes.html#PipeType">PipeType</a></td><td>CTE</td><td>1</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v105">105</a></td><td>t1.H</td><td>m</td><td>REAL</td><td>DATA_VAR</td><td>150</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v106">106</a></td><td>t1.h_out.H</td><td>m</td><td>REAL</td><td>DATA_VAR</td><td>150</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v107">107</a></td><td>t1.h_out.Q</td><td>m3/s</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v108">108</a></td><td>v1.A</td><td></td><td>REAL</td><td>DATA_VAR</td><td>0.009</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v109">109</a></td><td>v1.Cd</td><td></td><td>REAL</td><td>DATA_VAR</td><td>1</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v110">110</a></td><td>v1.dHlam</td><td></td><td>REAL</td><td>CTE</td><td>0.001</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v111">111</a></td><td>v1.h_in.H</td><td>m</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v112">112</a></td><td>v1.h_in.Q</td><td>m3/s</td><td>REAL</td><td>EXPLICIT</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v113">113</a></td><td>v1.pos</td><td></td><td>REAL</td><td>BOUNDARY</td><td></td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+<tr><td><a name="v114">114</a></td><td>v1.tau</td><td></td><td>REAL</td><td>DATA_VAR</td><td>0.0001</td><td></td><td></td><td></td><td>NO</td><td>YES</td><td>NO</td></tr>
+</table>
+<div w3-include-html="_timestamp.html"></div><script>includeTimestampHTML();</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: HYDRAULIC_ST_EXAMPLES
+ COMPONENT: Example01
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 01/02/2024
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp2 ON Example01.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+   BODY
+	
+      -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 0      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+      REPORT_MODE = IS_MANUAL_REFRESH
+      TOLTYPE= RELTOL -- convergence criteria
+		FOR(j IN 1, 100000)
+		   RESET_VARIABLES()
+			solver.NR_debug = 0
+		   of1.Q = -0.003 + j*1.e-7
+			EXEC_INIT()
+         REPORT_REFRESH()
+      END FOR
+END EXPERIMENT

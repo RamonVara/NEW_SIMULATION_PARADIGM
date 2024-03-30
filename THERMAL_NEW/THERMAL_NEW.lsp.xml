@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="Thermal_Classic.el"/>
+  <file name="Thermal_NSP.el"/>
+  <file name="Comparison.el"/>
+  <file name="Wall_NA_3.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>

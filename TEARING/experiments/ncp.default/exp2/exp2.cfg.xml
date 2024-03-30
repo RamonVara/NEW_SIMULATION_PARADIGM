@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_2" x="0" y="224" dx="1276" dy="224" state="maximized">
+				<plot id="Plot_2" graphType="plot_x_y">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="x">
+							<titleAxe value="x"/>
+							<scale minCurrent="1.33333" maxCurrent="4.66667" scaleType="current"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale minCurrent="-3.33333" maxCurrent="3.33333" scaleType="current"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="a" nick=""/>
+							<var name="b" nick=""/>
+							<var name="c" nick=""/>
+							<var name="mcp1" nick=""/>
+							<var name="mcp3" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_3" x="0" y="0" dx="1276" dy="224" state="maximized">
+				<plot id="Plot_3" graphType="plot_x_y">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="x">
+							<titleAxe value="x"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="mcp3" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="0" dx="350" dy="250" state="maximized">
+				<plot id="Plot_1" graphType="plot_x_y">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="x">
+							<titleAxe value="x"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="f" nick=""/>
+							<var name="mcp1" nick=""/>
+							<var name="mcp2" nick=""/>
+							<var name="mcp3" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="632" height="701" visible="true" pos="right" >
+		<currentTab name="initial"/>
+		<variables>
+			<tab name="initial"> 
+				<var name="x" value="1.01"/>
+			</tab> 
+			<tab name="inputs"> 
+				<var name="alpha" value="0.1"/>
+				<var name="eps" value="0.001"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="a"/>
+				<var name="alpha"/>
+				<var name="b"/>
+				<var name="c"/>
+				<var name="eps"/>
+				<var name="f"/>
+				<var name="mcp1"/>
+				<var name="mcp2"/>
+				<var name="mcp3"/>
+				<var name="x"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="237" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

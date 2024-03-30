@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" paper="A4" orientation="Landscape" sorting="customized" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" port-status="false" connector-creation="true" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" elPosition="1" />
+	</layers>
+	
+	<text id="Text_1" cx="229.5" cy="44" sx="459" sy="88" lineType="0"  color="255,255,220" dx="458" dy="644" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;LIBRARY: TRANLIQ_EXAMPLES&#60;br /&#62;FILE: +one+pipe.eds&#60;br /&#62;AUTHOR: rpv&#60;br /&#62;DESCRIPTION: Schematic generated automatically from compiled component&#60;br /&#62;CREATION DATE: domingo, marzo 10 2024&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="p1" library="TRANLIQ" type="Pipe" layer="1" elPosition="1" >
+	
+		<symbol cx="88" cy="64" sx="89" sy="21" dx="128" dy="80" onLabel="true" />
+	
+		<label cx="15.5" cy="15.5" dx="200" dy="160" family="Arial" points="14" bold="true" />
+	
+		<instanceData>
+			<datum id="n" value="n" pos="P" />
+			<datum id="type" value="RC" pos="P" />
+			<datum id="kdamp" value="kdamp" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="v1" library="TRANLIQ" type="ValveExit" layer="1" elPosition="2" >
+	
+		<symbol cx="86.125" cy="56.375" sx="53.25" sy="32.75" dx="200" dy="80" onLabel="true" />
+	
+		<label cx="15" cy="15.5" dx="280" dy="160" family="Arial" points="14" bold="true" />
+	
+	</component>
+
+	<connector id="Connector_1" sShape="p1" sPort="h_out" eShape="v1" ePort="h_in" elPosition="0"  />
+
+	<component id="t1" library="TRANLIQ" type="Tank" layer="1" elPosition="3" >
+	
+		<symbol cx="65.875" cy="56" sx="69.25" sy="49.5" dx="72" dy="80" onLabel="true" />
+	
+		<label cx="12.5" cy="15.5" dx="120" dy="160" family="Arial" points="14" bold="true" />
+	
+	</component>
+
+	<connector id="Connector_2" sShape="t1" sPort="h_out" eShape="p1" ePort="h_in" elPosition="1"  />
+
+	<bodyEL>
+	<![CDATA[
+COMPONENT %NAME% (INTEGER n = 20)
+DATA
+	REAL kdamp = 0
+
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="MATH" version="3.1" auto="false" />
+	<usedLibrary name="TRANLIQ" version="1.0" auto="false" />
+</schematic>

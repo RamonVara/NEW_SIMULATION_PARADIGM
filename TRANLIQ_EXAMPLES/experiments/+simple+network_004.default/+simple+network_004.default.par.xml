@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partitionInfo version="1.0" library="TRANLIQ_EXAMPLES" component="SimpleNetwork_004" partition="default">
+<noDerivatives value="FALSE"/>
+<inhibitReductionConstantCoefEqts value="FALSE"/>
+<generatePartitionClass value="FALSE"/>
+<removeNotUsedVars value="FALSE"/>
+<showPropertyPanel value="FALSE"/>
+<generateProtectedMathFunctions value="TRUE"/>
+<generatePerformanceMeters value="FALSE"/>
+<generateObfuscatedCpp value="FALSE"/>
+<generateParInfoHTML value="TRUE"/>
+<generateParInfoExtra value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
+<generateAdvancedBox value="disabled"/>
+<highIndexVars>
+  <variable name="p2.h_in.Q"/>
+  <variable name="p3.Q[1]."/>
+  <variable name="p3.h_in.Q"/>
+  <separator/>
+  <variable name="p4.h_in.Q"/>
+  <variable name="p5.Q[1]."/>
+  <variable name="p5.h_in.Q"/>
+  <separator/>
+  <variable name="p6.h_out.Q"/>
+  <variable name="p8.Q[6]."/>
+  <variable name="p8.h_out.Q"/>
+  <separator/>
+  <variable name="p8.h_in.Q"/>
+  <variable name="p9.Q[1]."/>
+  <variable name="p9.h_in.Q"/>
+  <separator/>
+  <variable name="p4.h_out.Q"/>
+  <variable name="p6.h_in.Q"/>
+  <variable name="p7.Q[1]."/>
+  <variable name="p7.h_in.Q"/>
+</highIndexVars>
+<boundaries>
+  <variable name="v6.pos"/>
+</boundaries>
+<dynamics>
+  <variable name="p1.Q[1]"/>
+  <variable name="p1.Q[7]"/>
+  <variable name="p1.H[1]"/>
+  <variable name="p1.H[2]"/>
+  <variable name="p1.H[3]"/>
+  <variable name="p1.H[4]"/>
+  <variable name="p1.H[5]"/>
+  <variable name="p1.H[6]"/>
+  <variable name="p1.Q[2]"/>
+  <variable name="p1.Q[3]"/>
+  <variable name="p1.Q[4]"/>
+  <variable name="p1.Q[5]"/>
+  <variable name="p1.Q[6]"/>
+  <variable name="p2.Q[1]"/>
+  <variable name="p2.Q[9]"/>
+  <variable name="p2.H[1]"/>
+  <variable name="p2.H[2]"/>
+  <variable name="p2.H[3]"/>
+  <variable name="p2.H[4]"/>
+  <variable name="p2.H[5]"/>
+  <variable name="p2.H[6]"/>
+  <variable name="p2.H[7]"/>
+  <variable name="p2.H[8]"/>
+  <variable name="p2.Q[2]"/>
+  <variable name="p2.Q[3]"/>
+  <variable name="p2.Q[4]"/>
+  <variable name="p2.Q[5]"/>
+  <variable name="p2.Q[6]"/>
+  <variable name="p2.Q[7]"/>
+  <variable name="p2.Q[8]"/>
+  <variable name="p3.Q[6]"/>
+  <variable name="p3.H[1]"/>
+  <variable name="p3.H[2]"/>
+  <variable name="p3.H[3]"/>
+  <variable name="p3.H[4]"/>
+  <variable name="p3.H[5]"/>
+  <variable name="p3.Q[2]"/>
+  <variable name="p3.Q[3]"/>
+  <variable name="p3.Q[4]"/>
+  <variable name="p3.Q[5]"/>
+  <variable name="p4.Q[1]"/>
+  <variable name="p4.Q[7]"/>
+  <variable name="p4.H[1]"/>
+  <variable name="p4.H[2]"/>
+  <variable name="p4.H[3]"/>
+  <variable name="p4.H[4]"/>
+  <variable name="p4.H[5]"/>
+  <variable name="p4.H[6]"/>
+  <variable name="p4.Q[2]"/>
+  <variable name="p4.Q[3]"/>
+  <variable name="p4.Q[4]"/>
+  <variable name="p4.Q[5]"/>
+  <variable name="p4.Q[6]"/>
+  <variable name="p5.Q[5]"/>
+  <variable name="p5.H[1]"/>
+  <variable name="p5.H[2]"/>
+  <variable name="p5.H[3]"/>
+  <variable name="p5.H[4]"/>
+  <variable name="p5.Q[2]"/>
+  <variable name="p5.Q[3]"/>
+  <variable name="p5.Q[4]"/>
+  <variable name="p6.Q[1]"/>
+  <variable name="p6.Q[6]"/>
+  <variable name="p6.H[1]"/>
+  <variable name="p6.H[2]"/>
+  <variable name="p6.H[3]"/>
+  <variable name="p6.H[4]"/>
+  <variable name="p6.H[5]"/>
+  <variable name="p6.Q[2]"/>
+  <variable name="p6.Q[3]"/>
+  <variable name="p6.Q[4]"/>
+  <variable name="p6.Q[5]"/>
+  <variable name="p7.Q[8]"/>
+  <variable name="p7.H[1]"/>
+  <variable name="p7.H[2]"/>
+  <variable name="p7.H[3]"/>
+  <variable name="p7.H[4]"/>
+  <variable name="p7.H[5]"/>
+  <variable name="p7.H[6]"/>
+  <variable name="p7.H[7]"/>
+  <variable name="p7.Q[2]"/>
+  <variable name="p7.Q[3]"/>
+  <variable name="p7.Q[4]"/>
+  <variable name="p7.Q[5]"/>
+  <variable name="p7.Q[6]"/>
+  <variable name="p7.Q[7]"/>
+  <variable name="p8.Q[1]"/>
+  <variable name="p8.H[1]"/>
+  <variable name="p8.H[2]"/>
+  <variable name="p8.H[3]"/>
+  <variable name="p8.H[4]"/>
+  <variable name="p8.H[5]"/>
+  <variable name="p8.Q[2]"/>
+  <variable name="p8.Q[3]"/>
+  <variable name="p8.Q[4]"/>
+  <variable name="p8.Q[5]"/>
+  <variable name="p9.H[1]"/>
+  <variable name="p9.H[2]"/>
+  <variable name="p9.H[3]"/>
+  <variable name="p9.H[4]"/>
+  <variable name="p9.H[5]"/>
+  <variable name="p9.H[6]"/>
+  <variable name="p9.Q[2]"/>
+  <variable name="p9.Q[3]"/>
+  <variable name="p9.Q[4]"/>
+  <variable name="p9.Q[5]"/>
+  <variable name="p9.Q[6]"/>
+</dynamics>
+<residues>
+</residues>
+</partitionInfo>

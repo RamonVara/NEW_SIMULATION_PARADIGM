@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="Tank" >
+
+		<line id="Line_2" points="87.4277,926.284 71.4277,926.284" dx="8.5723" dy="-862.284" lineColor="0,0,255" lineWidth="2"   />
+
+		<rect id="Rectangle_2" cx="49.0001" cy="870.282" sx="48" sy="16" dx="6.9999" dy="-830.282"  />
+
+		<rect id="Rectangle_1" cx="37.4277" cy="916.283" sx="48" sy="32" dx="18.5723" dy="-852.283" color="66,133,244"  />
+
+		<polygon id="Polygon_1" points="126,38 133,40 126,42" dx="-39.4664" dy="23.9582" lineColor="0,0,255"  color="0,0,255"  />
+
+		<rect id="Rectangle_5" cx="104" cy="72" sx="48" sy="48" dx="-48" dy="-16" lineWidth="1.5"   />
+
+		<port id="h_out" library="TRANLIQ" type="Hydraulic"  hotPort="h_out" >
+		
+				<symbol dx="96" dy="64" onLabel="true" />
+		
+				<label cx="20" cy="12" dx="104" dy="52" />
+		
+		</port>
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

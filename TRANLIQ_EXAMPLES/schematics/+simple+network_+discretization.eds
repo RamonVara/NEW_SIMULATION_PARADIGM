@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" sx="1000" sy="1200" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" connector-creation="true" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" />
+	</layers>
+	
+	<text id="Text_1" cx="108" cy="28" sx="216" sy="56" lineType="0"  color="255,255,220" dx="823" dy="694" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;LIBRARY: TRANLIQ_EXAMPLES&#60;br /&#62;FILE: SimpleNetwork_Discretization&#60;br /&#62;CREATION DATE: 21/03/2024&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<component id="simpleNetwork_004" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_004" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="3.5" dy="34.5" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="163.5" dy="3" />
+	
+	</component>
+
+	<component id="simpleNetwork_008" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_008" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="3.5" dy="297" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="168" dy="267" />
+	
+	</component>
+
+	<component id="simpleNetwork_016" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_016" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="3.5" dy="561" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="176" dy="531" />
+	
+	</component>
+
+	<component id="simpleNetwork_032" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_032" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="475.5" dy="33" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="632" dy="3" />
+	
+	</component>
+
+	<component id="simpleNetwork_064" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_064" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="483.5" dy="289" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="648" dy="267" />
+	
+	</component>
+
+	<component id="simpleNetwork_128" library="TRANLIQ_EXAMPLES" type="SimpleNetwork_128" layer="1" >
+	
+		<symbol cx="224" cy="109.5" sx="448" sy="219" dx="507.5" dy="553" onLabel="true" />
+	
+		<label cx="60.5" cy="12" dx="648" dy="523" />
+	
+	</component>
+
+	<component id="MOC_results" library="LIQHAMMER_ST" type="ReferenceResults" layer="1" >
+	
+		<symbol cx="76.5" cy="36" sx="43" sy="41" dx="221" dy="876" onLabel="true" />
+	
+		<label cx="53" cy="14" dx="259" dy="933" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="fileName" value="&#34;..\\..\\..\\docs\\example_03_epri_01.txt&#34;" pos="D" />
+			<datum id="size" value="9" pos="P" />
+			<datum id="gain" value="0.3048" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<bodyEL>
+	<![CDATA[-- EL code of the schematic.
+-- The COMPONENT definition lines are blocked for edition.
+-- You can edit the parameters clicking over them.
+
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+</schematic>

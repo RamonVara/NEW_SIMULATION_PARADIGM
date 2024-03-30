@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_1" x="0" y="0" dx="350" dy="250" state="maximized">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="">
+							<font family="MS Shell Dlg 2"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale minCustom="-2" maxCustom="2" scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font family="MS Shell Dlg 2"/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2"/>
+						</legend>
+						<chartStyles>
+							<var name="x[01]" nick=""/>
+							<var name="x[02]" nick=""/>
+							<var name="x[03]" nick=""/>
+							<var name="x[04]" nick=""/>
+							<var name="x[05]" nick=""/>
+							<var name="x[06]" nick=""/>
+							<var name="x[07]" nick=""/>
+							<var name="x[08]" nick=""/>
+							<var name="x[09]" nick=""/>
+							<var name="x[10]" nick=""/>
+							<var name="x[11]" nick=""/>
+							<var name="x[12]" nick=""/>
+							<var name="x[13]" nick=""/>
+							<var name="x[14]" nick=""/>
+							<var name="x[15]" nick=""/>
+							<var name="x[16]" nick=""/>
+							<var name="x[17]" nick=""/>
+							<var name="x[18]" nick=""/>
+							<var name="x[19]" nick=""/>
+							<var name="x[20]" nick=""/>
+							<var name="x_N1" nick=""/>
+							<var name="x_o" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="250" height="772" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="166" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

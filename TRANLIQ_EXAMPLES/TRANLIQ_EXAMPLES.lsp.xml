@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="OnePipe.eds"/>
+  <file name="ExampleOnePipe_Damping.eds"/>
+  <file name="ExampleOnePipe_Discretization.eds"/>
+  <file name="SimpleNetwork_004.eds"/>
+  <file name="SimpleNetwork_008.eds"/>
+  <file name="SimpleNetwork_016.eds"/>
+  <file name="SimpleNetwork_032.eds"/>
+  <file name="SimpleNetwork_064.eds"/>
+  <file name="SimpleNetwork_128.eds"/>
+  <file name="OnePipe_Compar_MOC.eds"/>
+  <file name="SimpleNetwork_Discretization.eds"/>
+  <file name="OnePipe_Damping.eds"/>
+  <file name="OnePipe_Discretization.eds"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>

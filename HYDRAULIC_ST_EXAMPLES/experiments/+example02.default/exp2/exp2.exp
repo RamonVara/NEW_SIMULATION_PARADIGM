@@ -1,0 +1,28 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: HYDRAULIC_ST_EXAMPLES
+ COMPONENT: Example02
+ PARTITION: default
+ EXPERIMENT: exp2
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 25/01/2024
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp2 ON Example02.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+   BODY
+		RESET_VARIABLES()
+      DEBUG_LEVEL= 0      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+      REPORT_MODE = IS_MANUAL_REFRESH
+      TOLTYPE= RELTOL -- convergence criteria	
+		FOR(j IN 1, 100)
+			RESET_VARIABLES()
+			solver.NR_debug = 0
+		   of1.Q = -0.003 + j*1.e-4
+			EXEC_INIT()
+         REPORT_REFRESH()
+      END FOR
+END EXPERIMENT

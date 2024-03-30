@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_1" x="813" y="0" dx="813" dy="781">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="ALTURA PIEZOM&#201;TRICA EN ENTRADA V&#192;LVULA" isShowed="true">
+							<font family="MS Shell Dlg 2" size="20" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIEMPO (s)"/>
+							<scale minCustom="0" maxCustom="3.5" scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value="ALTURA (m)"/>
+							<scale minCustom="0" maxCustom="3.5" scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="streeter_results.yref[01]" nick="MOC     V&#225;lvula" lineWidth="4" lineColor="0,0,255"/>
+							<var name="model_20.p1.H[20]" nick="MSOO   &#218;ltimo Nodo" isShowed="true" lineWidth="4" lineColor="255,0,0"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_2" x="0" y="0" dx="813" dy="781">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="FLUJO DESDE TANQUE" isShowed="true">
+							<font family="MS Shell Dlg 2" size="20" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIEMPO (s)"/>
+							<scale minCustom="0" maxCustom="3.5" scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value="FLUJO (m3/s)"/>
+							<scale minCustom="0" maxCustom="3.5" scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend position="Internal: Right-Top">
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="model_20.p1.h_in.Q" nick="MSOO   &#218;ltimo nodo" isShowed="true" lineWidth="4" lineColor="255,0,0"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="282" height="809" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="model_10.p1.kdamp" value="0"/>
+				<var name="model_100.p1.kdamp" value="0"/>
+				<var name="model_20.p1.kdamp" value="0"/>
+				<var name="model_50.p1.kdamp" value="0"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="model_10.p1.kdamp"/>
+				<var name="model_100.p1.kdamp"/>
+				<var name="model_20.p1.kdamp"/>
+				<var name="model_50.p1.kdamp"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="129" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

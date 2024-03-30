@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_2" x="0" y="0" dx="1658" dy="354" state="maximized">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="p1.H1" nick=""/>
+							<var name="p1.H2" nick=""/>
+							<var name="p2.H1" nick=""/>
+							<var name="p2.H2" nick=""/>
+							<var name="p3.H1" nick=""/>
+							<var name="p3.H2" nick=""/>
+							<var name="p4.H1" nick=""/>
+							<var name="p4.H2" nick=""/>
+							<var name="p5.H1" nick=""/>
+							<var name="p5.H2" nick=""/>
+							<var name="p6.H1" nick=""/>
+							<var name="p6.H2" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_1" x="0" y="354" dx="350" dy="250" state="maximized">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale minCurrent="-0.019685" maxCurrent="30.4134" scaleType="current"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale minCurrent="-0.0301859" maxCurrent="0.0183271" scaleType="current"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="of1.Q" nick=""/>
+							<var name="of2.Q" nick=""/>
+							<var name="of3.Q" nick=""/>
+							<var name="p1.Q" nick=""/>
+							<var name="p2.Q" nick=""/>
+							<var name="p3.Q" nick=""/>
+							<var name="p4.Q" nick=""/>
+							<var name="p5.Q" nick=""/>
+							<var name="p6.Q" nick=""/>
+							<var name="t1.Q" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_3" x="0" y="0" dx="350" dy="250" state="maximized">
+				<plot id="Plot_3" graphType="plot_cal">
+						<title value="">
+							<font family="MS Shell Dlg 2"/>
+						</title>
+						<axeX>
+							<titleAxe value="#CALCULATIONS"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<axeY2 isShowed="TRUE">
+							<titleAxe value=""/>
+						</axeY2>
+						<layout>
+							<font family="MS Shell Dlg 2"/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font family="MS Shell Dlg 2"/>
+						</legend>
+						<chartStyles>
+							<var name="of1.H" nick="">
+								<marker isShowed="true"/>
+							</var>
+							<var name="of1.Q" nick="" isY2="TRUE"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="250" height="738" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+				<var name="p1.D" value="0.1016"/>
+				<var name="p2.D" value="0.0762"/>
+				<var name="p3.D" value="0.0762"/>
+				<var name="p4.D" value="0.1016"/>
+				<var name="p5.D" value="0.0762"/>
+				<var name="p6.D" value="0.0762"/>
+				<var name="solver.NR_debug" value=""/>
+				<var name="of1.Q" value="-0.0283168466"/>
+				<var name="of2.Q" value="0.00707921165"/>
+				<var name="of3.Q" value="0.0141584233"/>
+			</tab> 
+			<tab name="view"> 
+				<var name="p1.H1"/>
+				<var name="p1.H2"/>
+				<var name="p2.H1"/>
+				<var name="p2.H2"/>
+				<var name="p3.H1"/>
+				<var name="p3.H2"/>
+				<var name="p4.H1"/>
+				<var name="p4.H2"/>
+				<var name="p5.H1"/>
+				<var name="p5.H2"/>
+				<var name="p6.H1"/>
+				<var name="p6.H2"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="200" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

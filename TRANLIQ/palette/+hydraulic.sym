@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" simulation-status="allshowed" >
+
+	<grid enabled="false" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<portType id="Hydraulic" color="0,0,255" >
+		<editor used="false">
+		</editor>
+
+	</portType>
+</palette>

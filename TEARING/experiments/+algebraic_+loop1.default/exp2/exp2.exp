@@ -1,0 +1,35 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: Algebraic_Loop1
+ PARTITION: default
+ EXPERIMENT: exp2
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 06/06/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp2 ON Algebraic_Loop1.default
+   DECLS
+     -- TABLE_1D new_cond = {{0., 20., 100.}, {20.1, 20.1, 20.1}}
+   INIT
+     -- T1 = 49
+   BOUNDS
+      --To = 150.
+      --T2 = 50.    
+   BODY
+      --  Tabla de conductividad de defecto
+     -- TIME = 0
+    -- -- TSTOP = 15
+    --  CINT = 0.1
+    -- INTEG() 
+      --  Nueva tabla de conductividad
+    --  cond_vs_Tave = new_cond
+      TIME = 0
+      TSTOP = 15
+      CINT = 0.1
+		FOR(i IN 0, 1400)
+		IF(i !=50)THEN
+			T1 = i
+     		STEADY()
+		END IF
+		END FOR
+END EXPERIMENT

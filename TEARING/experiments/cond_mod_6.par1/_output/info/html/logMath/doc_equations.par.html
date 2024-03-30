@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mathematical Model View</title>
+<link href="./css/mlog.css" rel="stylesheet">
+<script src="./css/jquery-1.10.2.min.js"></script>
+<script>
+function includeTimestampHTML() {
+var z, i, elmnt, file, xhttp;
+z = document.getElementsByTagName("*");
+for (i = 0; i < z.length; i++) {
+elmnt = z[i];
+file = elmnt.getAttribute("w3-include-html");
+if (file) {
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4) {
+if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+if (this.status == 404) { elmnt.innerHTML = "Timestamp not available."; }
+elmnt.removeAttribute("w3-include-html");
+includeTimestampHTML();
+}
+}
+xhttp.open("GET", file, true);
+xhttp.send();
+return;
+}
+}
+}
+</script>
+</head><body>
+<div data-role="page">
+<div data-role="main" class="ui-content">
+<div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../cond_mod_6.par1.par.html">Mathematical Model View</a>
+</div><div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../cond_mod_6.par1.par.html">Summary</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_vars.par.html">Variables</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equivalents.par.html">Equivalents</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_boundary.par.html">Boundary</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_jacobian.par.html">Jacobian</a> |
+<a class="qindexHL" rel="external" data-ajax='false' href="doc_equations.par.html">Equations</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_init.par.html">Init</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_discrete.par.html">Discrete</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_design.par.html">Design</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_highindex.par.html">High Index</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equationmatrix.par.html">Equation Matrix</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_diff.par.html">Validation Differences</a>
+</div><h2>Equations<br /></h2>
+Equations: 13<br>
+Note 3: In equations 'E' means explicit,'I' implicit,'L' linear,'F' function<br>
+<br>
+<hr>BOX 1 IS LINEAR<hr><table border="1" cellspacing="0" cellpadding="3" bgcolor="#FFFFC6" ><tr><td><color="black"><b>LINEAR VARIABLES</b></color></td>
+<td><color="black"><b>ALIAS</b></color></td>
+<td><color="black"><b>UNITS</b></color></td>
+<td><color="black"><b>DESCRIPTION
+</b></color></td>
+</tr>
+<tr><td><a href="doc_vars.par.html#v2" data-ajax='false'>F10</a></td><td><a href="doc_vars.par.html#v2" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v4" data-ajax='false'>F11</a></td><td><a href="doc_vars.par.html#v4" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v6" data-ajax='false'>F12</a></td><td><a href="doc_vars.par.html#v6" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v8" data-ajax='false'>F13</a></td><td><a href="doc_vars.par.html#v8" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v10" data-ajax='false'>F14</a></td><td><a href="doc_vars.par.html#v10" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v17" data-ajax='false'>F4</a></td><td><a href="doc_vars.par.html#v17" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v21" data-ajax='false'>F6</a></td><td><a href="doc_vars.par.html#v21" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v23" data-ajax='false'>F7</a></td><td><a href="doc_vars.par.html#v23" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v25" data-ajax='false'>F8</a></td><td><a href="doc_vars.par.html#v25" data-ajax='false'></a></td><td></td><td></td></tr>
+<tr><td><a href="doc_vars.par.html#v27" data-ajax='false'>F9</a></td><td><a href="doc_vars.par.html#v27" data-ajax='false'></a></td><td></td><td></td></tr>
+</table>
+<br>
+<h4>Equations:</h4>&nbsp;&nbsp;&nbsp;&nbsp;<a name="e1">[E-1] </a>F6 =  ZONE (F7 &lt; 50) 1.1 * F7 ZONE (F7 &lt; 80) 1.15 * F7 ZONE (F7 &lt; 150) 1.2 * F7 OTHERS 1.2 * F7	{L@F6}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e2">[E-2] </a>F10 =  ZONE (F7 &lt; 50) 0.05 * F7 ZONE (F7 &lt; 80) 0.1 * F7 ZONE (F7 &lt; 150) 0.2 * F7 OTHERS 0.2 * F7	{L@F7}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e3">[E-3] </a>F10 + F11 = F9	{L@F10}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e4">[E-4] </a>F9 =  ZONE (F4 &lt; 50) 0.67 * F4 ZONE (F4 &lt; 110) 0.7 * F4 ZONE (F4 &lt; 180) 0.75 * F4 OTHERS 0.75 * F4	{L@F9}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e5">[E-5] </a>F8 =  ZONE (F4 &lt; 50) 1.7 * F4 ZONE (F4 &lt; 110) 1.8 * F4 ZONE (F4 &lt; 180) 1.87 * F4 OTHERS 1.87 * F4	{L@F4}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e6">[E-6] </a>F7 =  ZONE (F8 &lt; 50) 0.8 * F8 ZONE (F8 &lt; 100) 0.75 * F8 ZONE (F8 &lt; 150) 0.7 * F8 OTHERS 0.7 * F8	{L@F8}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e7">[E-7] </a>F11 =  ZONE (F14 &lt; 40) 0.37 * F14 ZONE (F14 &lt; 80) 0.35 * F14 ZONE (F14 &lt; 130) 0.3 * F14 OTHERS 0.3 * F14	{L@F11}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e8">[E-8] </a>F13 =  ZONE (F14 &lt; 40) 1.2 * F14 ZONE (F14 &lt; 80) 1.25 * F14 ZONE (F14 &lt; 130) 1.3 * F14 OTHERS 1.3 * F14	{L@F14}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e9">[E-9] </a>F12 =  ZONE (F13 &lt; 50) 0.23 * F13 ZONE (F13 &lt; 90) 0.25 * F13 ZONE (F13 &lt; 140) 0.3 * F13 OTHERS 0.3 * F13	{L@F13}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="e10">[E-10] </a>F1 = F12 + F6	{L@F12}<br>
+<hr>END OF BOX 1<hr><a name="e11">[E-11] </a>F2 =  ZONE[3] (F8 &lt; 50) 0.5 * F8 ZONE[3] (F8 &lt; 100) 0.47 * F8 ZONE[3] (F8 &lt; 150) 0.45 * F8	  OTHERS 0.45 * F8<br>
+<a name="e12">[E-12] </a>F3 =  ZONE[7] (F13 &lt; 50) 1.18 * F13 ZONE[7] (F13 &lt; 90) 1.15 * F13 ZONE[7] (F13 &lt; 140) 1.1 * F13	  OTHERS 1.1 * F13<br>
+<a name="e13">[E-13] </a>F5 =  ZONE[11] (F5 &lt; 20) F14 / 1.15 ZONE[11] (F5 &lt; 45) F14 / 1.1 ZONE[11] (F5 &lt; 75) F14 / 1.02	  OTHERS F14 / 1.02<br>
+<div w3-include-html="_timestamp.html"></div><script>includeTimestampHTML();</script>
+</body>
+</html>

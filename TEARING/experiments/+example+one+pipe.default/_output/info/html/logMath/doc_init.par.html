@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mathematical Model View</title>
+<link href="./css/mlog.css" rel="stylesheet">
+<script src="./css/jquery-1.10.2.min.js"></script>
+<script>
+function includeTimestampHTML() {
+var z, i, elmnt, file, xhttp;
+z = document.getElementsByTagName("*");
+for (i = 0; i < z.length; i++) {
+elmnt = z[i];
+file = elmnt.getAttribute("w3-include-html");
+if (file) {
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4) {
+if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+if (this.status == 404) { elmnt.innerHTML = "Timestamp not available."; }
+elmnt.removeAttribute("w3-include-html");
+includeTimestampHTML();
+}
+}
+xhttp.open("GET", file, true);
+xhttp.send();
+return;
+}
+}
+}
+</script>
+</head><body>
+<div data-role="page">
+<div data-role="main" class="ui-content">
+<div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../+example+one+pipe.default.par.html">Mathematical Model View</a>
+</div><div class="qindex"><a class="qindex" rel="external" data-ajax='false' href="../+example+one+pipe.default.par.html">Summary</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_vars.par.html">Variables</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equivalents.par.html">Equivalents</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_boundary.par.html">Boundary</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_jacobian.par.html">Jacobian</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equations.par.html">Equations</a> |
+<a class="qindexHL" rel="external" data-ajax='false' href="doc_init.par.html">Init</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_discrete.par.html">Discrete</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_design.par.html">Design</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_highindex.par.html">High Index</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_equationmatrix.par.html">Equation Matrix</a> |
+<a class="qindex" rel="external" data-ajax='false' href="doc_diff.par.html">Validation Differences</a>
+</div><h2>Init Blocks<br /></h2>
+<br>
+Note 1: Variables called "__aux_int_..." are internal integer variables, used to iterate<br>
+Note 2: FOR statements are converted to WHILE statements<br>
+<br>
+  -- init(model_10.p1.Pipe,0)<br>
+model_10.p1.A = 0.78539816339744828 * model_10.p1.D ** 2<br>
+model_10.p1.dx = model_10.p1.L / 10<br>
+IF  FALSE  THEN
+	model_10.p1.km = 1
+		ELSEIF  TRUE  THEN
+	model_10.p1.km = 1.0526315789473684
+
+		ELSEIF  FALSE  THEN
+	model_10.p1.km = 1.1111111111111112
+
+	END IF<br>
+_vi1 = 1<br>
+WHILE ( _vi1 <= model_10.p1.nodes )
+	model_10.p1.H[_vi1] = model_10.p1.Ho - (_vi1 - 1 + 0.5) * model_10.p1.f * model_10.p1.dx / model_10.p1.D * model_10.p1.Qo * abs(model_10.p1.Qo) / (19.612 * model_10.p1.A ** 2)
+	_vi1 += 1
+	END WHILE<br>
+_vi2 = 1<br>
+WHILE ( _vi2 <= 11 )
+	model_10.p1.Q[_vi2] = model_10.p1.Qo
+	_vi2 += 1
+	END WHILE<br>
+model_10.p1.h_in.Q = model_10.p1.Qo<br>
+model_10.v1.h_in.Q = model_10.p1.Qo<br>
+  -- init(model_20.p1.Pipe,0)<br>
+model_20.p1.A = 0.78539816339744828 * model_20.p1.D ** 2<br>
+model_20.p1.dx = model_20.p1.L / 20<br>
+IF  FALSE  THEN
+	model_20.p1.km = 1
+		ELSEIF  TRUE  THEN
+	model_20.p1.km = 1.0256410256410255
+
+		ELSEIF  FALSE  THEN
+	model_20.p1.km = 1.0526315789473684
+
+	END IF<br>
+_vi3 = 1<br>
+WHILE ( _vi3 <= model_20.p1.nodes )
+	model_20.p1.H[_vi3] = model_20.p1.Ho - (_vi3 - 1 + 0.5) * model_20.p1.f * model_20.p1.dx / model_20.p1.D * model_20.p1.Qo * abs(model_20.p1.Qo) / (19.612 * model_20.p1.A ** 2)
+	_vi3 += 1
+	END WHILE<br>
+_vi4 = 1<br>
+WHILE ( _vi4 <= 21 )
+	model_20.p1.Q[_vi4] = model_20.p1.Qo
+	_vi4 += 1
+	END WHILE<br>
+model_20.p1.h_in.Q = model_20.p1.Qo<br>
+model_20.v1.h_in.Q = model_20.p1.Qo<br>
+  -- init(model_50.p1.Pipe,0)<br>
+model_50.p1.A = 0.78539816339744828 * model_50.p1.D ** 2<br>
+model_50.p1.dx = model_50.p1.L / 50<br>
+IF  FALSE  THEN
+	model_50.p1.km = 1
+		ELSEIF  TRUE  THEN
+	model_50.p1.km = 1.0101010101010102
+
+		ELSEIF  FALSE  THEN
+	model_50.p1.km = 1.0204081632653061
+
+	END IF<br>
+_vi5 = 1<br>
+WHILE ( _vi5 <= model_50.p1.nodes )
+	model_50.p1.H[_vi5] = model_50.p1.Ho - (_vi5 - 1 + 0.5) * model_50.p1.f * model_50.p1.dx / model_50.p1.D * model_50.p1.Qo * abs(model_50.p1.Qo) / (19.612 * model_50.p1.A ** 2)
+	_vi5 += 1
+	END WHILE<br>
+_vi6 = 1<br>
+WHILE ( _vi6 <= 51 )
+	model_50.p1.Q[_vi6] = model_50.p1.Qo
+	_vi6 += 1
+	END WHILE<br>
+model_50.p1.h_in.Q = model_50.p1.Qo<br>
+model_50.v1.h_in.Q = model_50.p1.Qo<br>
+  -- init(model_100.p1.Pipe,0)<br>
+model_100.p1.A = 0.78539816339744828 * model_100.p1.D ** 2<br>
+model_100.p1.dx = model_100.p1.L / 100<br>
+IF  FALSE  THEN
+	model_100.p1.km = 1
+		ELSEIF  TRUE  THEN
+	model_100.p1.km = 1.0050251256281406
+
+		ELSEIF  FALSE  THEN
+	model_100.p1.km = 1.0101010101010102
+
+	END IF<br>
+_vi7 = 1<br>
+WHILE ( _vi7 <= model_100.p1.nodes )
+	model_100.p1.H[_vi7] = model_100.p1.Ho - (_vi7 - 1 + 0.5) * model_100.p1.f * model_100.p1.dx / model_100.p1.D * model_100.p1.Qo * abs(model_100.p1.Qo) / (19.612 * model_100.p1.A ** 2)
+	_vi7 += 1
+	END WHILE<br>
+_vi8 = 1<br>
+WHILE ( _vi8 <= 101 )
+	model_100.p1.Q[_vi8] = model_100.p1.Qo
+	_vi8 += 1
+	END WHILE<br>
+model_100.p1.h_in.Q = model_100.p1.Qo<br>
+model_100.v1.h_in.Q = model_100.p1.Qo<br>
+  -- init(streeter_results.ReferenceResults,0)<br>
+IF streeter_results.fileName != "" THEN
+	IF NOT streeter_results.AlreadyRead THEN
+	_vi9 = 1
+	WHILE ( _vi9 <= streeter_results.size )
+	streeter_results_table_ref_results[_vi9].readCols1D(streeter_results.fileName, 1, _vi9 + 1,  TRUE )
+	_vi9 += 1
+	END WHILE
+	streeter_results.AlreadyRead =  TRUE 
+	END IF
+	END IF<br>
+<div w3-include-html="_timestamp.html"></div><script>includeTimestampHTML();</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: HYDRAULIC_ST_EXAMPLES
+ COMPONENT: Example04_classic
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 20/11/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON Example04_classic.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+      t1_3.Q = 0
+
+   BOUNDS
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-07 -- steady solver relative tolerance 
+
+      TOLTYPE= ABSTOL -- convergence criteria
+		/*p16.D = 1.e-2
+		p17.D = 1.e-2
+      STEADY()
+		p16.D = 1.e-3
+		p17.D = 1.e-3
+      STEADY()
+		p16.D = 0.5e-3
+		p17.D = 0.5e-3
+		STEADY()
+		p16.D = 0.375e-3
+		p17.D = 0.375e-3
+	   STEADY()*/
+		p16.D = 1.0e-3
+		p17.D = 1.0e-3
+		STEADY()
+		--p16.D = 0.175e-3
+		--p17.D = 0.175e-3
+		--STEADY()
+		--p16.D = 0.1e-3
+		--p17.D = 0.1e-3
+		--STEADY()
+END EXPERIMENT

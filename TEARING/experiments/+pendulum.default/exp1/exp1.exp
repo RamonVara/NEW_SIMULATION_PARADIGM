@@ -1,0 +1,27 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: Pendulum
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 09/09/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON Pendulum.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+      y = 0
+
+   BOUNDS
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

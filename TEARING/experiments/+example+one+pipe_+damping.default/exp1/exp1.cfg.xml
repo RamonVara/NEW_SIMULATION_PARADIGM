@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_1" x="0" y="0" dx="350" dy="250" state="maximized">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="ALTURA PIEZOM&#201;TRICA EN ENTRADA V&#192;LVULA" isShowed="true">
+							<font family="MS Shell Dlg 2" size="20" bold="true"/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIEMPO (s)"/>
+							<scale minCustom="0" maxCustom="16" scaleType="user"/>
+						</axeX>
+						<axeY>
+							<titleAxe value="ALTURA (m)"/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend position="External: Right">
+							<font family="MS Shell Dlg 2" size="18" bold="true"/>
+						</legend>
+						<chartStyles>
+							<var name="streeter_results.yref[01]" nick="MOC" lineWidth="4" lineColor="0,0,0"/>
+							<var name="model_damp05.p1.H[20]" nick="kdamp = 0.05" lineWidth="4"/>
+							<var name="model_damp10.p1.H[20]" nick="kdamp = 0.10" lineWidth="4"/>
+							<var name="model_damp15.p1.H[20]" nick="kdamp = 0.15" lineWidth="4"/>
+							<var name="model_damp20.p1.H[20]" nick="kdamp = 0.20" lineWidth="4"/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="260" height="738" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="200" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

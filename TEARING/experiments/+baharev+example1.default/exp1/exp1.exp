@@ -1,0 +1,22 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: BaharevExample1
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 08/12/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON BaharevExample1.default
+   INIT
+      -- initial values for algebraics
+      x[01] = 1. 
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      k = 10.
+   BODY
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+END EXPERIMENT

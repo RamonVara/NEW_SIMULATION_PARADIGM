@@ -1,0 +1,49 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: example
+ PARTITION: default
+ EXPERIMENT: exp2
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 21/06/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp2 ON example.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+      i1 = 0
+      i2 = 0
+      i3 = 0
+      i4 = 0
+      i5 = 0
+      i6 = 0
+      u2 = 0
+      u4 = 0
+      u6 = 0
+
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      U = 0
+
+   BODY
+      -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
+      DEBUG_LEVEL= 1   -- valid range is [0,4]
+      IMETHOD= IDAS -- integration method
+
+      -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
+      REL_ERROR = 1e-06
+      ABS_ERROR = 1e-06
+      TOLERANCE = 1e-06
+
+      INIT_INTEG_STEP = -1 -- initial integration step size (-1 uses default) 
+      MAX_INTEG_STEP = -1 -- maximum integration step size (-1 uses default) 
+      NSTEPS = 1 -- Only for explicit solvers use CINT/NSTEPS as integration step size
+      REPORT_MODE = IS_EVENT -- Report results at every CINT and event detection.
+
+      -- simulate a transient in range[TIME,TSTOP] reporting at every CINT
+      TIME = 0
+      TSTOP = 15
+      CINT = 0.1
+      INTEG()
+END EXPERIMENT

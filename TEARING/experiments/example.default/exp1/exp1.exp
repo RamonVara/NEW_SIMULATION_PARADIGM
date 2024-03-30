@@ -1,0 +1,38 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: TEARING
+ COMPONENT: example
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: STEADY
+ CREATION DATE: 19/06/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON example.default
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for algebraics
+      i1 = 0
+      i2 = 0
+      i3 = 0
+      i4 = 0
+      i5 = 0
+      i6 = 0
+      u2 = 0
+      u4 = 0
+      u6 = 0
+
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      U = 10
+
+   BODY
+     -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
+
+      DEBUG_LEVEL= 1      -- valid range is [0,4]
+      TOLERANCE = 1e-06 -- steady solver relative tolerance 
+
+      TOLTYPE= RELTOL -- convergence criteria
+      STEADY()
+
+END EXPERIMENT

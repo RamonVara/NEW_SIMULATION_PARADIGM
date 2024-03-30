@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
+
+<schematic version="1.2.0" paper="A4" orientation="Landscape" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" connector-creation="true" >
+
+	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<layers>
+			<layer id="1" name="Layer_1" isVisible="true" isActive="true" />
+	</layers>
+	
+	<component id="of1" library="HYDRAULIC_ST_CLASSIC" type="Outflow" layer="1" >
+	
+		<symbol cx="84.125" cy="48" sx="49.25" sy="25.5" dx="119.75" dy="248" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="16" cy="14" dx="144" dy="280" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="Q" value="-1 * 0.3048 ** 3" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="of2" library="HYDRAULIC_ST_CLASSIC" type="Outflow" layer="1" >
+	
+		<symbol cx="84.125" cy="48" sx="49.25" sy="25.5" dx="119.75" dy="424" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="16" cy="14" dx="144" dy="456" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="Q" value="0.25 * 0.3048 ** 3" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="of3" library="HYDRAULIC_ST_CLASSIC" type="Outflow" layer="1" >
+	
+		<symbol cx="84.125" cy="48" sx="49.25" sy="25.5" dx="592" dy="248" onLabel="true" />
+	
+		<label cx="16" cy="14" dx="672" dy="248" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="Q" value="0.5 * 0.3048 ** 3" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p1" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="248" dy="216" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="352" dy="256" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="150 * 0.3048" pos="D" />
+			<datum id="D" value="4 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p2" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="160" dy="320" rotation="90" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="240" dy="384" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="100 * 0.3048" pos="D" />
+			<datum id="D" value="3 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p3" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="328" dy="320" rotation="90" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="408" dy="384" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="100 * 0.3048" pos="D" />
+			<datum id="D" value="3 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p4" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="440" dy="216" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="544" dy="256" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="100 * 0.3048" pos="D" />
+			<datum id="D" value="4 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p5" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="248" dy="392" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="352" dy="432" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="150 * 0.3048" pos="D" />
+			<datum id="D" value="3 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="p6" library="HYDRAULIC_ST_CLASSIC" type="Pipe" layer="1" >
+	
+		<symbol cx="120" cy="80" sx="89" sy="21" dx="440" dy="392" onLabel="true" />
+	
+		<label cx="13.5" cy="14" dx="544" dy="440" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="L" value="141 * 0.3048" pos="D" />
+			<datum id="D" value="3 * 0.0254" pos="D" />
+			<datum id="CHW" value="130" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<component id="t1" library="HYDRAULIC_ST_CLASSIC" type="Tank" layer="1" >
+	
+		<symbol cx="119.875" cy="72" sx="57.25" sy="49.5" dx="352.25" dy="464" rotation="180" flipY="true" onLabel="true" />
+	
+		<label cx="11" cy="14" dx="504" dy="520" family="Arial" points="12" bold="true" />
+	
+		<instanceData>
+			<datum id="H" value="30.48" pos="D" />
+			<datum id="Qo" value="0.5 * 0.3048 ** 3" pos="D" />
+		</instanceData>
+	
+	</component>
+
+	<connector id="Connector_1" sShape="of1" sPort="h_in" eShape="p1" ePort="h_in"  />
+
+	<connector id="Connector_2" sShape="p1" sPort="h_out" eShape="p3" ePort="h_in" points="448,296"  intermediate2="1"  />
+
+	<connector id="Connector_3" sShape="p1" sPort="h_out" eShape="p4" ePort="h_in"  />
+
+	<connector id="Connector_4" sShape="p2" sPort="h_in" eShape="of1" ePort="h_in" points="280,296"  />
+
+	<connector id="Connector_5" sShape="p2" sPort="h_out" eShape="of2" ePort="h_in" points="280,472"  intermediate2="1"  />
+
+	<connector id="Connector_6" sShape="p3" sPort="h_out" eShape="t1" ePort="h_out"  />
+
+	<connector id="Connector_7" sShape="p4" sPort="h_out" eShape="of3" ePort="h_in"  />
+
+	<connector id="Connector_8" sShape="p5" sPort="h_in" eShape="of2" ePort="h_in"  />
+
+	<connector id="Connector_9" sShape="p5" sPort="h_out" eShape="p3" ePort="h_out" points="448,472"  />
+
+	<connector id="Connector_10" sShape="p5" sPort="h_out" eShape="p6" ePort="h_in"  />
+
+	<connector id="Connector_11" sShape="p6" sPort="h_out" eShape="of3" ePort="h_in" points="632,472 632,296"  />
+
+	<ellipse id="Ellipse_1" cx="456" cy="288" rx="32" ry="32" dx="-8" dy="8" lineColor="255,0,0"  layer="1"  />
+
+	<ellipse id="Ellipse_2" cx="456" cy="291" rx="32" ry="35" dx="-8" dy="176" lineColor="255,0,0"  layer="1"  />
+
+	<ellipse id="Ellipse_3" cx="456" cy="291" rx="32" ry="35" dx="-176" dy="176" lineColor="255,0,0"  layer="1"  />
+
+	<ellipse id="Ellipse_4" cx="456" cy="291" rx="32" ry="35" dx="-176" dy="8" lineColor="255,0,0"  layer="1"  />
+
+	<text id="Text_1" cx="8.5" cy="13.5" sx="17" sy="27" dx="412" dy="480" layer="1"  >
+		<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; font-size:12pt;&#34;&#62;1&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+	</text>
+
+	<bodyEL>
+	<![CDATA[
+COMPONENT %NAME% 
+END COMPONENT
+]]>
+	</bodyEL>
+
+	<usedLibrary name="HYDRAULIC_ST_CLASSIC" version="1.1" auto="true" />
+</schematic>

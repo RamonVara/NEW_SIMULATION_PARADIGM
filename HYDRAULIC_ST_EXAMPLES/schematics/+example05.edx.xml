@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<simulation version="1.2.0" show_max_decimals="4" simulation-status="allshowed" >
+	<layers>
+			<layer id="2" name="Simulation" isVisible="true" />
+	</layers>
+	
+	<execution type="transient" >
+		<transient tstart="0.0" tstop="15.0" cint="0.01" iMethod="IDAS" steps="1" maxRelError="0.000001" maxAbsError="0.000001"  /> 
+		<steady sMethod="NR" tolType="RELTOL" tolerance="1e-06"  /> 
+	</execution>
+	
+	<initials>
+	</initials>
+</simulation>

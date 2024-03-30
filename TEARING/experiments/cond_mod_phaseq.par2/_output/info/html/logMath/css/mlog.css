@@ -1,0 +1,43 @@
+DIV.qindex {
+	width: 100%;
+	background-color: #eeeeff;
+	border: 1px solid #B0B0B0;
+	text-align: center;
+	margin: 2px;
+	padding: 2px;
+}
+A.qindex {
+       text-decoration: none;
+       padding: 2px;
+}
+A.qindex:visited {
+       text-decoration: none;
+       padding: 2px; 
+}
+A.qindex:hover {
+	text-decoration: none;
+}
+A.qindexHL {
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #ddddff;
+	padding: 2px;
+	border: 1px double #9295C2;
+}
+A.qindexHL:hover {
+	text-decoration: none;
+	padding: 2px;
+}
+A.qindexHL:visited {
+	text-decoration: none;
+}
+
+.warning-red{color:darkred;}
+.warning-green{color:green;}
+.warning-orange{color:orange;}
+
+.warning-red-content{color:white;background-color:darkred;}
+.warning-green-content{color:white;background-color:green;}
+.warning-orange-content{color:white;background-color:orange;}
+
+

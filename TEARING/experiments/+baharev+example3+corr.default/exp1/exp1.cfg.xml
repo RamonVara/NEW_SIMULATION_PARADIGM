@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+				</tab>
+	</experimentViews>
+
+	<watch width="250" height="338" visible="true" pos="right" >
+		<currentTab name="inputs"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+				<var name="x[001]"/>
+				<var name="x[002]"/>
+				<var name="x[003]"/>
+				<var name="x[004]"/>
+				<var name="x[005]"/>
+				<var name="x[006]"/>
+				<var name="x[007]"/>
+				<var name="x[008]"/>
+				<var name="x[009]"/>
+				<var name="x[010]"/>
+				<var name="x[011]"/>
+				<var name="x[012]"/>
+				<var name="x[013]"/>
+				<var name="x[014]"/>
+				<var name="x[015]"/>
+				<var name="x[016]"/>
+				<var name="x[017]"/>
+				<var name="x[018]"/>
+				<var name="x[019]"/>
+				<var name="x[020]"/>
+				<var name="x[021]"/>
+				<var name="x[022]"/>
+				<var name="x[023]"/>
+				<var name="x[024]"/>
+				<var name="x[025]"/>
+				<var name="x[026]"/>
+				<var name="x[027]"/>
+				<var name="x[028]"/>
+				<var name="x[029]"/>
+				<var name="x[030]"/>
+				<var name="x[031]"/>
+				<var name="x[032]"/>
+				<var name="x[033]"/>
+				<var name="x[034]"/>
+				<var name="x[035]"/>
+				<var name="x[036]"/>
+				<var name="x[037]"/>
+				<var name="x[038]"/>
+				<var name="x[039]"/>
+				<var name="x[040]"/>
+				<var name="x[041]"/>
+				<var name="x[042]"/>
+				<var name="x[043]"/>
+				<var name="x[044]"/>
+				<var name="x[045]"/>
+				<var name="x[046]"/>
+				<var name="x[047]"/>
+				<var name="x[048]"/>
+				<var name="x[049]"/>
+				<var name="x[050]"/>
+				<var name="x[051]"/>
+				<var name="x[052]"/>
+				<var name="x[053]"/>
+				<var name="x[054]"/>
+				<var name="x[055]"/>
+				<var name="x[056]"/>
+				<var name="x[057]"/>
+				<var name="x[058]"/>
+				<var name="x[059]"/>
+				<var name="x[060]"/>
+				<var name="x[061]"/>
+				<var name="x[062]"/>
+				<var name="x[063]"/>
+				<var name="x[064]"/>
+				<var name="x[065]"/>
+				<var name="x[066]"/>
+				<var name="x[067]"/>
+				<var name="x[068]"/>
+				<var name="x[069]"/>
+				<var name="x[070]"/>
+				<var name="x[071]"/>
+				<var name="x[072]"/>
+				<var name="x[073]"/>
+				<var name="x[074]"/>
+				<var name="x[075]"/>
+				<var name="x[076]"/>
+				<var name="x[077]"/>
+				<var name="x[078]"/>
+				<var name="x[079]"/>
+				<var name="x[080]"/>
+				<var name="x[081]"/>
+				<var name="x[082]"/>
+				<var name="x[083]"/>
+				<var name="x[084]"/>
+				<var name="x[085]"/>
+				<var name="x[086]"/>
+				<var name="x[087]"/>
+				<var name="x[088]"/>
+				<var name="x[089]"/>
+				<var name="x[090]"/>
+				<var name="x[091]"/>
+				<var name="x[092]"/>
+				<var name="x[093]"/>
+				<var name="x[094]"/>
+				<var name="x[095]"/>
+				<var name="x[096]"/>
+				<var name="x[097]"/>
+				<var name="x[098]"/>
+				<var name="x[099]"/>
+				<var name="x[100]"/>
+				<var name="x[101]"/>
+				<var name="x[102]"/>
+				<var name="x[103]"/>
+				<var name="x[104]"/>
+				<var name="x[105]"/>
+				<var name="x[106]"/>
+				<var name="x[107]"/>
+				<var name="x[108]"/>
+				<var name="x[109]"/>
+				<var name="x[110]"/>
+				<var name="x[111]"/>
+				<var name="x[112]"/>
+				<var name="x[113]"/>
+				<var name="x[114]"/>
+				<var name="x[115]"/>
+				<var name="x[116]"/>
+				<var name="x[117]"/>
+				<var name="x[118]"/>
+				<var name="x[119]"/>
+				<var name="x[120]"/>
+				<var name="x[121]"/>
+				<var name="x[122]"/>
+				<var name="x[123]"/>
+				<var name="x[124]"/>
+				<var name="x[125]"/>
+				<var name="x[126]"/>
+				<var name="x[127]"/>
+				<var name="x[128]"/>
+				<var name="x[129]"/>
+				<var name="x[130]"/>
+				<var name="x[131]"/>
+				<var name="x[132]"/>
+				<var name="x[133]"/>
+				<var name="x[134]"/>
+				<var name="x[135]"/>
+				<var name="x[136]"/>
+				<var name="x[137]"/>
+				<var name="x[138]"/>
+				<var name="x[139]"/>
+				<var name="x[140]"/>
+				<var name="x[141]"/>
+				<var name="x[142]"/>
+				<var name="x[143]"/>
+				<var name="x[144]"/>
+				<var name="x[145]"/>
+				<var name="x[146]"/>
+				<var name="x[147]"/>
+				<var name="x[148]"/>
+				<var name="x[149]"/>
+				<var name="x[150]"/>
+				<var name="x[151]"/>
+				<var name="x[152]"/>
+				<var name="x[153]"/>
+				<var name="x[154]"/>
+				<var name="x[155]"/>
+				<var name="x[156]"/>
+				<var name="x[157]"/>
+				<var name="x[158]"/>
+				<var name="x[159]"/>
+				<var name="x[160]"/>
+				<var name="x[161]"/>
+				<var name="x[162]"/>
+				<var name="x[163]"/>
+				<var name="x[164]"/>
+				<var name="x[165]"/>
+				<var name="x[166]"/>
+				<var name="x[167]"/>
+				<var name="x[168]"/>
+				<var name="x[169]"/>
+				<var name="x[170]"/>
+				<var name="x[171]"/>
+				<var name="x[172]"/>
+				<var name="x[173]"/>
+				<var name="x[174]"/>
+				<var name="x[175]"/>
+				<var name="x[176]"/>
+				<var name="x[177]"/>
+				<var name="x[178]"/>
+				<var name="x[179]"/>
+				<var name="x[180]"/>
+				<var name="x[181]"/>
+				<var name="x[182]"/>
+				<var name="x[183]"/>
+				<var name="x[184]"/>
+				<var name="x[185]"/>
+				<var name="x[186]"/>
+				<var name="x[187]"/>
+				<var name="x[188]"/>
+				<var name="x[189]"/>
+				<var name="x[190]"/>
+				<var name="x[191]"/>
+				<var name="x[192]"/>
+				<var name="x[193]"/>
+				<var name="x[194]"/>
+				<var name="x[195]"/>
+				<var name="x[196]"/>
+				<var name="x[197]"/>
+				<var name="x[198]"/>
+				<var name="x[199]"/>
+				<var name="x[200]"/>
+				<var name="x[201]"/>
+				<var name="x[202]"/>
+				<var name="x[203]"/>
+				<var name="x[204]"/>
+				<var name="x[205]"/>
+				<var name="x[206]"/>
+				<var name="x[207]"/>
+				<var name="x[208]"/>
+				<var name="x[209]"/>
+				<var name="x[210]"/>
+				<var name="x[211]"/>
+				<var name="x[212]"/>
+				<var name="x[213]"/>
+				<var name="x[214]"/>
+				<var name="x[215]"/>
+				<var name="x[216]"/>
+				<var name="x[217]"/>
+				<var name="x[218]"/>
+				<var name="x[219]"/>
+				<var name="x[220]"/>
+				<var name="x[221]"/>
+				<var name="x[222]"/>
+				<var name="x[223]"/>
+				<var name="x[224]"/>
+				<var name="x[225]"/>
+				<var name="x[226]"/>
+				<var name="x[227]"/>
+				<var name="x[228]"/>
+				<var name="x[229]"/>
+				<var name="x[230]"/>
+				<var name="x[231]"/>
+				<var name="x[232]"/>
+				<var name="x[233]"/>
+				<var name="x[234]"/>
+				<var name="x[235]"/>
+				<var name="x[236]"/>
+				<var name="x[237]"/>
+				<var name="x[238]"/>
+				<var name="x[239]"/>
+				<var name="x[240]"/>
+				<var name="x[241]"/>
+				<var name="x[242]"/>
+				<var name="x[243]"/>
+				<var name="x[244]"/>
+				<var name="x[245]"/>
+				<var name="x[246]"/>
+				<var name="x[247]"/>
+				<var name="x[248]"/>
+				<var name="x[249]"/>
+				<var name="x[250]"/>
+				<var name="x[251]"/>
+				<var name="x[252]"/>
+				<var name="x[253]"/>
+				<var name="x[254]"/>
+				<var name="x[255]"/>
+				<var name="x[256]"/>
+				<var name="x[257]"/>
+				<var name="x[258]"/>
+				<var name="x[259]"/>
+				<var name="x[260]"/>
+				<var name="x[261]"/>
+				<var name="x[262]"/>
+				<var name="x[263]"/>
+				<var name="x[264]"/>
+				<var name="x[265]"/>
+				<var name="x[266]"/>
+				<var name="x[267]"/>
+				<var name="x[268]"/>
+				<var name="x[269]"/>
+				<var name="x[270]"/>
+				<var name="x[271]"/>
+				<var name="x[272]"/>
+				<var name="x[273]"/>
+				<var name="x[274]"/>
+				<var name="x[275]"/>
+				<var name="x[276]"/>
+				<var name="x[277]"/>
+				<var name="x[278]"/>
+				<var name="x[279]"/>
+				<var name="x[280]"/>
+				<var name="x[281]"/>
+				<var name="x[282]"/>
+				<var name="x[283]"/>
+				<var name="x[284]"/>
+				<var name="x[285]"/>
+				<var name="x[286]"/>
+				<var name="x[287]"/>
+				<var name="x[288]"/>
+				<var name="x[289]"/>
+				<var name="x[290]"/>
+				<var name="x[291]"/>
+				<var name="x[292]"/>
+				<var name="x[293]"/>
+				<var name="x[294]"/>
+				<var name="x[295]"/>
+				<var name="x[296]"/>
+				<var name="x[297]"/>
+				<var name="x[298]"/>
+				<var name="x[299]"/>
+				<var name="x[300]"/>
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+
+
+
+
+	<outputWindow height="600" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>

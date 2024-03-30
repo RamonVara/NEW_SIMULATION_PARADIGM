@@ -1,0 +1,43 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: HYDRAULIC_ST_EXAMPLES
+ COMPONENT: Example04_classic
+ PARTITION: par1
+ EXPERIMENT: exp1
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 25/11/2023
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON Example04_classic.par1
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for state variables
+
+      -- initial values for algebraics
+      t1_3.Q = 0.005
+
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      of1.Q = 0.1*sin(0.01*TIME)
+
+   BODY
+      -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
+      DEBUG_LEVEL= 1   -- valid range is [0,4]
+      IMETHOD= IDAS_SPARSE -- integration method
+
+      -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
+      REL_ERROR = 1e-06
+      ABS_ERROR = 1e-06
+      TOLERANCE = 1e-06
+
+      INIT_INTEG_STEP = -1 -- initial integration step size (-1 uses default) 
+      MAX_INTEG_STEP = -1 -- maximum integration step size (-1 uses default) 
+      NSTEPS = 1 -- Only for explicit solvers use CINT/NSTEPS as integration step size
+      REPORT_MODE = IS_EVENT -- Report results at every CINT and event detection.
+
+      -- simulate a transient in range[TIME,TSTOP] reporting at every CINT
+      TIME = 0
+      TSTOP = 10000.
+      CINT = 10.
+      INTEG()
+END EXPERIMENT

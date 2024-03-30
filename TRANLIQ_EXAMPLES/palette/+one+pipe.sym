@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="OnePipe" >
+
+		<g id="Group_1" >
+			<line id="Line_2" points="87.4277,926.284 71.4277,926.284" dx="8.5723" dy="-862.284" lineColor="0,0,255" lineWidth="2"  aliasing="true"  />
+			<rect id="Rectangle_2" cx="49.0001" cy="870.282" sx="48" sy="16" dx="6.9999" dy="-830.282" aliasing="true"  />
+			<rect id="Rectangle_1" cx="37.4277" cy="916.283" sx="48" sy="32" dx="18.5723" dy="-852.283" color="66,133,244" aliasing="true"  />
+			<polygon id="Polygon_1" points="126,38 133,40 126,42" dx="-39.4664" dy="23.9582" lineColor="0,0,255"  color="0,0,255" aliasing="true"  />
+			<rect id="Rectangle_5" cx="104" cy="72" sx="48" sy="48" dx="-48" dy="-16" lineWidth="1.5"  aliasing="true"  />
+		</g>
+
+		<g id="Group_2" dx="64" >
+			<line id="Line_1" points="85.8301,731.962 69.8301,731.962" dx="42.1699" dy="-667.962" lineColor="0,0,255" lineWidth="2"  aliasing="true"  />
+			<line id="Line_3" points="-10.4096,731.722 5.59042,731.722" dx="58.4096" dy="-667.722" lineColor="0,0,255" lineWidth="2"  aliasing="true"  />
+			<rect id="Rectangle_3" cx="29.8301" cy="731.962" sx="48" sy="16" dx="58.1699" dy="-667.962" color="66,133,244" aliasing="true"  />
+			<line id="Line_5" points="21.5904,731.722 49.5904,731.722" dx="50.4096" dy="-667.722" aliasing="true"  />
+			<polygon id="Polygon_2" points="45.8301,727.962 53.8301,731.962 45.8301,735.962" dx="50.4096" dy="-667.722" color="0,0,0" aliasing="true"  />
+			<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="-69.7603" dy="23.9897" lineColor="0,0,255"  color="0,0,255" aliasing="true"  />
+			<polygon id="Polygon_4" points="126,38 133,40 126,42" dx="-9.875" dy="24" lineColor="0,0,255"  color="0,0,255" aliasing="true"  />
+			<line id="Line_4" points="96,56 144,56" dx="-32" lineWidth="1.5"  aliasing="true"  />
+			<line id="Line_6" points="96,56 144,56" dx="-32" dy="16" lineWidth="1.5"  aliasing="true"  />
+		</g>
+
+		<g id="Group_3" dx="144" >
+			<line id="Line_7" points="13.929,509.877 29.929,509.877" dx="50.071" dy="-445.877" lineColor="0,0,255" lineWidth="2"  aliasing="true"  />
+			<line id="Line_8" points="45.9291,493.878 45.9291,509.878" dx="50.0709" dy="-445.878" aliasing="true"  />
+			<closedBezier id="ClosedBezier_1" points="33.2184,496.376 37.2184,484.376 53.2184,484.376 57.2184,496.376" dx="50.7816" dy="-444.376" lineWidth="1.5"  color="251,188,5" aliasing="true"  />
+			<polygon id="Polygon_5" points="126,38 133,40 126,42" dx="-53" dy="24" lineColor="0,0,255"  color="0,0,255" aliasing="true"  />
+			<polygon id="Polygon_6" points="29.2184,516.376 29.2184,500.376 61.2184,516.376 61.2184,500.376" dx="50.7816" dy="-444.376" lineWidth="1.5"  color="66,133,244" aliasing="true"  />
+		</g>
+
+		<line id="Line_9" points="96,64 112,64" lineColor="0,0,255" lineWidth="2"   />
+
+		<line id="Line_10" points="96,64 112,64" dx="96" lineColor="0,0,255" lineWidth="2"   />
+
+		<text id="Text_1" cx="10.5" cy="14" sx="21" sy="28" dx="44" dy="76"  >
+			<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; color:#444444;&#34;&#62;t1&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+		</text>
+
+		<text id="Text_2" cx="13" cy="14" sx="26" sy="28" dx="140" dy="76"  >
+			<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; color:#444444;&#34;&#62;p1&#60;/span&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+		</text>
+
+		<text id="Text_3" cx="12" cy="24" sx="24" sy="48" dx="228" dy="76"  >
+			<![CDATA[&#60;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.0//EN&#34; &#34;http://www.w3.org/TR/REC-html40/strict.dtd&#34;&#62;&#60;html&#62;&#60;head&#62;&#60;meta name=&#34;qrichtext&#34; content=&#34;1&#34; /&#62;&#60;style type=&#34;text/css&#34;&#62;p, li { white-space: pre-wrap; }&#60;/style&#62;&#60;/head&#62;&#60;body style=&#34; font-family:&#39;Arial&#39;; font-size:10pt; font-weight:400; font-style:normal;&#34;&#62;&#60;p style=&#34; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&#34;&#62;&#60;span style=&#34; color:#444444;&#34;&#62;v1&#60;/span&#62;&#60;/p&#62;&#60;p style=&#34;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#444444;&#34;&#62;&#60;br /&#62;&#60;/p&#62;&#60;/body&#62;&#60;/html&#62;]]>
+		</text>
+
+		<rect id="Rectangle_4" cx="144" cy="64" sx="256" sy="96"  />
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="ValveExit" >
+
+		<line id="Line_2" points="13.929,509.877 29.929,509.877" dx="50.071" dy="-445.877" lineColor="0,0,255" lineWidth="2"   />
+
+		<line id="Line_3" points="45.9291,493.878 45.9291,509.878" dx="50.0709" dy="-445.878"  />
+
+		<closedBezier id="ClosedBezier_1" points="33.2184,496.376 37.2184,484.376 53.2184,484.376 57.2184,496.376" dx="50.7816" dy="-444.376" lineWidth="1.5"  color="251,188,5"  />
+
+		<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="-53" dy="24" lineColor="0,0,255"  color="0,0,255"  />
+
+		<polygon id="Polygon_1" points="29.2184,516.376 29.2184,500.376 61.2184,516.376 61.2184,500.376" dx="50.7816" dy="-444.376" lineWidth="1.5"  color="66,133,244"  />
+
+		<port id="h_in" library="TRANLIQ" type="Hydraulic"  hotPort="h_in" >
+		
+				<symbol dx="64" dy="64" onLabel="true" />
+		
+				<label cx="16" cy="12" dx="24" dy="52" />
+		
+		</port>
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+</palette>

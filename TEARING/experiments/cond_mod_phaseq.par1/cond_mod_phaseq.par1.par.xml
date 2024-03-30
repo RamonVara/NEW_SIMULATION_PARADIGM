@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partitionInfo version="1.0" library="TEARING" component="cond_mod_phaseq" partition="par1">
+<noDerivatives value="FALSE"/>
+<inhibitReductionConstantCoefEqts value="FALSE"/>
+<generatePartitionClass value="FALSE"/>
+<removeNotUsedVars value="FALSE"/>
+<showPropertyPanel value="FALSE"/>
+<generateProtectedMathFunctions value="TRUE"/>
+<generatePerformanceMeters value="FALSE"/>
+<generateObfuscatedCpp value="FALSE"/>
+<generateParInfoHTML value="TRUE"/>
+<generateParInfoExtra value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
+<generateAdvancedBox value="disabled"/>
+<algebraics>
+  <variable name="phi[pA]"/>
+  <variable name="phi[pO]"/>
+  <variable name="phi[pV]"/>
+  <variable name="y[pA,cB]"/>
+  <variable name="y[pA,cE]"/>
+  <variable name="y[pA,cW]"/>
+  <variable name="y[pO,cB]"/>
+  <variable name="y[pO,cE]"/>
+  <variable name="y[pO,cW]"/>
+  <variable name="y[pV,cB]"/>
+  <variable name="y[pV,cE]"/>
+  <variable name="y[pV,cW]"/>
+</algebraics>
+<residues>
+</residues>
+</partitionInfo>
