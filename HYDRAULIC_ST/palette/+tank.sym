@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE sym SYSTEM "DTDFILE_FULLPATH">
+
+<palette version="1.2.0" sx="480" sy="320" aliasingInShapes="true" aliasingInUnitSymbols="true" simulation-status="allshowed" >
+
+	<grid enabled="true" snap="true" hspacing="4" vspacing="4" colorMain="210,210,210" colorSecondary="243,243,243" numberCells="4" margin="true" />
+
+	<componentType id="Tank" >
+
+		<line id="Line_1" points="87.4277,926.284 71.4277,926.284" dx="56.5723" dy="-846.284" lineColor="0,0,255" lineWidth="2"   />
+
+		<rect id="Rectangle_2" cx="55.0001" cy="870.282" sx="36" sy="16" dx="54.9999" dy="-814.282"  />
+
+		<rect id="Rectangle_3" cx="43.4277" cy="916.283" sx="36" sy="32" dx="66.5723" dy="-836.283" color="66,133,244"  />
+
+		<polygon id="Polygon_3" points="126,38 133,40 126,42" dx="8.53361" dy="39.9582" lineColor="0,0,255"  color="0,0,255"  />
+
+		<rect id="Rectangle_1" cx="110" cy="72" sx="36" sy="48" lineWidth="1.5"   />
+
+		<port id="h_out" library="HYDRAULIC_ST" type="Hydraulic" >
+		
+				<symbol dx="144" dy="80" onLabel="true" />
+		
+				<label cx="20" cy="12" dx="152" dy="64" />
+		
+		</port>
+
+		<editor used="false">
+		</editor>
+
+	</componentType>
+	<simulation>
+			<variableLabel  id="VariableLabel_1" cx="120" cy="120" sx="80" sy="16"  headerText="H"  tailText="m" family="MS Shell Dlg 2" points="8" bold="true" adjust="false" lineType="-1"   >
+				<notation used_local_notation="false" used_local_decimals="false" local_max_decimals="4" />
+				<variable name="H" />
+			</variableLabel>
+	
+			<variableLabel  id="VariableLabel_2" cx="146" cy="131.5" sx="132" sy="15"  headerText="Q"  tailText="m3/s" family="MS Shell Dlg 2" points="8" bold="true" dy="4" lineType="-1"   >
+				<notation used_local_notation="false" used_local_decimals="false" local_max_decimals="4" />
+				<variable name="Q" />
+			</variableLabel>
+	
+	
+	</simulation>
+</palette>

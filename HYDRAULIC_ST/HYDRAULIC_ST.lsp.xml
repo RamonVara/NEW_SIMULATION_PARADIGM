@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="hydro_v1.el"/>
+  <file name="hydro_v2.el"/>
+  <file name="hydro_v3.el"/>
+  <file name="hydro_v4.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>
