@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test version="1.3.0" type="configuration_test">
+   <libraries>
+      <lib name="MATH" type="models" enabled="F"/>
+      <lib name="SPARSE" type="models" enabled="F"/>
+      <lib name="HYDRAULIC_ST" type="models" enabled="F"/>
+      <lib name="HYDRAULIC_ST_CLASSIC" type="models" enabled="F"/>
+      <lib name="HYDRAULIC_ST_EXAMPLES" type="models" enabled="T"/>
+      <lib name="LIQHAMMER_ST" type="models" enabled="F"/>
+      <lib name="LIQHAMMER_ST_EXAMPLES" type="models" enabled="T"/>
+      <lib name="SPARSE_EXAMPLES" type="models" enabled="T"/>
+      <lib name="TEARING" type="models" enabled="T"/>
+      <lib name="THERMAL_NEW" type="models" enabled="T"/>
+      <lib name="TRANLIQ" type="models" enabled="F"/>
+      <lib name="TRANLIQ_EXAMPLES" type="models" enabled="T"/>
+   </libraries>
+
+   <environmentVars>
+   </environmentVars>
+
+   <comparisonOptions>
+      <option name="tolerance" value="0.0001"/>
+      <option name="correctionRelError" value="1e-12"/>
+      <option name="compMode" value="stat"/>
+      <option name="testVariablesMode" value="selected"/>
+      <option name="clearLibrary" value="true"/>
+      <option name="compileLibrary" value="true"/>
+      <option name="generateDocumentation" value="true"/>
+      <option name="validateLibrary" value="true"/>
+      <option name="compileLibExperiments" value="true"/>
+      <option name="runLibModels" value="true"/>
+      <option name="generateLibDecks" value="true"/>
+      <option name="scriptLibDecks" value="true"/>
+      <option name="skipELCompileIfMissingRef" value="true"/>
+   </comparisonOptions>
+</test>
