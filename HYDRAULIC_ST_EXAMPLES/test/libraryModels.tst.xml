@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test version="1.3.0" type="library_test">
+
+   <items>
+      <item name="Example01.default.exp1" type="exp_el" enabled="T"/>
+      <item name="Example01.default.exp2" type="exp_el" enabled="T"/>
+      <item name="Example01.default.exp3" type="exp_el" enabled="T"/>
+      <item name="Example01_classic.default.exp1" type="exp_el" enabled="T"/>
+      <item name="Example01_classic.default.exp2" type="exp_el" enabled="T"/>
+      <item name="Example01_classic.default.exp3" type="exp_el" enabled="T"/>
+      <item name="Example02.default.exp1" type="exp_el" enabled="T"/>
+      <item name="Example02.default.exp2" type="exp_el" enabled="T"/>
+      <item name="Example02_classic.default.exp1" type="exp_el" enabled="T"/>
+      <item name="Example02_classic.default.exp2" type="exp_el" enabled="T"/>
+      <item name="Example03.default.exp1" type="exp_el" enabled="F"/>
+      <item name="Example03.par1.exp1" type="exp_el" enabled="F"/>
+      <item name="Example04.default.exp1" type="exp_el" enabled="F"/>
+      <item name="Example04_classic.default.exp1" type="exp_el" enabled="F"/>
+      <item name="Example04_classic.default.exp2" type="exp_el" enabled="F"/>
+      <item name="Example04_classic.par1.exp1" type="exp_el" enabled="F"/>
+   </items>
+</test>

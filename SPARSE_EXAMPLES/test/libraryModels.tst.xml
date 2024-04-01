@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test version="1.3.0" type="library_test">
+
+   <items>
+      <item name="TestLinearSystem01.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestLinearSystem02_0010.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestLinearSystem02_0100.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestLinearSystem02_0500.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestLinearSystem02_1000.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestNleqnSystem01.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestSparseMatrix01.default.exp1" type="exp_el" enabled="T"/>
+      <item name="TestSparseMatrix02.default.exp1" type="exp_el" enabled="T"/>
+   </items>
+</test>

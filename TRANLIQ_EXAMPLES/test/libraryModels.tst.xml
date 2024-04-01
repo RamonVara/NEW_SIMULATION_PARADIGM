@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test version="1.3.0" type="library_test">
+
+   <items>
+      <item name="OnePipe.default.exp1" type="exp_el" enabled="T"/>
+      <item name="OnePipe_Compar_MOC.default.exp1" type="exp_el" enabled="T"/>
+      <item name="OnePipe_Compar_MOC.default.slow_closure" type="exp_el" enabled="T"/>
+      <item name="OnePipe_Compar_MOC.default.sudden_closure" type="exp_el" enabled="T"/>
+      <item name="OnePipe_Damping.default.exp1" type="exp_el" enabled="T"/>
+      <item name="OnePipe_Discretization.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_Discretization.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_004.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_008.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_016.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_032.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_064.default.exp1" type="exp_el" enabled="T"/>
+      <item name="SimpleNetwork_128.default.exp1" type="exp_el" enabled="T"/>
+   </items>
+</test>
