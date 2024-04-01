@@ -13,9 +13,6 @@
 <generateMaxSignificantDigits value="TRUE"/>
 <generateParResiduesForDiff value="FALSE"/>
 <generateAdvancedBox value="disabled"/>
-<dynamics>
-  <variable name="y"/>
-</dynamics>
 <residues>
 </residues>
 </partitionInfo>
