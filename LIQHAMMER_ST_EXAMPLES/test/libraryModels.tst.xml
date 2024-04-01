@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test version="1.3.0" type="library_test">
+
+   <items>
+      <item name="example_01.default.flow_reduction" type="exp_el" enabled="T"/>
+      <item name="example_01.default.flow_reduction_in_1_ms" type="exp_el" enabled="T"/>
+      <item name="example_01.default.method_comparison" type="exp_el" enabled="T"/>
+      <item name="example_01.default.sensitivity_closure_time" type="exp_el" enabled="T"/>
+      <item name="example_01.default.sensitivity_discretization" type="exp_el" enabled="T"/>
+      <item name="example_01.default.transient_friction" type="exp_el" enabled="T"/>
+      <item name="example_02.default.closure" type="exp_el" enabled="T"/>
+      <item name="example_02.default.closure_1_in_ms" type="exp_el" enabled="T"/>
+      <item name="example_02.default.method_comparison" type="exp_el" enabled="T"/>
+      <item name="example_02.default.sensitivity_discretization" type="exp_el" enabled="T"/>
+      <item name="example_02.default.transient_friction" type="exp_el" enabled="T"/>
+      <item name="example_02.default.validation" type="exp_el" enabled="T"/>
+      <item name="example_03.default.closure" type="exp_el" enabled="T"/>
+      <item name="example_03.default.method_comparison" type="exp_el" enabled="T"/>
+      <item name="example_03.default.transient_friction" type="exp_el" enabled="T"/>
+      <item name="example_03.default.validation" type="exp_el" enabled="T"/>
+      <item name="example_04.default.trip_validation" type="exp_el" enabled="T"/>
+      <item name="example_05.default.start_up" type="exp_el" enabled="T"/>
+      <item name="example_05.default.trip" type="exp_el" enabled="T"/>
+      <item name="example_06.default.exp1_validation" type="exp_el" enabled="T"/>
+      <item name="example_06.default.exp2_validation" type="exp_el" enabled="T"/>
+      <item name="example_06.default.exp3_validation" type="exp_el" enabled="T"/>
+      <item name="example_07.default.exp1" type="exp_el" enabled="T"/>
+      <item name="example_08.default.closure" type="exp_el" enabled="T"/>
+      <item name="example_09.default.closure_5s" type="exp_el" enabled="T"/>
+      <item name="example_10.default.closure_5s" type="exp_el" enabled="T"/>
+   </items>
+</test>
