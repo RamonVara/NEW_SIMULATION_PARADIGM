@@ -22,7 +22,6 @@ COMPONENT TestLinearSystem02(INTEGER n = 2000)
 	CONTINUOUS
 		x[1] = 0.1*TIME
 		x[n] = 0.1*TIME
-		y' = x[2] - y
 		SEQUENTIAL
 			leq_system.SetToZero()
 			FOR (i IN 2, n-1)
@@ -42,10 +41,10 @@ COMPONENT TestLinearSystem02(INTEGER n = 2000)
 				END IF
 			END FOR
 			leq_system.Solve()
-			FOR (i IN 2, n-1)
-				x[i] = leq_system.GetUnknown(i-1)
-			END FOR 
+			y = 1.
 		END SEQUENTIAL
+		EXPAND (i IN 2, n-1)
+				x[i] = y * leq_system.GetUnknown(i-1) 
 
 END COMPONENT
 COMPONENT TestLinearSystem02_0010 IS_A TestLinearSystem02 
