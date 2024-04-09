@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library version="1.1.1">
+ <filedeps>
+  <file name="version.el"/>
+  <file name="Inline.el"/>
+  <file name="Thermal_Classic.el"/>
+  <file name="Thermal_NSP.el"/>
+  <file name="WallComparison.el"/>
+  <file name="Wall_3layer_Comparison.el"/>
+ </filedeps>
+ <libdeps>
+ </libdeps>
+ <otherdeps>
+ </otherdeps>
+</library>

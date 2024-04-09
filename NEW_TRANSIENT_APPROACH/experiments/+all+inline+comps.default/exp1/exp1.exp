@@ -1,0 +1,38 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: NEW_TRANSIENT_APPROACH
+ COMPONENT: AllInlineComps
+ PARTITION: default
+ EXPERIMENT: exp1
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 09/04/2024
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON AllInlineComps.default
+   DECLS
+   OBJECTS
+   INIT
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      error = 0
+
+   BODY
+      -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
+      DEBUG_LEVEL= 1   -- valid range is [0,4]
+      IMETHOD= CVODE_BDF -- integration method
+
+      -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
+      REL_ERROR = 1e-06
+      ABS_ERROR = 1e-06
+      TOLERANCE = 1e-06
+
+      INIT_INTEG_STEP = -1 -- initial integration step size (-1 uses default) 
+      MAX_INTEG_STEP = -1 -- maximum integration step size (-1 uses default) 
+      NSTEPS = 1 -- Only for explicit solvers use CINT/NSTEPS as integration step size
+      REPORT_MODE = IS_EVENT -- Report results at every CINT and event detection.
+
+      -- simulate a transient in range[TIME,TSTOP] reporting at every CINT
+      TIME = 0
+      TSTOP = 15
+      CINT = 0.1
+      INTEG()
+END EXPERIMENT

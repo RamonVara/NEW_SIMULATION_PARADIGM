@@ -1,0 +1,53 @@
+ /*-----------------------------------------------------------------------------------------
+ LIBRARY: NEW_TRANSIENT_APPROACH
+ COMPONENT: Wall_3layer_Comparison
+ PARTITION: par1
+ EXPERIMENT: exp1
+ TEMPLATE: TRANSIENT
+ CREATION DATE: 09/04/2024
+-----------------------------------------------------------------------------------------*/
+
+EXPERIMENT exp1 ON Wall_3layer_Comparison.par1
+   DECLS
+   OBJECTS
+   INIT
+      -- initial values for state variables
+
+      -- initial values for algebraics
+      layer2_nsp.tp_in.Tk = 290
+      layer3_nsp.tp_in.Tk = 290
+
+   BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      layer1_classic.tp_in.Tk = 290+100*step(TIME,1.)
+      layer1_nsp.tp_in.Tk = 290+100*step(TIME,1.)
+      layer3_classic.tp_out.Tk = 290
+      layer3_nsp.tp_out.Tk = 290
+
+   BODY
+      -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
+      DEBUG_LEVEL= 1   -- valid range is [0,4]
+      IMETHOD= IDAS -- integration method
+
+      -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
+      REL_ERROR = 1e-06
+      ABS_ERROR = 1e-06
+      TOLERANCE = 1e-06
+
+      INIT_INTEG_STEP = -1 -- initial integration step size (-1 uses default) 
+      MAX_INTEG_STEP = -1 -- maximum integration step size (-1 uses default) 
+      NSTEPS = 1 -- Only for explicit solvers use CINT/NSTEPS as integration step size
+      REPORT_MODE = IS_EVENT -- Report results at every CINT and event detection.
+
+      -- simulate a transient in range[TIME,TSTOP] reporting at every CINT
+      TIME = 1.
+      TSTOP = 100.
+      CINT = 1.
+      INTEG()
+		TSTOP = 1000.
+		CINT = 5.
+		INTEG()
+		TSTOP = 50000.
+		CINT = 25.
+		INTEG()
+END EXPERIMENT

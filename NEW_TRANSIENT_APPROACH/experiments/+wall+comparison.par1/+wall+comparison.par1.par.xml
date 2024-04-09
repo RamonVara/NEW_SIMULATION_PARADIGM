@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partitionInfo version="1.0" library="NEW_TRANSIENT_APPROACH" component="WallComparison" partition="par1">
+<noDerivatives value="FALSE"/>
+<inhibitReductionConstantCoefEqts value="FALSE"/>
+<generatePartitionClass value="FALSE"/>
+<removeNotUsedVars value="FALSE"/>
+<showPropertyPanel value="FALSE"/>
+<generateProtectedMathFunctions value="TRUE"/>
+<generatePerformanceMeters value="FALSE"/>
+<generateObfuscatedCpp value="FALSE"/>
+<generateParInfoHTML value="TRUE"/>
+<generateParInfoExtra value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
+<generateAdvancedBox value="disabled"/>
+<boundaries>
+  <variable name="wall_classic.tp_in.Tk"/>
+  <variable name="wall_classic.tp_out.Tk"/>
+  <variable name="wall_nsp.tp_in.Tk"/>
+  <variable name="wall_nsp.tp_out.Tk"/>
+</boundaries>
+<dynamics>
+  <variable name="wall_classic.T[02]"/>
+  <variable name="wall_classic.T[03]"/>
+  <variable name="wall_classic.T[04]"/>
+  <variable name="wall_classic.T[05]"/>
+  <variable name="wall_classic.T[06]"/>
+  <variable name="wall_classic.T[07]"/>
+  <variable name="wall_classic.T[08]"/>
+  <variable name="wall_classic.T[09]"/>
+  <variable name="wall_classic.T[10]"/>
+  <variable name="wall_classic.T[11]"/>
+  <variable name="wall_classic.T[12]"/>
+  <variable name="wall_classic.T[13]"/>
+  <variable name="wall_classic.T[14]"/>
+  <variable name="wall_classic.T[15]"/>
+  <variable name="wall_classic.T[16]"/>
+  <variable name="wall_classic.T[17]"/>
+  <variable name="wall_classic.T[18]"/>
+  <variable name="wall_classic.T[19]"/>
+</dynamics>
+<residues>
+</residues>
+</partitionInfo>

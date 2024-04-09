@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partitionInfo version="1.0" library="NEW_TRANSIENT_APPROACH" component="Wall_3layer_Comparison" partition="par1">
+<noDerivatives value="FALSE"/>
+<inhibitReductionConstantCoefEqts value="FALSE"/>
+<generatePartitionClass value="FALSE"/>
+<removeNotUsedVars value="FALSE"/>
+<showPropertyPanel value="FALSE"/>
+<generateProtectedMathFunctions value="TRUE"/>
+<generatePerformanceMeters value="FALSE"/>
+<generateObfuscatedCpp value="FALSE"/>
+<generateParInfoHTML value="TRUE"/>
+<generateParInfoExtra value="FALSE"/>
+<generateMaxSignificantDigits value="TRUE"/>
+<generateParResiduesForDiff value="FALSE"/>
+<generateAdvancedBox value="disabled"/>
+<boundaries>
+  <variable name="layer1_classic.tp_in.Tk"/>
+  <variable name="layer1_nsp.tp_in.Tk"/>
+  <variable name="layer3_classic.tp_out.Tk"/>
+  <variable name="layer3_nsp.tp_out.Tk"/>
+</boundaries>
+<dynamics>
+  <variable name="layer1_classic.T[2]"/>
+  <variable name="layer1_classic.T[3]"/>
+  <variable name="layer1_classic.T[4]"/>
+  <variable name="layer2_classic.T[2]"/>
+  <variable name="layer2_classic.T[3]"/>
+  <variable name="layer2_classic.T[4]"/>
+  <variable name="layer3_classic.T[2]"/>
+  <variable name="layer3_classic.T[3]"/>
+  <variable name="layer3_classic.T[4]"/>
+</dynamics>
+<algebraics>
+  <variable name="layer2_nsp.tp_in.Tk"/>
+  <variable name="layer3_nsp.tp_in.Tk"/>
+</algebraics>
+<residues>
+</residues>
+</partitionInfo>
