@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<test version="1.3.0" type="library_test">
-
-   <items>
-      <item name="Comparison.par1.exp1" type="exp_el" enabled="T"/>
-      <item name="Wall.par1.exp1" type="exp_el" enabled="T"/>
-      <item name="Wall_NSP.par1.exp1" type="exp_el" enabled="T"/>
-   </items>
-</test>

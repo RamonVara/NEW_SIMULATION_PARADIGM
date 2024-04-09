@@ -72,7 +72,7 @@
 
 	<component id="solver" library="LIQHAMMER_ST" type="SolverControl" layer="1" elPosition="6" >
 	
-		<symbol cx="279.5" cy="103" sx="50" sy="56" dx="-70.5" dy="181" onLabel="true" />
+		<symbol cx="280.25" cy="103" sx="49.5" sy="56" dx="-70.5" dy="181" onLabel="true" />
 	
 		<label cx="27.5" cy="14" dx="176" dy="312" family="Arial" points="12" bold="true" />
 	
@@ -98,7 +98,7 @@
 
 	<bodyEL>
 	<![CDATA[
-COMPONENT %NAME% (INTEGER n = 20)
+COMPONENT %NAME% ( INTEGER n = 50 )
 DATA
 	REAL kdamp = 0
 
@@ -106,7 +106,7 @@ END COMPONENT
 ]]>
 	</bodyEL>
 
-	<usedLibrary name="MATH" version="3.1" auto="false" />
+	<usedLibrary name="MATH" version="3.2" auto="false" />
 	<usedLibrary name="TRANLIQ" version="1.0" auto="false" />
-	<usedLibrary name="LIQHAMMER_ST" version="1.0" auto="true" />
+	<usedLibrary name="LIQHAMMER_ST" version="1.1" auto="true" />
 </schematic>
