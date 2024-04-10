@@ -27,7 +27,7 @@ EXPERIMENT exp1 ON Wall_3layer_Comparison.par1
    BODY
       -- REPORT_TABLE("results.rpt", "*") -- create an automatic report of variables
       DEBUG_LEVEL= 1   -- valid range is [0,4]
-      IMETHOD= IDAS -- integration method
+      IMETHOD= DASSL -- integration method
 
       -- set tolerances for transient (REL_ERROR & ABS_ERROR) and steady (TOLERANCE) solvers
       REL_ERROR = 1e-06

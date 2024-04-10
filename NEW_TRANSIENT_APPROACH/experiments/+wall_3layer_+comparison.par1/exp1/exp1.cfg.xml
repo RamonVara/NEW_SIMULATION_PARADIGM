@@ -2,7 +2,7 @@
 <experiment version="1.4.0">
 	<experimentViews>
 		<tab name="Tab_1">
-			<plotWindow title="Plot_2" x="0" y="0" dx="1658" dy="339">
+			<plotWindow title="Plot_2" x="0" y="354" dx="1658" dy="354">
 				<plot id="Plot_2" graphType="plot_time">
 						<title value="">
 							<font family="MS Shell Dlg 2"/>
@@ -36,7 +36,7 @@
 					
 					</plot>
 			</plotWindow>
-			<plotWindow title="Plot_1" x="0" y="339" dx="1658" dy="356">
+			<plotWindow title="Plot_1" x="0" y="0" dx="1658" dy="354">
 				<plot id="Plot_1" graphType="plot_time">
 						<title value="">
 							<font family="MS Shell Dlg 2"/>
@@ -73,7 +73,7 @@
 		</tab>
 	</experimentViews>
 
-	<watch width="250" height="722" visible="true" pos="right" >
+	<watch width="250" height="737" visible="true" pos="right" >
 		<currentTab name="view"/>
 		<variables>
 			<tab name="initial"> 
@@ -110,7 +110,7 @@
 
 
 
-	<outputWindow height="216" width="1920" visible="true" pos="bottom" />
+	<outputWindow height="201" width="1920" visible="true" pos="bottom" />
 
 	<alarms globalEnabled="TRUE">
 	</alarms>
