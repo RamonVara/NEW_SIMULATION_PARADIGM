@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<experiment version="1.4.0">
+	<experimentViews>
+		<tab name="Tab_1">
+			<plotWindow title="Plot_1" x="1104" y="0" dx="552" dy="710">
+				<plot id="Plot_1" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="tp_in.Tk" nick=""/>
+							<var name="tp_out.Tk" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_2" x="552" y="0" dx="552" dy="710">
+				<plot id="Plot_2" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="tp_in.q" nick=""/>
+							<var name="tp_out.q" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+			<plotWindow title="Plot_3" x="0" y="0" dx="552" dy="710">
+				<plot id="Plot_3" graphType="plot_time">
+						<title value="">
+							<font/>
+						</title>
+						<axeX variableName="TIME">
+							<titleAxe value="TIME"/>
+							<scale scaleType="auto"/>
+						</axeX>
+						<axeY>
+							<titleAxe value=""/>
+							<scale scaleType="auto"/>
+						</axeY>
+						<layout>
+							<font/>
+							<majorGrid/>
+							<minorGrid/>
+						</layout>
+						<legend>
+							<font/>
+						</legend>
+						<chartStyles>
+							<var name="T[01]" nick=""/>
+							<var name="T[02]" nick=""/>
+							<var name="T[03]" nick=""/>
+							<var name="T[04]" nick=""/>
+							<var name="T[05]" nick=""/>
+							<var name="T[06]" nick=""/>
+							<var name="T[07]" nick=""/>
+							<var name="T[08]" nick=""/>
+							<var name="T[09]" nick=""/>
+							<var name="T[10]" nick=""/>
+							<var name="T[11]" nick=""/>
+							<var name="T[12]" nick=""/>
+							<var name="T[13]" nick=""/>
+							<var name="T[14]" nick=""/>
+							<var name="T[15]" nick=""/>
+							<var name="T[16]" nick=""/>
+							<var name="T[17]" nick=""/>
+							<var name="T[18]" nick=""/>
+							<var name="T[19]" nick=""/>
+							<var name="T[20]" nick=""/>
+						</chartStyles>
+					
+					</plot>
+			</plotWindow>
+		</tab>
+	</experimentViews>
+
+	<watch width="250" height="738" visible="true" pos="right" >
+		<currentTab name="view"/>
+		<variables>
+			<tab name="initial"> 
+			</tab> 
+			<tab name="inputs"> 
+			</tab> 
+			<tab name="view"> 
+			</tab> 
+		</variables>
+		<layout>
+			<tab name="initial"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+				<column name="type" width="100"/> 
+			</tab> 
+			<tab name="inputs"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+			<tab name="view"> 
+				<column name="name" width="100"/> 
+				<column name="value" width="100"/> 
+				<column name="units" width="100"/> 
+				<column name="category" width="100"/> 
+			</tab> 
+		</layout>
+	</watch>
+
+	<library3D width="200" height="738" visible="true" pos="left" >
+	</library3D>
+
+
+
+	<outputWindow height="200" width="1920" visible="true" pos="bottom" />
+
+	<alarms globalEnabled="TRUE">
+	</alarms>
+
+
+	<mainWindow  mode="maximized" currentTab="Tab_1" />
+</experiment>
