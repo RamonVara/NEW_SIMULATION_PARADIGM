@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE eds SYSTEM "DTDFILE_FULLPATH">
 
-<schematic version="1.2.0" paper="A1" orientation="Landscape" createEL="true" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" connector-creation="true" >
+<schematic version="1.2.0" paper="A1" orientation="Landscape" sorting="alphabetic" aliasingInShapes="true" aliasingInUnitSymbols="true" connector-status="allshowed" connector-creation="true" >
 
 	<grid enabled="true" snap="true" hspacing="8" vspacing="8" colorMain="230,230,230" colorSecondary="243,243,243" numberCells="4" margin="true" />
 
@@ -13064,6 +13064,6 @@ END COMPONENT
 	</bodyEL>
 
 	<usedLibrary name="HYDRAULIC_ST" version="1.0" auto="false" />
-	<usedLibrary name="MATH" version="3.1" auto="false" />
+	<usedLibrary name="MATH" version="3.2" auto="false" />
 	<usedLibrary name="SPARSE" version="1.0" auto="false" />
 </schematic>
