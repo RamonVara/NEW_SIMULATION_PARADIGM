@@ -5,14 +5,14 @@
       <lib name="SPARSE" type="models" enabled="F"/>
       <lib name="HYDRAULIC_ST" type="models" enabled="F"/>
       <lib name="HYDRAULIC_ST_CLASSIC" type="models" enabled="F"/>
-      <lib name="HYDRAULIC_ST_EXAMPLES" type="models" enabled="T"/>
+      <lib name="HYDRAULIC_ST_EXAMPLES" type="models" enabled="F"/>
       <lib name="LIQHAMMER_ST" type="models" enabled="F"/>
-      <lib name="LIQHAMMER_ST_EXAMPLES" type="models" enabled="T"/>
-      <lib name="SPARSE_EXAMPLES" type="models" enabled="T"/>
-      <lib name="TEARING" type="models" enabled="T"/>
-      <lib name="THERMAL_NEW" type="models" enabled="T"/>
+      <lib name="LIQHAMMER_ST_EXAMPLES" type="models" enabled="F"/>
+      <lib name="SPARSE_EXAMPLES" type="models" enabled="F"/>
+      <lib name="TEARING" type="models" enabled="F"/>
       <lib name="TRANLIQ" type="models" enabled="F"/>
       <lib name="TRANLIQ_EXAMPLES" type="models" enabled="T"/>
+      <lib name="NEW_TRANSIENT_APPROACH" type="models" enabled="F"/>
    </libraries>
 
    <environmentVars>

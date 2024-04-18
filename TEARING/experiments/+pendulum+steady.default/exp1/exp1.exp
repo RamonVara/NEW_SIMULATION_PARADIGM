@@ -1,13 +1,13 @@
  /*-----------------------------------------------------------------------------------------
  LIBRARY: TEARING
- COMPONENT: Pendulum
+ COMPONENT: PendulumSteady
  PARTITION: default
  EXPERIMENT: exp1
  TEMPLATE: STEADY
- CREATION DATE: 09/09/2023
+ CREATION DATE: 18/04/2024
 -----------------------------------------------------------------------------------------*/
 
-EXPERIMENT exp1 ON Pendulum.default
+EXPERIMENT exp1 ON PendulumSteady.default
    DECLS
    OBJECTS
    INIT
@@ -15,6 +15,9 @@ EXPERIMENT exp1 ON Pendulum.default
       y = 0
 
    BOUNDS
+      -- Set equations for boundaries: boundVar = f(TIME;...)
+      Fx = 1
+
    BODY
      -- REPORT_LIST("reportAll","*") -- create an automatic report of variables
 

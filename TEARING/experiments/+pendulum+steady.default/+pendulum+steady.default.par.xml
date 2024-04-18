@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<partitionInfo version="1.0" library="TEARING" component="Pendulum1" partition="par1">
+<partitionInfo version="1.0" library="TEARING" component="PendulumSteady" partition="default">
 <noDerivatives value="FALSE"/>
 <inhibitReductionConstantCoefEqts value="FALSE"/>
 <generatePartitionClass value="FALSE"/>
@@ -13,17 +13,9 @@
 <generateMaxSignificantDigits value="TRUE"/>
 <generateParResiduesForDiff value="FALSE"/>
 <generateAdvancedBox value="disabled"/>
-<highIndexVars>
-  <variable name="y"/>
-  <variable name="y'"/>
-</highIndexVars>
 <boundaries>
   <variable name="Fx"/>
 </boundaries>
-<dynamics>
-  <variable name="x"/>
-  <variable name="x'"/>
-</dynamics>
 <algebraics>
   <variable name="y"/>
 </algebraics>
